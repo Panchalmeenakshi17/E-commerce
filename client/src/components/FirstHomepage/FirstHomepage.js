@@ -133,6 +133,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useSelector } from "react-redux";
+import { FaHeart, FaShoppingCart } from 'react-icons/fa';
+
 
 const HomePage = () => {
   const [settings] = useState({
@@ -306,34 +308,18 @@ const HomePage = () => {
     ];
   
   return (
-    <div className="bg-gray-50 text-gray-900 relative">
-      <section className="py-20 bg-gray-100">
-        <div className="container mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-12">Featured Products</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-            {products.map((product, index) => (
-             <div key={index} className="border mt-10 p-6 hover:shadow-2xl shadow-black hover:shadow-black ease-in-out rounded-2xl shadow-xl bg-white transform transition-transform hover:scale-105">
-             <div className="relative overflow-hidden rounded-lg">
-               <img src={product.image} alt={product.name} className="w-full h-64 object-cover rounded-lg" />
-             </div>
-             <h3 className="text-xl font-bold mb-2">{product.name}</h3>
-             <p className="text-lg text-gray-700 mb-4">{product.description}</p>
-             <p className="text-sm text-gray-500">Category: {product.category}</p>
-           </div>
-           
-            
-            ))}
-          </div>
-        </div>
-      </section>
-      {/* Carousel */}
+    <>
+    <div className="bg-slate-900 text-gray-900 relative">
+    <div className=" ">
+       {/* Carousel */}
+       <div className=" md:translate-y-10">
       <Slider {...settings}>
         {carouselImages.map((slide, index) => (
           <div key={index} style={{ position: "relative" }}>
             <img
               src={slide.image}
               alt={`Slide ${index + 1}`}
-              className="w-full h-[600px] object-cover"
+              className="w-full h-[300px] object-cover"
             //   style={{ filter: "blur(2px)" }}
             />
             {/* <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white">
@@ -343,81 +329,147 @@ const HomePage = () => {
             </div> */}
           </div>
         ))}
-      </Slider>
+      </Slider></div>
+    <section className="py-20 mt-10 bg-gray-900">
+    <div className="container mx-auto text-left">
+      <h2 className="text-3xl font-Main text-gray-300 font-bold mb-4">Featured Products</h2>
+      <hr className=" w-1/5 " />
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+        {products.map((product, index) => (
+          <div key={index} className="border mt-10 p-6 hover:shadow-2xl shadow-black hover:shadow-blue-900 ease-in-out rounded-2xl shadow-xl bg-white hover:bg-[#e1e2ff]  transform transition-transform hover:scale-105">
+            <div className="relative overflow-hidden rounded-lg">
+              <img
+                src={product.image}
+                alt={product.name}
+                className="w-full h-64 object-cover rounded-lg transition-transform duration-500 ease-in-out transform hover:scale-110"
+              />
+            </div>
+            <h3 className="text-xl mt-5 font-Main font-bold mb-2">{product.name}</h3>
+            <p className="text-lg text-gray-700 mb-2">{product.description}</p>
+            <p className="text-sm text-gray-500">Category: {product.category}</p>
+            {/* <div className="flex justify-center mt-4 gap-40">
+              <button className="px-4 py-2 bg-red-500 hover:bg-red-600 transition ease-in-out text-white rounded-md">
+                <FaHeart className="inline-block mr-2" /> Like
+              </button>
+              <button className="px-4 py-2 bg-[#8f5af9] text-white rounded-md hover:bg-[#5d17e5]">
+                <FaShoppingCart className="inline-block mr-2" /> Add to Cart
+              </button>
+            </div> */}
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+     
 
       {/* About Section */}
       <section className="py-20">
         <div className="container mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-6">About DigiHaat</h2>
-          <p className="text-lg max-w-2xl mx-auto">DigiHaat is an e-commerce platform offering a wide range of products including clothing, electronics, and more. We are dedicated to providing the best online shopping experience with top-quality products and exceptional customer service.</p>
+          <h2 className="text-3xl text-white text-left font-bold mb-6">About DigiHaat</h2>
+      <hr className=" w-1/5 " />
+
+          <p className="text-lg mt-10 text-left text-white  ">DigiHaat is your premier destination for an unparalleled online shopping experience. Our commitment to excellence is reflected in every aspect of our platform, from the carefully curated selection of top-quality products to the seamless browsing and purchasing process. Whether you're in search of fashionable clothing, cutting-edge electronics, or essential home goods, DigiHaat offers a diverse range of items to cater to your every need. With a dedication to customer satisfaction at the forefront, we provide transparent pricing, secure transactions, and prompt delivery services. Our mission is simple: to exceed your expectations at every turn. Join the thousands of satisfied customers who trust DigiHaat for their online shopping needs, and embark on a journey of convenience, reliability, and unparalleled quality today.</p>
         </div>
       </section>
 
       {/* Products Section */}
  {/* Men's Section */}
- <section className="py-20 bg-gray-100">
-        <div className="container mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-12">Men's Section</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-            {products1
-              .filter(
-                (product1) =>
-                  product1.category === "Men's Clothing" ||
-                  product1.category === "Men's Shoes"
-              )
-              .map((product1, index) => (
-                <div key={index} className="border p-6 rounded-lg shadow-lg bg-white">
-                  <img src={product1.image} alt={product1.name} className="w-full h-64 object-cover mb-4 rounded-lg" />
-                  <h3 className="text-xl font-bold mb-2">{product1.name}</h3>
-                  <p className="text-lg text-gray-700 mb-4">{product1.description}</p>
-                  <p className="text-sm text-gray-500">Category: {product1.category}</p>
-                </div>
-              ))}
+ <section className="py-10 bg-gray-900">
+  <div className="container mx-auto text-center">
+    <h2 className="text-3xl text-white text-left font-bold mb-6">Men's Section</h2>
+    <hr className=" w-1/5 " />
+
+    <div className="grid grid-cols-1 mt-10 md:grid-cols-2 lg:grid-cols-3 gap-12">
+      {products1
+        .filter(
+          (product1) =>
+            product1.category === "Men's Clothing" ||
+            product1.category === "Men's Shoes"
+        )
+        .map((product1, index) => (
+          <div
+            key={index}
+            className="group border p-6 rounded-lg shadow-lg hover:shadow-2xl hover:shadow-blue-900 transition ease-in-out bg-white overflow-hidden  duration-500  transform hover:scale-105"
+          >
+            <div className="overflow-hidden rounded-lg">
+              <img
+                src={product1.image}
+                alt={product1.name}
+                className="w-full h-64 object-cover transition-transform duration-500 ease-in-out transform group-hover:scale-110"
+              />
+            </div>
+            <h3 className="text-xl font-Main mt-5 font-bold mb-2">{product1.name}</h3>
+            <p className="text-lg text-gray-700 mb-4">{product1.description}</p>
+            <p className="text-sm text-gray-500">Category: {product1.category}</p>
           </div>
-        </div>
-      </section>
+        ))}
+    </div>
+  </div>
+</section>
+
 {/* Women's Section */}
-<section className="py-20 bg-gray-200">
-        <div className="container mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-12">Women's Section</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-            {products1
-              .filter(
-                (product1) =>
-                  product1.category === "Women's Clothing" ||
-                  product1.category === "Women's Accessories" ||
-                  product1.category === "Women's Shoes"
-              )
-              .map((product1, index) => (
-                <div key={index} className="border p-6 rounded-lg shadow-lg bg-white">
-                  <img src={product1.image} alt={product1.name} className="w-full h-64 object-cover mb-4 rounded-lg" />
-                  <h3 className="text-xl font-bold mb-2">{product1.name}</h3>
-                  <p className="text-lg text-gray-700 mb-4">{product1.description}</p>
-                  <p className="text-sm text-gray-500">Category: {product1.category}</p>
-                </div>
-              ))}
+<section className="py-20 bg-gray-900">
+  <div className="container mx-auto text-center">
+    <h2 className="text-3xl text-white text-left font-bold mb-6">Women's Section</h2>
+    <hr className="w-1/5   mb-10" />
+    <div className="grid grid-cols-1 md:grid-cols-2 mt-10 lg:grid-cols-3 gap-12">
+      {products1
+        .filter(
+          (product1) =>
+            product1.category === "Women's Clothing" ||
+            product1.category === "Women's Accessories" ||
+            product1.category === "Women's Shoes"
+        )
+        .map((product1, index) => (
+          <div
+            key={index}
+            className="group border p-6 rounded-lg shadow-lg hover:shadow-2xl hover:shadow-blue-900 bg-white overflow-hidden transition-transform duration-500 ease-in-out transform hover:scale-105"
+          >
+            <div className="overflow-hidden rounded-lg">
+              <img
+                src={product1.image}
+                alt={product1.name}
+                className="w-full h-64 object-cover mb-4 transition-transform duration-500 ease-in-out transform group-hover:scale-110"
+              />
+            </div>
+            <h3 className="text-xl font-bold mb-2">{product1.name}</h3>
+            <p className="text-lg text-gray-700 mb-4">{product1.description}</p>
+            <p className="text-sm text-gray-500">Category: {product1.category}</p>
           </div>
-        </div>
-      </section>
+        ))}
+    </div>
+  </div>
+</section>
 
       {/* Children's Section */}
-      <section className="py-20 bg-gray-300">
-        <div className="container mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-12">Children's Section</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-            {products1
-              .filter((product1) => product1.category === "Kids")
-              .map((product1, index) => (
-                <div key={index} className="border p-6 rounded-lg shadow-lg bg-white">
-                  <img src={product1.image} alt={product1.name} className="w-full h-64 object-cover mb-4 rounded-lg" />
-                  <h3 className="text-xl font-bold mb-2">{product1.name}</h3>
-                  <p className="text-lg text-gray-700 mb-4">{product1.description}</p>
-                  <p className="text-sm text-gray-500">Category: {product1.category}</p>
-                </div>
-              ))}
+      <section className="py-20 bg-gray-900">
+  <div className="container mx-auto text-center">
+    <h2 className="text-3xl text-white text-left font-bold mb-6">Children's Section</h2>
+    <hr className="w-1/5 mx-auto mb-10" />
+    <div className="grid grid-cols-1 md:grid-cols-2 mt-10 lg:grid-cols-3 gap-12">
+      {products1
+        .filter((product1) => product1.category === "Kids")
+        .map((product1, index) => (
+          <div
+            key={index}
+            className="group border p-6 rounded-lg shadow-lg hover:shadow-2xl hover:shadow-blue-900 bg-white overflow-hidden transition-transform duration-500 ease-in-out transform hover:scale-105"
+          >
+            <div className="overflow-hidden rounded-lg">
+              <img
+                src={product1.image}
+                alt={product1.name}
+                className="w-full h-64 object-cover mb-4 transition-transform duration-500 ease-in-out transform group-hover:scale-110"
+              />
+            </div>
+            <h3 className="text-xl font-bold mb-2">{product1.name}</h3>
+            <p className="text-lg text-gray-700 mb-4">{product1.description}</p>
+            <p className="text-sm text-gray-500">Category: {product1.category}</p>
           </div>
-        </div>
-      </section>
+        ))}
+    </div>
+  </div>
+</section>
+
 
       {/* User Info */}
       {/* {user && (
@@ -426,6 +478,8 @@ const HomePage = () => {
         </div>
       )} */}
     </div>
+    </div>
+    </>
   );
 };
 

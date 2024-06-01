@@ -6,8 +6,8 @@ const Footer = () => {
     <>
     
 
-<footer class="bg-[#000000] rounded-lg shadow dark:bg-gray-900 m-4">
-    <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+<footer class="bg-[#000000] shadow dark:bg-gray-900 m-">
+    <div class="w-full  max-w-screen-xl mx-auto p- md:py-8">
         <div class="sm:flex sm:items-center sm:justify-between">
         <div className="md:translate-x-20 green-400">
               <NavLink className="gap-3 flex" exact to="/">

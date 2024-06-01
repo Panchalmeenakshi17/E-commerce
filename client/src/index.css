@@ -11,6 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* App.css */
+.bg-color {
+  background-color: #f0f0f0; /* Replace this with the color you want */
+  min-height: 100vh; /* Ensure it covers the full height of the viewport */
+  /* padding: 20px; Add some padding if needed */
+}
 
 @tailwind base;
 @tailwind components;

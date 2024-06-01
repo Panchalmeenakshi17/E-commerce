@@ -40,18 +40,18 @@ const Header = () => {
         animate={{ opacity: 5 }}
         exit={{ opacity: 0 }}
       >
-        <div className="bg-[#fd1010f] md:flex md:justify-center flex justify-around gap-20   py-4">
+        <div className="bg-slate-900 md:flex md:justify-center flex justify-around gap-20   py-4">
           {/* <div>
             <NavLink to="/">
               <img
                 className="md:w-1/4 w-1/3"
-                src="../images/Black_and_Green_Modern_Automotive_Logo__1_-removebg-preview.png"
+                src="../images/white_and_Green_Modern_Automotive_Logo__1_-removebg-preview.png"
                 alt="not valid"
               />
             </NavLink>
           </div> */}
 
-          <div className=" bg-lue-800 w-full ">
+          <div className=" bg-grey-900 w-full ">
           <div className="flex justify-between  items-center  bg-[ff3ce8] p-2">
           <div className=" md:translate-x-20 bg-green400  ">
           <div className="md:translate-x-20 green-400">
@@ -71,16 +71,25 @@ const Header = () => {
                     exact
                     to="/FirstHomepage"
                     activeclassname="active-link"
-                    className="nav-link text-[#3322f2] text-sm font-medium md:text-xl hover:text-[black]"
+                    className="nav-link text-[#3322f2] transition ease-in-out duration-300 text-sm font-medium md:text-xl hover:text-[#dfcfff]"
                   >
                     Home
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    to="/"
+                    activeclassname="active-link"
+                    className="nav-link text-[#3322f2] transition ease-in-out duration-300 ml- text-sm font-medium md:text-xl hover:text-[#dfcfff]"
+                  >
+                    Shop Now
                   </NavLink>
                 </li>
                 <li className="mr-4">
                   <NavLink
                     to="/About"
                     activeclassname="active-link"
-                    className="nav-link text-[#3322f2] text-sm font-medium md:text-xl hover:text-[black]"
+                    className="nav-link text-[#3322f2] transition ease-in-out duration-300 text-sm font-medium md:text-xl hover:text-[#dfcfff]"
                   >
                     About Us
                   </NavLink>
@@ -90,33 +99,25 @@ const Header = () => {
                   <NavLink
                     to="/VisionMission"
                     activeclassname="active-link"
-                    className="nav-link text-[#3322f2] text-sm font-medium md:text-xl hover:text-[black]"
+                    className="nav-link text-[#3322f2] text-sm font-medium md:text-xl hover:text-[#dfcfff]"
                   >
                     Vision &amp; Mission
                   </NavLink>
                 </li> */}
-                <li>
-                  <NavLink
-                    to="/"
-                    activeclassname="active-link"
-                    className="nav-link text-[#3322f2] ml-5 text-sm font-medium md:text-xl hover:text-[black]"
-                  >
-                    Shop Now
-                  </NavLink>
-                </li>
               </ul>
             </nav>
           </div>
           <NavLink
+           className="hover:bg-[] rounded-full text-center z-50   border-2 border-[#3322f2] hover:border-[#dfcfff] hover:text-[#dfcfff] h-[40px] w-[120px] font-bold transition ease-in-out hover:shadow-2xl hover:shadow-blue-950 text-[#3322f2] shadow-[#000000d6] shadow-md flex justify-center items-center duration-300 font-scnd cursor-pointer"
                 to="/Signin">
           <div
  
-              className="hover:bg-[] rounded-full text-center z-50 text-[#3322f2] border-2 border-[#3322f2] hover:border-[black] hover:text-[black] h-[40px] w-[120px] font-bold transition ease-in-out shadow-[#000000d6] shadow-md flex justify-center items-center bg-[] font-scnd cursor-pointer"
+             
             >
               <ul className=" ">
                 <li className=" p- text-center  ">
                   <h1
-                    className="nav-link rounded-full text-center p-1 hover:text-[black]  text-[#3322f2] font-bold  md:text-sm  "
+                    className="nav-link rounded-full text-center p-1 font-bold  md:text-sm  "
                   >
                     {" "}
                     Sign Up
@@ -125,16 +126,16 @@ const Header = () => {
               </ul>
             </div>
             </NavLink>
-            <NavLink
+            <NavLink  className="hover:bg-[] rounded-full text-center hover:shadow-2xl hover:shadow-blue-950 z-50 text-[#3322f2] border-2 border-[#3322f2] hover:border-[#dfcfff] hover:text-[#dfcfff] h-[40px] w-[120px] font-bold transition ease-in-out shadow-[#000000d6] shadow-md flex justify-center items-center bg-[] font-scnd cursor-pointer"
                 to="/Login">
           <div
              
-              className="hover:bg-[] rounded-full text-center z-50 text-[#3322f2] border-2 border-[#3322f2] hover:border-[black] hover:text-[black] h-[40px] w-[120px] font-bold transition ease-in-out shadow-[#000000d6] shadow-md flex justify-center items-center bg-[] font-scnd cursor-pointer"
+             
             >
               <ul className=" ">
                 <li className=" p- text-center  ">
                   <h1
-                    className="nav-link rounded-full text-center p-1 hover:text-[black]  text-[#3322f2] font-bold  md:text-sm  "
+                    className="nav-link rounded-full text-center p-1  font-bold  md:text-sm  "
                   >
                     {" "}
                     Log In
@@ -146,12 +147,12 @@ const Header = () => {
           {/* <div ref={dropdownRef} className="relative">
             <div
               onClick={toggleDropdown}
-              className="hover:bg-[] rounded-full text-center z-50 text-[#3322f2] border-2 border-[#3322f2] hover:border-[black] hover:text-[black] h-[40px] w-[180px] font-bold transition ease-in-out shadow-[#000000d6] shadow-md flex justify-center items-center bg-[] font-scnd cursor-pointer"
+              className="hover:bg-[] rounded-full text-center z-50 text-[#3322f2] border-2 border-[#3322f2] hover:border-[white] hover:text-[white] h-[40px] w-[180px] font-bold transition ease-in-out shadow-[#000000d6] shadow-md flex justify-center items-center bg-[] font-scnd cursor-pointer"
             >
               <ul className=" ">
                 <li className=" p- text-center  ">
                   <h1
-                    className="nav-link rounded-full text-center p-1 hover:text-[black]  text-[#3322f2] font-bold  md:text-sm  "
+                    className="nav-link rounded-full text-center p-1 hover:text-[white]  text-[#3322f2] font-bold  md:text-sm  "
                   >
                     {" "}
                     Click for Registration{" "}
@@ -194,7 +195,7 @@ const Header = () => {
                 to="/"
                 className={({ isActive }) =>
                   isActive
-                    ? "   nav-link text-[#3322f2] font-medium md:text-xl hover:text-[black]"
+                    ? "   nav-link text-[#3322f2] font-medium md:text-xl hover:text-[white]"
                     : null
                 }
               >
@@ -204,7 +205,7 @@ const Header = () => {
                 to="/AboutUs"
                 className={({ isActive }) =>
                   isActive
-                    ? "   nav-link text-[#3322f2] font-medium md:text-xl hover:text-[black]"
+                    ? "   nav-link text-[#3322f2] font-medium md:text-xl hover:text-[white]"
                     : null
                 }
               >
@@ -214,7 +215,7 @@ const Header = () => {
                 to="/VisionMission"
                 className={({ isActive }) =>
                   isActive
-                    ? "   nav-link text-[#3322f2] font-medium md:text-xl hover:text-[black]"
+                    ? "   nav-link text-[#3322f2] font-medium md:text-xl hover:text-[white]"
                     : null
                 }
               >
@@ -224,7 +225,7 @@ const Header = () => {
                 to="/"
                 className={({ isActive }) =>
                   isActive
-                    ? "   nav-link text-[#3322f2] font-medium md:text-xl hover:text-[black]"
+                    ? "   nav-link text-[#3322f2] font-medium md:text-xl hover:text-[white]"
                     : null
                 }
               >
@@ -246,7 +247,7 @@ const Header = () => {
                       to="/About"
                       className={({ isActive }) =>
                         isActive
-                          ? "   transition ease-in-out font-bold font-scnd  text-[#ffffff]   rounded-xl"
+                          ? "   transition ease-in-out font-bold font-scnd  text-[#8f5af9]   rounded-xl"
                           : null
                       }
                     >
@@ -259,7 +260,7 @@ const Header = () => {
                       to="/services"
                       className={({ isActive }) =>
                         isActive
-                          ? " mt-3  transition ease-in-out font-bold font-scnd  text-[#ffffff]   rounded-xl"
+                          ? " mt-3  transition ease-in-out font-bold font-scnd  text-[#8f5af9]   rounded-xl"
                           : null
                       }
                     >
@@ -271,7 +272,7 @@ const Header = () => {
                       to="/Contact"
                       className={({ isActive }) =>
                         isActive
-                          ? "   transition ease-in-out font-bold font-scnd  text-[#ffffff]   rounded-xl"
+                          ? "   transition ease-in-out font-bold font-scnd  text-[#8f5af9]   rounded-xl"
                           : null
                       }
                     >

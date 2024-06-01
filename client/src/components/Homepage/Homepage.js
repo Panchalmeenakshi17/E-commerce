@@ -714,6 +714,7 @@
 
 import React, { useState, useEffect } from 'react';
 import productsData from '../data/productData';
+import { FaHeart, FaShoppingCart } from 'react-icons/fa';
 
 const Homepage = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -781,7 +782,9 @@ const Homepage = () => {
   };
 
   return (
-    <div className="container mt-32 mx-auto py-4 flex">
+    <>
+    <div className=" bg-slate-900 text-white  w-full h-full ">
+    <div className="container  mt-32 mx-auto py-4 flex">
       {/* Filtering Section */}
       <div className="w-1/8 bg-purple 00 h-screen overflow-y-auto sticky top-36">
         <div className="mb-4">
@@ -796,7 +799,7 @@ const Homepage = () => {
             {searchSuggestions.map((suggestion, index) => (
               <div
                 key={index}
-                className="cursor-pointer hover:bg-gray-100 rounded-md px-3 py-1"
+                className="cursor-pointer hover:bg-gray-600 rounded-md px-3 py-1"
                 onClick={() => handleSuggestionClick(suggestion)}
               >
                 {suggestion}
@@ -829,10 +832,18 @@ const Homepage = () => {
             ).map(product => (
               <div key={product.id} className="bg-white hover:-translate-y-2 mt-5 transition ease-in-out hover:shadow-2xl  rounded-lg shadow-xl hover:bg-[#d4d5f8c6] p-10">
                 <img src={product.image} alt={product.name} className="w-full h-48 object-cover mb-4 rounded" />
-                <h3 className="text-lg font-semibold">{product.name}</h3>
+                <h3 className="text-lg text-black font-semibold">{product.name}</h3>
                 <p className="text-gray-600">{product.description}</p>
                 <p className="text-blue-600 font-semibold">Price: ${product.price}</p>
                 <p className="text-gray-600">Category: {product.category}</p>
+                <div className="flex transition ease-in-out justify-center mt-4 gap-20">
+              <button className="px-4 py-2 bg-red-500 hover:bg-red-600 transition ease-in-out text-white rounded-md">
+                <FaHeart className="inline-block mr-2" /> Like
+              </button>
+              <button className="px-4 py-2 bg-[#8f5af9] text-white rounded-md hover:bg-[#5d17e5]">
+                <FaShoppingCart className="inline-block mr-2" /> Add to Cart
+              </button>
+            </div> 
               </div>
             ))}
           </div>
@@ -840,13 +851,15 @@ const Homepage = () => {
       </div>
 
       {/* Recommended Products Section */}
-      <div className="w-1/4   overflow-y-auto ">
+
+      <div className="w-1/4 bg-slate-900   overflow-y-auto ">
+      <div className="  ">
   <h2 className="text-2xl font-semibold mb-4">Recommended Products on your Past Search</h2>
   <div className="grid grid-cols-1 gap-4">
     {recommendedProducts.map(product => (
       <div
         key={product.id}
-        className="bg-white  hover:shadow-xl mt-10 shadow-black transition ease-in-out rounded-lg   shadow-md p-4"
+        className="bg-black  hover:shadow-xl mt-10 shadow-black transition ease-in-out rounded-lg   shadow-md p-4"
       >
         <div className="overflow-hidden rounded">
           <img
@@ -855,8 +868,8 @@ const Homepage = () => {
             className="w-full h-48 object-cover mb-4 transform transition duration-500 ease-in-out hover:scale-110"
           />
         </div>
-        <h3 className="text-lg font-semibold">{product.name}</h3>
-        <p className="text-gray-600">{product.description}</p>
+        <h3 className="text-lg text-white font-semibold">{product.name}</h3>
+        <p className="text-gray-200">{product.description}</p>
         <p className="text-blue-600 font-semibold">Price: ${product.price}</p>
         <p className="text-gray-600">Category: {product.category}</p>
       </div>
@@ -865,6 +878,9 @@ const Homepage = () => {
 </div>
 
     </div>
+    </div>
+    </div>
+    </>
   );
 };
 

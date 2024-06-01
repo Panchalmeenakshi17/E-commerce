@@ -186,6 +186,7 @@ import Homepage from "./components/Homepage/Homepage"; // Ensure you import the 
 import Footer from "./components/Footer/Footer";
 import FirstHomepage from "./components/FirstHomepage/FirstHomepage";
 import About from "./components/About/About";
+import BeforeLogin from "./components/Homepage/BeforeLogin";
 
 const App = () => {
   const [currentUser, setCurrentUser] = useState(null);
@@ -233,7 +234,10 @@ const App = () => {
           ) : (
             <Header />
           )}
+           <div className="bg-color">
+
           <RoutesWithTitles currentUser={currentUser} onLogin={handleLogin} />
+           </div>
           <Footer/>
         </Router>
       )}
@@ -270,7 +274,8 @@ const RoutesWithTitles = ({ currentUser, onLogin }) => {
           <Route path="/Login" element={<Login onLogin={onLogin} />} />
           <Route path="/Signin" element={<Signin />} />
           <Route path="/FirstHomepage" element={<FirstHomepage />} />
-          <Route exact path="/" element={<Homepage />} />
+          {/* <Route exact path="/" element={<Homepage />} /> */}
+          <Route exact path="/" element={<BeforeLogin />} />
 
           <Route path="/About" element={<About />} />
           <Route path="*" element={<NotFound />} />
@@ -281,3 +286,5 @@ const RoutesWithTitles = ({ currentUser, onLogin }) => {
 };
 
 export default App;
+
+
