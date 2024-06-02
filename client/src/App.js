@@ -75,7 +75,7 @@
 
 // import React, { useState, useEffect } from "react";
 // import "./App.css";
-// import ClockLoader from "react-spinners/ClockLoader";
+// import BeatLoader from "react-spinners/BeatLoader";
 // import Header from "./components/Header/Header";
 // import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 // import Login from "./components/Registration/Login";
@@ -113,7 +113,7 @@
 //     <>
 //       {Loading ? (
 //         <div id="toTop" className="App">
-//           <ClockLoader
+//           <BeatLoader
 //             color={"#007fee"}
 //             loading={Loading}
 //             className=" w-[300px] top-[240px] left-[630px] h- "
@@ -175,7 +175,7 @@
 
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import ClockLoader from "react-spinners/ClockLoader";
+import BeatLoader from "react-spinners/BeatLoader";
 import Header from "./components/Header/Header";
 import MainHeader from "./components/Header/MainHeader"; // Ensure you import the MainHeader component
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
@@ -217,16 +217,15 @@ const App = () => {
   return (
     <>
       {loading ? (
-        <div id="toTop" className="App">
-          <ClockLoader
-            color={"#007fee"}
-            loading={loading}
-            className="w-[300px] top-[240px] left-[630px] h-"
-            size={300}
-            aria-label="Loading Spinner"
-            data-testid="loader"
-          />
-        </div>
+        <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100vh" }}>
+        <BeatLoader
+          color={"#007fee"}
+          loading={loading}
+          size={15}
+          aria-label="Loading Spinner"
+          data-testid="loader"
+        />
+      </div>
       ) : (
         <Router>
           {currentUser ? (
@@ -267,6 +266,8 @@ const RoutesWithTitles = ({ currentUser, onLogin }) => {
       {currentUser ? (
         <>
           <Route exact path="/" element={<Homepage />} />
+          <Route path="/About" element={<About />} />
+
           {/* Add other protected routes here */}
         </>
       ) : (

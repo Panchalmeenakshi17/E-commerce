@@ -591,19 +591,19 @@ const Header = () => {
   };
 
   return (
-    <motion.div
+    <motion.div className=" bg-[#11182700]"
       initial={{ opacity: 0 }}
       animate={{ opacity: 5 }}
       exit={{ opacity: 0 }}
     >
-      <div className="bg-[#2725d00e] fixed top-0 left-0 right-0 z-50 backdrop-blur-md md:flex md:justify-center flex justify-around gap-20 py-4">
+      <div className="bg-[#11182708] fixed top-0 left-0 right-0 z-50 backdrop-blur-md md:flex md:justify-center flex justify-around gap-20 py-4">
      
         <div className="blue-800 w-full">
           <div className="flex justify-between items-center purple-500 p-2">
             <div className="md:translate-x-20 green-400">
               <NavLink className="gap-3 flex" exact to="/">
-                <img className="h-16 w-20" src="images/DiGiHaatbg.jpg" alt="Logo" />
-                <h1 className="mt-3 font-Main md:text-3xl font-bold text-[#3322f2]"> DigiHaat </h1>
+                <img className="h-10 w-16" src="images/DiGiHaatbg.jpg" alt="Logo" />
+                <h1 className="mt-2 font-Main md:text-xl font-bold text-[#3322f2]"> DigiHaat </h1>
               </NavLink>
             </div>
             <ul className=" md:space-x-5 text-[#3322f2] font-medium  ml-16 flex list-none p-0 font-Main
@@ -613,7 +613,7 @@ const Header = () => {
                     exact
                     to="/FirstHomepage"
                     activeclassname="active-link"
-                    className="nav-link text-[#3322f2] text-sm font-medium md:text-xl hover:text-[black]"
+                    className="nav-link text-[#3322f2] text-sm font-medium md:text-lg hover:text-[#ffffff]"
                   >
                     Home
                   </NavLink>
@@ -678,7 +678,7 @@ const Header = () => {
                   <NavLink
                     to="/About"
                     activeclassname="active-link"
-                    className="nav-link text-[#3322f2] text-sm font-medium md:text-xl hover:text-[black]"
+                    className="nav-link text-[#3322f2] text-sm font-medium md:text-lg hover:text-[#ffffff]"
                   >
                     About Us
                   </NavLink>
@@ -707,117 +707,15 @@ const Header = () => {
                 onClick={() => {
                   dispatch(logoutuser());
                 }}
-                className="hover:bg-[] rounded-full text-center z-50 text-[#3322f2] border-2 border-[#3322f2] hover:border-[black] hover:text-[black] h-[40px] w-[120px] font-bold transition ease-in-out shadow-[#000000d6] shadow-md flex justify-center items-center bg-[] font-scnd cursor-pointer"
+                className="hover:bg-[] mr-10 rounded-full text-center z-50 text-[#3322f2] border-2 border-[#3322f2] hover:text-[white] hover:border-[#ffffff]   h-[40px] w-[100px] font-bold transition ease-in-out shadow-[#000000d6] shadow-md flex justify-center items-center bg-[] font-scnd cursor-pointer"
               >
                 <ul>
                   <li className="p- text-center">
-                    <h1 className="nav-link rounded-full text-center p-1 hover:text-[black] text-[#3322f2] font-bold md:text-sm"> Logout </h1>
+                    <h1 className="nav-link rounded-full text-center p-1     font-bold md:text-sm"> Logout </h1>
                   </li>
                 </ul>
               </button>
-            <div className="flex relative">
-              {!menu && (
-                <HiMenuAlt4
-                  fontSize={28}
-                  className="bg-[#3322f2] rounded fill-white md:hidden cursor-pointer"
-                  onClick={() => setMenu(true)}
-                />
-              )}
-              {menu && (
-                <ul
-                  className="z-30 bg-[#0000004d] backdrop-blur-md fixed -top-0 -right-2 p-3 w-[70vw] h-screen shadow-md md:hidden list-none
-                  flex flex-col justify-start items-center rounded-md blue-glassmorphism text-white animate-slide-in"
-                >
-                  <li className="text-xl w-full my-3">
-                    <AiOutlineClose className="stroke-2" onClick={() => setMenu(false)} />
-                  </li>
-                  <li className="mr-4 font-bold bg-emerald-800">
-                    <NavLink
-                      exact
-                      to="/"
-                      activeclassname="active-link"
-                      className={({ isActive }) =>
-                        isActive ? "nav-link text-[#3322f2] font-medium md:text-xl" : null
-                      }
-                    >
-                      Home
-                    </NavLink>
-                  </li>
-                  <li className="mr-5 bg-emerald-4 mt-4 font-bold">
-                    <NavLink
-                      to="/AboutUs"
-                      activeclassname="active-link"
-                      className={({ isActive }) =>
-                        isActive ? "nav-link text-[#f25522] font-medium md:text-xl" : null
-                      }
-                    >
-                      About Us
-                    </NavLink>
-                  </li>
-                  <li className="mr-5 bg-yellow-800 mt-4 font-bold">
-                    <NavLink
-                      to="/VisionMission"
-                      activeclassname="active-link"
-                      className={({ isActive }) =>
-                        isActive ? "nav-link text-[#f25522] font-medium md:text-xl" : null
-                      }
-                    >
-                      Vision &amp; Mission
-                    </NavLink>
-                  </li>
-                  <li className="mr-5 bg-emerald-800 mt-4 font-bold">
-                    <NavLink
-                      to="/ContactUs"
-                      activeclassname="active-link"
-                      className={({ isActive }) =>
-                        isActive ? "nav-link text-[#f25522] font-medium md:text-xl" : null
-                      }
-                    >
-                      Contact Us
-                    </NavLink>
-                  </li>
-                  <hr className="my-6 bg-red-950 w-full border-2 border-gray-300" />
-                  <h1 className="px-4 rounded-full mr-3 py-2 text-gray-800 bg-gray-200"> Register As </h1>
-                  <div className="flex flex-col">
-                    <NavLink to='/VolunteerRegistration' className="relative my-4 inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-green-500 rounded-xl group">
-                      <span className="absolute top-0 right-0 inline-block w-4 h-4 transition-all duration-500 ease-in-out bg-green-700 rounded group-hover:-mr-4 group-hover:-mt-4">
-                        <span className="absolute top-0 right-0 w-5 h-5 rotate-45 translate-x-1/2 -translate-y-1/2 bg-white"></span>
-                      </span>
-                      <span className="absolute bottom-0 left-0 w-full h-full transition-all duration-500 ease-in-out delay-200 -translate-x-full translate-y-full bg-green-600 rounded-2xl group-hover:mb-12 group-hover:translate-x-0"></span>
-                      <span className="relative w-full text-center font-bold text-white transition-colors duration-200 font-scnd ease-in-out group-hover:text-white">Volunteer</span>
-                    </NavLink>
-                    <NavLink to='/VendorRegistration' className="relative my-4 inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-green-500 rounded-xl group">
-                      <span className="absolute top-0 right-0 inline-block w-4 h-4 transition-all duration-500 ease-in-out bg-green-700 rounded group-hover:-mr-4 group-hover:-mt-4">
-                        <span className="absolute top-0 right-0 w-5 h-5 rotate-45 translate-x-1/2 -translate-y-1/2 bg-white"></span>
-                      </span>
-                      <span className="absolute bottom-0 left-0 w-full h-full transition-all duration-500 ease-in-out delay-200 -translate-x-full translate-y-full bg-green-600 rounded-2xl group-hover:mb-12 group-hover:translate-x-0"></span>
-                      <span className="relative w-full text-center font-bold text-white transition-colors duration-200 font-scnd ease-in-out group-hover:text-white">Vendor</span>
-                    </NavLink>
-                  </div>
-                  <hr className="my-6 bg-red-950 w-full border-2 border-gray-300" />
-                  <NavLink to='/user/cart' className="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium transition duration-300 ease-out border-2 rounded-full shadow-md group">
-                    <span className="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-[#3322f2] group-hover:translate-x-0 ease">
-                      <FaArrowRight />
-                    </span>
-                    <span className="absolute flex items-center justify-center w-full h-full text-[#3322f2] transition-all duration-300 transform group-hover:translate-x-full ease">Cart</span>
-                    <span className="relative invisible">Cart</span>
-                  </NavLink>
-                  <button
-                    onClick={() => {
-                      dispatch(logoutuser());
-                    }}
-                    className="hover:bg-[#3322f2] rounded-full text-center z-50 text-[#3322f2] border-2 border-[#3322f2] hover:border-[#3322f2] hover:text-[#3322f2] h-[40px] w-[120px] font-bold transition ease-in-out shadow-[#3322f2] shadow-md flex justify-center items-center bg-[] font-scnd cursor-pointer"
-                  >
-                    <ul>
-                      <li className="p- text-center">
-                        <h1 className="nav-link rounded-full text-center p-1 hover:text-white text-[#3322f2] font-bold md:text-sm"> Logout </h1>
-                      </li>
-                    </ul>
-                  </button>
-                </ul>
-              )}
-            </div>
-          </div>
+                    </div>
         </div>
       </div>
       {searchTerm && (

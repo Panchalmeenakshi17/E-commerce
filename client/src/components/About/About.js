@@ -59,10 +59,10 @@ const About = () => {
       {/* About Section */}
       <section className="py-20 w-full bg-gray-900">
         <div className="w-full mx-auto text-center">
-          <h2 className="text-5xl text-[#b7c6f6] font-bold font-Main mb-6">
+          <h2 className="text-3xl text-[#b7c6f6] font-bold font-Main mb-6">
             About DigiHaat
           </h2>
-          <p className="text-xl text-gray-300 text-justify w-full p-10">
+          <p className="text-lg text-gray-300 text-justify w-full p-10">
             DigiHaat is an e-commerce platform offering a wide range of
             products including clothing, electronics, and more. We are dedicated
             to providing the best online shopping experience with top-quality
@@ -85,8 +85,8 @@ const About = () => {
       {/* Carousels Section */}
       <section className="py-10 bg-gray-800">
       <h1 className="text-center font-Main text-3xl text-white">Our highlights</h1>
-<hr className="mt-5 mx-auto w-1/4" /> {/* Add mx-auto to center the hr element */}
-<div className="container mx-auto flex mt-7 justify-center space-x-4">
+<hr className="mt- mx-auto w-1/4" /> {/* Add mx-auto to center the hr element */}
+<div className=" p-16 container mx-auto flex mt-7 justify-center space-x-6">
   {Array.from({ length: 3 }).map((_, idx) => (
     <div key={idx} className="w-1/3">
       <Slider {...settings}>

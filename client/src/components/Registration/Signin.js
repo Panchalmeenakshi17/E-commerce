@@ -44,10 +44,10 @@ const Signin = () => {
     <>
       <ToastContainer />
        
-      <div className= "font-Main bg-gray-900 md:w-full">
+      <div className= "font-Main p-20 bg-gray-900 md:w-full">
         <div className="mb md:w-full flex justify-center   w-full h-full">
           <div className="w-full flex justify-center">
-            <div className="w-full md:mt-[40px] md:w-full   md:rounded-2xl bg-gray-900 shadow-[#5c5fa100] shadow-2xl rounded-lg dark:border dark:border-[#435ef4]">
+            <div className="w-full md:w-full   md:rounded-2xl bg-gray-900 shadow-[#5c5fa100] shadow-2xl rounded-lg dark:border dark:border-[#435ef4]">
               <div className="flex flex-col w-full bg-ye low-600 md:flex-row">
                 {/* Left Side Image */}
                 <div className="md:w-full w-full md:block hidden">
@@ -63,11 +63,11 @@ const Signin = () => {
                 <h2 className="text-[#fefefe] text-center mt-7 text-3xl mb-1 md:p-0 px-6 translate-x-[0px] font-semibold md:text-2xl font-main title-font">
             Create a free account if you're a new user
           </h2>
-                  <form className="space-y-4  md:space-y-6">
+                  <form className="space-y-4 ">
                     <div className="w-full md:w-full p-3">
                       <label className="block">
                         <input
-                          className="p-4 w-full text-[#ffffff] tracking-tight bg-[#f6f6f640] placeholder:text-cyan-50 outline-none border border-gray-300 rounded-lg focus:border-[#435ef4] transition duration-200"
+                          className="p-3 w-full text-[#ffffff] tracking-tight bg-[#f6f6f640] placeholder:text-cyan-50 outline-none border border-gray-300 rounded-lg focus:border-[#435ef4] transition duration-200"
                           id="signUpInput1-1"
                           type="text"
                           value={Name}
@@ -80,7 +80,7 @@ const Signin = () => {
                     <div className="w-full md:w-full p-3">
                       <label className="block">
                         <input
-                          className="p-4 w-full text-[#ffffff] tracking-tight bg-[#f6f6f640] placeholder:text-cyan-50 outline-none border border-gray-300 rounded-lg focus:border-[#435ef4] transition duration-200"
+                          className="p-3 w-full text-[#ffffff] tracking-tight bg-[#f6f6f640] placeholder:text-cyan-50 outline-none border border-gray-300 rounded-lg focus:border-[#435ef4] transition duration-200"
                           id="signUpInput1-1"
                           type="email"
                           value={Email}
@@ -93,7 +93,7 @@ const Signin = () => {
                     <div className="w-full md:w-full p-3">
                       <label className="block">
                         <input
-                          className="p-4 w-full text-[#f0f7ff] tracking-tight bg-[#f6f6f640] placeholder:text-cyan-50 outline-none border border-gray-300 rounded-lg focus:border-[#435ef4] transition duration-200"
+                          className="p-3 w-full text-[#f0f7ff] tracking-tight bg-[#f6f6f640] placeholder:text-cyan-50 outline-none border border-gray-300 rounded-lg focus:border-[#435ef4] transition duration-200"
                           id="signUpInput1-2"
                           type="text"
                           value={Password}

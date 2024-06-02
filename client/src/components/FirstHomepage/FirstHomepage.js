@@ -330,7 +330,7 @@ const HomePage = () => {
           </div>
         ))}
       </Slider></div>
-    <section className="py-20 mt-10 bg-gray-900">
+    <section className="py-20 p-20 mt-10 bg-gray-900">
     <div className="container mx-auto text-left">
       <h2 className="text-3xl font-Main text-gray-300 font-bold mb-4">Featured Products</h2>
       <hr className=" w-1/5 " />

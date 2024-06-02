@@ -72,7 +72,7 @@ const BeforeLogin = () => {
   };
 
   return (
-    <div className="bg-slate-900 text-white font-Main">
+    <div className="bg-slate-900 px-20 text-white font-Main">
     <div className="container    mx-auto py-4 flex">
       {/* Filtering Section */}
       <div className="w-1/8 bg-purple 00 h-screen overflow-y-auto sticky top-32">
@@ -146,20 +146,20 @@ const BeforeLogin = () => {
 
       <div className="flex bg-yellow-00 flex-grow ml-1/4 overflow-x-auto">
         {/* Products Section */}
-        <div className="w-[850px] translate-x-8 bg-fuchsia 0 ">
+        <div className="w-[800px] translate-x-8 bg-fuchsia 0 ">
           <h2 className="text-3xl font-Main font-bold ml-2 mb-4">Products</h2>
           <hr className=' w-1/5'/>
-          <div className="grid mt-9 tra grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4">
+          <div className="grid mt-9 px-10 tra grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4">
             {searchProducts(searchTerm).filter(product => 
               selectedCategories.length === 0 || selectedCategories.includes(product.category)
             ).map(product => (
-              <div key={product.id} className="bg-white hover:-translate-y-2 mt-5 transition ease-in-out hover:shadow-2xl  rounded-lg shadow-xl hover:bg-[#e8e9ff] p-10">
+              <div key={product.id} className="bg-white hover:-translate-y-2 mt-5 transition ease-in-out hover:shadow-2xl  rounded-lg shadow-xl hover:bg-[#e8e9ff] p-4">
                 <img src={product.image} alt={product.name} className="w-full h-48 object-cover mb-4 rounded" />
                 <h3 className="text-lg text-black font-bold">{product.name}</h3>
                 <p className="text-gray-600">{product.description}</p>
                 <p className="text-blue-600 font-semibold">Price: ${product.price}</p>
                 <p className="text-gray-600">Category: {product.category}</p>
-                 <div className="flex transition ease-in-out justify-center mt-4 gap-20">
+                 <div className="flex transition ease-in-out justify-center mt-4 gap-10">
               <button className="px-4 py-2 bg-red-500 hover:bg-red-600 transition ease-in-out text-white rounded-md">
                 <FaHeart className="inline-block mr-2" /> Like
               </button>
@@ -176,7 +176,7 @@ const BeforeLogin = () => {
       </div>
 
       {/* Recommended Products Section */}
-      <div className="w-1/4   overflow-y-auto ">
+      <div className="w-1/4  ml-5  overflow-y-auto ">
   <h2 className="text-2xl font-semibold mb-4">Recommended Products on your Past Search</h2>
   <div className="grid grid-cols-1 gap-4">
     {recommendedProducts.map(product => (

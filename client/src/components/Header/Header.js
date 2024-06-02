@@ -66,17 +66,7 @@ const Header = () => {
             <nav className="flex justify-end">
               <ul className=" md:space-x-5 text-[#3322f2] font-medium md:mr-16 flex list-none p-0 font-Main
                ">
-                <li className="mr-4">
-                  <NavLink
-                    exact
-                    to="/FirstHomepage"
-                    activeclassname="active-link"
-                    className="nav-link text-[#3322f2] transition ease-in-out duration-300 text-sm font-medium md:text-xl hover:text-[#dfcfff]"
-                  >
-                    Home
-                  </NavLink>
-                </li>
-                <li>
+                <li className="mr-2">
                   <NavLink
                     to="/"
                     activeclassname="active-link"
@@ -86,6 +76,17 @@ const Header = () => {
                   </NavLink>
                 </li>
                 <li className="mr-4">
+                  <NavLink
+                    exact
+                    to="/FirstHomepage"
+                    activeclassname="active-link"
+                    className="nav-link text-[#3322f2] transition ease-in-out duration-300 text-sm font-medium md:text-xl hover:text-[#dfcfff]"
+                  >
+                    Featured 
+                  </NavLink>
+                  
+                </li>
+                <li className="ml-4">
                   <NavLink
                     to="/About"
                     activeclassname="active-link"
