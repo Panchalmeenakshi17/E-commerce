@@ -291,7 +291,7 @@ const Header = () => {
               {!menu && (
                 <HiMenuAlt4
                   fontSize={28}
-                  className="bg-[#3322f2] rounded fill-white md:hidden cursor-pointer"
+                  className="bg-[#3322f200] rounded fill-white md:hidden cursor-pointer"
                   onClick={() => setMenu(true)}
                 />
               )}

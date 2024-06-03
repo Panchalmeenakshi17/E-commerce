@@ -68,7 +68,7 @@ const Login = () => {
           
         </div>*/}
       {/* </div> */}
-      <div className=" font-Main p-20 bg-gray-900 md:h-screen">
+      <div className=" font-Main md:p-20 py-40 bg-gray-900 md:h-screen">
         <div className="   md:w-full flex justify-center  w-full h-full ">
           <div className=" w-full flex justify-center md:">
             <div className=" bg-gray-900 w-full md:mt-[30px]  md:w-full rounded-xl md:translate-x-[10px] md:rounded-2xl bg-gray-900 shdow-[#5c60a1]   rounded-lgdark:border  dark:border-[#435ef4]">
@@ -82,7 +82,8 @@ const Login = () => {
                   />
                 </div>
 
-              <div className="p-6 bg-gray-900 w-full space-y-4 md:space-y-6 sm:p-8"><h2 className="text-[#dcdcdc] text-center mt-7 text-3xl mb-1 md:p-0 px-6 translate-x-[0px] font-semibold md:text-2xl font-main title-font">
+              <div className="md:p-6 bg-gray-900 w-full space-y-4 md:space-y-6 sm:p-8">
+                <h2 className="text-[#dcdcdc] text-center mt-7 text-3xl mb-1 md:p-0 px-6 translate-x-[0px] font-semibold md:text-2xl font-main title-font">
             Log In to access all the Products
           </h2>
                 <form className="  space-y-4 md:space-y-6">
