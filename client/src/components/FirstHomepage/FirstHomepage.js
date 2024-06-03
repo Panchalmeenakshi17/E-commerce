@@ -330,11 +330,11 @@ const HomePage = () => {
           </div>
         ))}
       </Slider></div>
-    <section className="py-20 p-20 mt-10 bg-gray-900">
+    <section className="md:py-20 md:p-20 p-5 md:mt-10 mt-8 bg-gray-900">
     <div className="container mx-auto text-left">
       <h2 className="text-3xl font-Main text-gray-300 font-bold mb-4">Featured Products</h2>
-      <hr className=" w-1/5 " />
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+      <hr className=" md:w-1/5 " />
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap- md:gap-12">
         {products.map((product, index) => (
           <div key={index} className="border mt-10 p-6 hover:shadow-2xl shadow-black hover:shadow-blue-900 ease-in-out rounded-2xl shadow-xl bg-white hover:bg-[#e1e2ff]  transform transition-transform hover:scale-105">
             <div className="relative overflow-hidden rounded-lg">
@@ -363,21 +363,21 @@ const HomePage = () => {
      
 
       {/* About Section */}
-      <section className="py-20">
+      <section className="md:py-20 md:p-20 p-8">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl text-white text-left font-bold mb-6">About DigiHaat</h2>
-      <hr className=" w-1/5 " />
+      <hr className=" md:w-1/5 w-72 " />
 
-          <p className="text-lg mt-10 text-left text-white  ">DigiHaat is your premier destination for an unparalleled online shopping experience. Our commitment to excellence is reflected in every aspect of our platform, from the carefully curated selection of top-quality products to the seamless browsing and purchasing process. Whether you're in search of fashionable clothing, cutting-edge electronics, or essential home goods, DigiHaat offers a diverse range of items to cater to your every need. With a dedication to customer satisfaction at the forefront, we provide transparent pricing, secure transactions, and prompt delivery services. Our mission is simple: to exceed your expectations at every turn. Join the thousands of satisfied customers who trust DigiHaat for their online shopping needs, and embark on a journey of convenience, reliability, and unparalleled quality today.</p>
+          <p className="text-lg mt-10 text-justify text-white  ">DigiHaat is your premier destination for an unparalleled online shopping experience. Our commitment to excellence is reflected in every aspect of our platform, from the carefully curated selection of top-quality products to the seamless browsing and purchasing process. Whether you're in search of fashionable clothing, cutting-edge electronics, or essential home goods, DigiHaat offers a diverse range of items to cater to your every need. With a dedication to customer satisfaction at the forefront, we provide transparent pricing, secure transactions, and prompt delivery services. Our mission is simple: to exceed your expectations at every turn. Join the thousands of satisfied customers who trust DigiHaat for their online shopping needs, and embark on a journey of convenience, reliability, and unparalleled quality today.</p>
         </div>
       </section>
 
       {/* Products Section */}
  {/* Men's Section */}
- <section className="py-10 bg-gray-900">
+ <section className="md:py-10 md:p-20 p-5 bg-gray-900">
   <div className="container mx-auto text-center">
     <h2 className="text-3xl text-white text-left font-bold mb-6">Men's Section</h2>
-    <hr className=" w-1/5 " />
+    <hr className=" md:w-1/5 w-72 " />
 
     <div className="grid grid-cols-1 mt-10 md:grid-cols-2 lg:grid-cols-3 gap-12">
       {products1
@@ -408,10 +408,10 @@ const HomePage = () => {
 </section>
 
 {/* Women's Section */}
-<section className="py-20 bg-gray-900">
+<section className="py-10 md:p-20 p-5 bg-gray-900">
   <div className="container mx-auto text-center">
     <h2 className="text-3xl text-white text-left font-bold mb-6">Women's Section</h2>
-    <hr className="w-1/5   mb-10" />
+    <hr className="md:w-1/5 w-72  mb-10" />
     <div className="grid grid-cols-1 md:grid-cols-2 mt-10 lg:grid-cols-3 gap-12">
       {products1
         .filter(
@@ -442,10 +442,10 @@ const HomePage = () => {
 </section>
 
       {/* Children's Section */}
-      <section className="py-20 bg-gray-900">
+      <section className="md:p-20 p-5 bg-gray-900">
   <div className="container mx-auto text-center">
     <h2 className="text-3xl text-white text-left font-bold mb-6">Children's Section</h2>
-    <hr className="w-1/5 mx-auto mb-10" />
+    <hr className="md:w-1/5 w-72   mb-10" />
     <div className="grid grid-cols-1 md:grid-cols-2 mt-10 lg:grid-cols-3 gap-12">
       {products1
         .filter((product1) => product1.category === "Kids")

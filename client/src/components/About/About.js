@@ -57,12 +57,12 @@ const About = () => {
   return (
     <>
       {/* About Section */}
-      <section className="py-20 w-full bg-gray-900">
-        <div className="w-full mx-auto text-center">
-          <h2 className="text-3xl text-[#b7c6f6] font-bold font-Main mb-6">
+      <section className="md:py-20 py-10 w-full bg-gray-900">
+        <div className="w-full md:mx-auto text-center">
+          <h2 className="text-3xl text-[#b7c6f6] font-bold font-Main md:mb-6">
             About DigiHaat
           </h2>
-          <p className="text-lg text-gray-300 text-justify w-full p-10">
+          <p className="text-lg text-gray-300 text-justify w-full p-9 md:p-10">
             DigiHaat is an e-commerce platform offering a wide range of
             products including clothing, electronics, and more. We are dedicated
             to providing the best online shopping experience with top-quality
@@ -85,23 +85,23 @@ const About = () => {
       {/* Carousels Section */}
       <section className="py-10 bg-gray-800">
       <h1 className="text-center font-Main text-3xl text-white">Our highlights</h1>
-<hr className="mt- mx-auto w-1/4" /> {/* Add mx-auto to center the hr element */}
-<div className=" p-16 container mx-auto flex mt-7 justify-center space-x-6">
+<hr className="md:mt-5 mt-5 mx-auto w-60 md:w-1/4" /> {/* Add mx-auto to center the hr element */}
+<div className=" mt-10 md:p-16   md:container w-full md:mx-auto md:flex   justify-center md:space-x-6">
   {Array.from({ length: 3 }).map((_, idx) => (
-    <div key={idx} className="w-1/3">
+    <div key={idx} className="md:w-1/3 rounded-2xl md:p-0 p-5">
       <Slider {...settings}>
   {carouselImages.map((slide, index) => (
     <div
-      className="w-full h-[400px] flex"
+      className=" rounded-2xl w-full h-[400px] md:flex"
       key={index}
       style={{ position: "relative" }}
     >
       <img
         src={slide.image}
         alt={`Slide ${index + 1}`}
-        className="w-full h-[400px] object-cover"
+        className="w-full rounded-2xl  h-[400px] object-cover"
       />
-      <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white">
+      <div className="absolute rounded-2xl inset-0 flex flex-col justify-center items-center text-center text-white">
         <h2 className="text-3xl font-bold mb-2">{slide.text}</h2>
         {/* <p className="text-lg mb-1">{slide.subtext}</p> */}
         <Link

@@ -47,7 +47,7 @@ const Login = () => {
    return (
     <>
       <ToastContainer />
-      <div className="relative ">
+      {/* <div className="relative  "> */}
         {/* <img
           src="https://images.unsplash.com/photo-1561414927-6d86591d0c4f?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           className="w-full md:h-[300px]"
@@ -61,20 +61,30 @@ const Login = () => {
           className="  h-[500px] w-full object-cover opacity-100 transition-opacity duration-500 ease-in-out "
         /> */}
 
-        <div className="   w-full md:p-0 p-5   absolute   transform   text-center">
-          {/* <h1 className=" font-main   text-xl text-center text-[#f48d5e] ">
+       {/*  <div className="  p-20  w-full md:p-0   absolute   transform   text-center">
+          <h1 className=" font-main   text-xl text-center text-[#f48d5e] ">
             | Volunteer Registration
-          </h1> */}
-          <h2 className="text-[#000000] text-center mt-7 text-3xl mb-1 md:p-0 px-6 translate-x-[0px] font-semibold md:text-2xl font-main title-font">
+          </h1> 
+          
+        </div>*/}
+      {/* </div> */}
+      <div className=" font-Main p-20 bg-gray-900 md:h-screen">
+        <div className="   md:w-full flex justify-center  w-full h-full ">
+          <div className=" w-full flex justify-center md:">
+            <div className=" bg-gray-900 w-full md:mt-[30px]  md:w-full rounded-xl md:translate-x-[10px] md:rounded-2xl bg-gray-900 shdow-[#5c60a1]   rounded-lgdark:border  dark:border-[#435ef4]">
+            <div className="flex flex-col w-full bg-ye low-600 md:flex-row">
+                {/* Left Side Image */}
+                <div className="md:w-full bg-yellow-00 w-full md:block hidden">
+                  <img
+                    src="images/d.png"
+                    alt="Signup"
+                    className="h-full w-full object-cover rounded-l-lg"
+                  />
+                </div>
+
+              <div className="p-6 bg-gray-900 w-full space-y-4 md:space-y-6 sm:p-8"><h2 className="text-[#dcdcdc] text-center mt-7 text-3xl mb-1 md:p-0 px-6 translate-x-[0px] font-semibold md:text-2xl font-main title-font">
             Log In to access all the Products
           </h2>
-        </div>
-      </div>
-      <div className="p-2  bg-[#ffffff] md:w-full">
-        <div className=" mb-20 md:w-full flex justify-center mt-20 w-full h-full ">
-          <div className=" w-full flex justify-center md:">
-            <div className=" w-full md:mt-[30px]  md:w-[1000px] rounded-xl md:translate-x-[10px] md:rounded-2xl bg-[#14133c] shadow-[#5c60a1] shadow-2xl  rounded-lgdark:border  dark:border-[#435ef4]">
-              <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
                 <form className="  space-y-4 md:space-y-6">
                   <div className="w-full md:w-full p-3">
                     <label className="block">
@@ -152,8 +162,9 @@ const Login = () => {
               </div>
             </div>
           </div>
-        </div>
       </div>
+        </div>
+        </div>
     </>
   );
 };

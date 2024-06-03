@@ -44,13 +44,13 @@ const Signin = () => {
     <>
       <ToastContainer />
        
-      <div className= "font-Main p-20 bg-gray-900 md:w-full">
-        <div className="mb md:w-full flex justify-center   w-full h-full">
+      <div className= "font-Main md:p-20 md:py-16 py-20 bg-gray-900 md:w-full">
+        <div className="mb md:w-full md:flex justify-center   w-full h-full">
           <div className="w-full flex justify-center">
             <div className="w-full md:w-full   md:rounded-2xl bg-gray-900 shadow-[#5c5fa100] shadow-2xl rounded-lg dark:border dark:border-[#435ef4]">
               <div className="flex flex-col w-full bg-ye low-600 md:flex-row">
                 {/* Left Side Image */}
-                <div className="md:w-full w-full md:block hidden">
+                <div className="md:w-full bg-yellow-00 w-full md:block hidden">
                   <img
                     src="images/s.png"
                     alt="Signup"
