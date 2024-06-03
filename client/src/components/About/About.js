@@ -58,7 +58,9 @@ const About = () => {
     <>
       {/* About Section */}
       <section className="md:py-20 py-10 w-full bg-gray-900">
-        <div className="w-full md:mx-auto text-center">
+    <hr className='md:w-full w-full border-black ' />
+
+        <div className="w-full mt-20 md:mx-auto text-center">
           <h2 className="text-3xl text-[#b7c6f6] font-bold font-Main md:mb-6">
             About DigiHaat
           </h2>

@@ -310,16 +310,18 @@ const HomePage = () => {
   return (
     <>
     <div className="bg-slate-900 text-gray-900 relative">
-    <div className=" ">
+    <hr className='md:w-full w-full border-black ' />
+
+    <div className=" mt-28 md:mt-36 ">
        {/* Carousel */}
-       <div className=" md:translate-y-10">
+       <div className=" ">
       <Slider {...settings}>
         {carouselImages.map((slide, index) => (
           <div key={index} style={{ position: "relative" }}>
             <img
               src={slide.image}
               alt={`Slide ${index + 1}`}
-              className="w-full h-[300px] object-cover"
+              className="w-full h-[200px] md:h-[300px] object-cover"
             //   style={{ filter: "blur(2px)" }}
             />
             {/* <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white">
@@ -330,7 +332,7 @@ const HomePage = () => {
           </div>
         ))}
       </Slider></div>
-    <section className="md:py-20 md:p-20 p-5 md:mt-10 mt-8 bg-gray-900">
+    <section className="md:  md:p-20 p-5 md:mt- 0 mt-8 bg-gray-900">
     <div className="container mx-auto text-left">
       <h2 className="text-3xl font-Main text-gray-300 font-bold mb-4">Featured Products</h2>
       <hr className=" md:w-1/5 " />
