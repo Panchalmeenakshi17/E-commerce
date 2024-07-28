@@ -1288,7 +1288,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      {menu && (
+      {/* {menu && (
         <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-90 flex flex-col items-center justify-center z-50">
           <AiOutlineClose
             size={30}
@@ -1366,7 +1366,76 @@ const Header = () => {
             </li>
           </ul>
         </div>
-      )}
+      )} */}
+            {menu && (
+      <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-90 flex flex-col items-center justify-center z-50 p-4">
+        <AiOutlineClose
+          size={30}
+          className="text-white cursor-pointer absolute top-4 right-4"
+          onClick={() => setMenu(false)}
+        />
+        <div className="flex flex-col space-y-4">
+          {/* Wrapper for horizontal links */}
+          <div className="flex font-Main flex-wrap gap-4 justify-center">
+            {/* Link Box 1 */}
+            <NavLink
+              to="/"
+              className="bg-[#00000083] text-white border-2 border-blue-500 rounded-xl p-4 w-48 text-center font-semibold transition hover:bg-gray-700"
+              activeClassName="active-link"
+              onClick={() => setMenu(false)}
+            >
+              Home
+            </NavLink>
+            {/* Link Box 2 */}
+            <NavLink
+              to="/FirstHomepage"
+              className="bg-[#00000083] text-white border-2 border-blue-500 rounded-xl p-4 w-48 text-center font-semibold transition hover:bg-gray-700"
+              activeClassName="active-link"
+              onClick={() => setMenu(false)}
+            >
+              Featured
+            </NavLink>
+            {/* Link Box 3 */}
+            <NavLink
+              to="/Cart"
+              className="bg-[#00000083] text-white border-2 border-blue-500 rounded-xl p-4 w-48 text-center font-semibold transition hover:bg-gray-700"
+              activeClassName="active-link"
+              onClick={() => setMenu(false)}
+            >
+              Cart
+            </NavLink>
+            {/* Link Box 4 */}
+            <NavLink
+              to="/Like"
+              className="bg-[#00000083] text-white border-2 border-blue-500 rounded-xl p-4 w-48 text-center font-semibold transition hover:bg-gray-700"
+              activeClassName="active-link"
+              onClick={() => setMenu(false)}
+            >
+              Like
+            </NavLink>
+             
+          </div>
+        </div>
+        <NavLink
+                to="/Login"
+                          className="mt-8 bg-[#3322f2] text-white border-2 border-[#3322f2] hover:bg-transparent hover:text-[#3322f2] hover:border-[#ffffff] rounded-xl py-3 px-9 font-bold transition ease-in-out shadow-md flex items-center justify-center"
+                onClick={() => setMenu(false)}
+              >
+                {/* <FaArrowRight /> */}
+                Log in
+              </NavLink>
+        <NavLink
+                to="/Signin"
+                          className="mt-8 bg-[#3322f2] text-white border-2 border-[#3322f2] hover:bg-transparent hover:text-[#3322f2] hover:border-[#ffffff] rounded-xl py-3 px-9 font-bold transition ease-in-out shadow-md flex items-center justify-center"
+                onClick={() => setMenu(false)}
+              >
+                {/* <FaArrowRight /> */}
+                Sign in
+              </NavLink>
+
+      
+      </div>
+    )}
       {searchTerm && (
         <div className="p-4 mt-36">
           <h2 className="text-lg text-white font-bold mb-2">
