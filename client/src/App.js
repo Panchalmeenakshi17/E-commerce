@@ -1,90 +1,30 @@
-// import React, { useEffect } from "react";
-// import "./App.css";
-// import Header from "./components/Header/Header";
-// // import Footer from "./components/Footer/Footer";
-// import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
-// // import Homepage from "./components/Homepage/Homepage";
-// // import Gallery from "./components/Gallery/Gallery";
-// // import AboutUs from "./components/About/AboutUs";
-// // import ContactUs from "./components/Contact/ContactUs";
-// // import Notification from "./components/Notification/Notification";
-// // import VisionMission from "./components/VisionMission/VisionMission";
-// // import Headline from "./components/Header/Headline";
-// import Donate from "./components/Registration/Login";
-// import VolunteerRegistration from "./components/Registration/Signin";
-// // import CoreTeam from "./components/Team/CoreTeam";
-// // import CoreProfileCard from "./components/Team/CoreProfileCard";
-// import NotFound from "./components/NotFound/NotFound";
-// import Login from "./components/Registration/Login";
-// import Signin from "./components/Registration/Signin";
-
-// const App = () => {
-//   return (
-//     <>
-//       <Router>
-//         {/* <Headline /> */}
-//         <Header />
-//       {/* <Route  path="/VolunteerRegistration" element={<VolunteerRegistration />} /> */}
-// {/* <VolunteerRegistration/> */}
-// {/* <Donate/> */}
-//         {/* <Notification /> */}
-//         <RoutesWithTitles />
-//         {/* <Footer /> */}
-         
-//       </Router>
-
-//     </>
-//   );
-// };
-
-// const RoutesWithTitles = () => {
-//   const location = useLocation();
-
-//   useEffect(() => {
-//     updateTitle(getPageName(location.pathname));
-//   }, [location]);
-
-//   const getPageName = (pathname) => {
-//     // Extract the page name from the pathname
-//     const pathParts = pathname.split("/");
-//     const pageName = pathParts[pathParts.length - 1];
-//     return pageName;
-//   };
-
-//   const updateTitle = (pageName) => {
-//     document.title = `${pageName} | Unity of Youth`;
-//   };
-
-//   return (
-//     <Routes>
-//       {/* <Route  path="/" element={<Homepage />} />
-//       <Route  path="/AboutUs" element={<AboutUs />} />
-//       <Route  path="/ContactUs" element={<ContactUs />} />
-//       <Route  path="/VisionMission" element={<VisionMission />} /> */}
-//       <Route  path="/Login" element={<Login />} />
-//       <Route  path="/Signin" element={<Signin />} />
-//       {/* <Route  path="/CoreTeam" element={<CoreTeam />} />
-//       <Route  path="/CoreProfileCard" element={<CoreProfileCard />} /> */}
-//         <Route path="*" element={<NotFound/>} />
-//     </Routes>
-//   );
-// };
-
-// export default App;
-
-
+// // ---->
 // import React, { useState, useEffect } from "react";
 // import "./App.css";
 // import BeatLoader from "react-spinners/BeatLoader";
 // import Header from "./components/Header/Header";
-// import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+// import MainHeader from "./components/Header/MainHeader";
+// import {
+//   BrowserRouter as Router,
+//   Routes,
+//   Route,
+//   useLocation,
+// } from "react-router-dom";
 // import Login from "./components/Registration/Login";
 // import Signin from "./components/Registration/Signin";
 // import NotFound from "./components/NotFound/NotFound";
-// import Homepage from "./components/Homepage/Homepage"; // Ensure you import the Homepage component
+// import Homepage from "./components/Homepage/Homepage";
+// import Footer from "./components/Footer/Footer";
+// import FirstHomepage from "./components/FirstHomepage/FirstHomepage";
+// import About from "./components/About/About";
+// import BeforeLogin from "./components/Homepage/BeforeLogin";
+// import { CartProvider } from "./components/CartContext";
+// import Cart from "./components/Cart";
+// import Like from "./components/Like";
 
 // const App = () => {
 //   const [currentUser, setCurrentUser] = useState(null);
+//   const [loading, setLoading] = useState(false);
 
 //   useEffect(() => {
 //     const storedUser = localStorage.getItem("currentUser");
@@ -102,7 +42,6 @@
 //     setCurrentUser(null);
 //     localStorage.removeItem("currentUser");
 //   };
-//   const [Loading, setLoading] = useState(false);
 
 //   useEffect(() => {
 //     setLoading(true);
@@ -111,22 +50,40 @@
 
 //   return (
 //     <>
-//       {Loading ? (
-//         <div id="toTop" className="App">
+//       {loading ? (
+//         <div
+//           style={{
+//             display: "flex",
+//             justifyContent: "center",
+//             alignItems: "center",
+//             height: "100vh",
+//           }}
+//         >
 //           <BeatLoader
 //             color={"#007fee"}
-//             loading={Loading}
-//             className=" w-[300px] top-[240px] left-[630px] h- "
-//             size={300}
+//             loading={loading}
+//             size={15}
 //             aria-label="Loading Spinner"
 //             data-testid="loader"
 //           />
 //         </div>
 //       ) : (
-//         <Router>
-//           <Header currentUser={currentUser} onLogout={handleLogout} />
-//           <RoutesWithTitles currentUser={currentUser} onLogin={handleLogin} />
-//         </Router>
+//         <CartProvider>
+//           <Router>
+//             {currentUser ? (
+//               <MainHeader currentUser={currentUser} onLogout={handleLogout} />
+//             ) : (
+//               <Header />
+//             )}
+//             <div className="bg-color">
+//               <RoutesWithTitles
+//                 currentUser={currentUser}
+//                 onLogin={handleLogin}
+//               />
+//             </div>
+//             <Footer />
+//           </Router>
+//         </CartProvider>
 //       )}
 //     </>
 //   );
@@ -146,47 +103,60 @@
 //   };
 
 //   const updateTitle = (pageName) => {
-//     document.title = `${pageName} | Unity of Youth`;
+//     document.title = `${pageName} | DigiHaat`;
 //   };
 
 //   return (
-//     <>
-    
 //     <Routes>
 //       {currentUser ? (
 //         <>
 //           <Route exact path="/" element={<Homepage />} />
-//           {/* Add other protected routes here */}
+//           <Route path="/About" element={<About />} />
+//           <Route path="/FirstHomepage" element={<FirstHomepage />} />
+//           <Route exact path="/Cart" element={<Cart />} />
+//           <Route exact path="/Like" element={<Like />} />
 //         </>
 //       ) : (
 //         <>
 //           <Route path="/Login" element={<Login onLogin={onLogin} />} />
 //           <Route path="/Signin" element={<Signin />} />
+//           <Route path="/FirstHomepage" element={<FirstHomepage />} />
+//           <Route exact path="/" element={<BeforeLogin />} />
+//           <Route exact path="/Cart" element={<Cart />} />
+//           <Route exact path="/Like" element={<Like />} />
+//           <Route path="/About" element={<About />} />
 //           <Route path="*" element={<NotFound />} />
 //         </>
 //       )}
 //     </Routes>
-//     </>
 //   );
 // };
 
 // export default App;
-
-
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import BeatLoader from "react-spinners/BeatLoader";
 import Header from "./components/Header/Header";
-import MainHeader from "./components/Header/MainHeader"; // Ensure you import the MainHeader component
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import MainHeader from "./components/Header/MainHeader";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
 import Login from "./components/Registration/Login";
 import Signin from "./components/Registration/Signin";
 import NotFound from "./components/NotFound/NotFound";
-import Homepage from "./components/Homepage/Homepage"; // Ensure you import the Homepage component
+import Homepage from "./components/Homepage/Homepage";
 import Footer from "./components/Footer/Footer";
 import FirstHomepage from "./components/FirstHomepage/FirstHomepage";
 import About from "./components/About/About";
 import BeforeLogin from "./components/Homepage/BeforeLogin";
+import { CartProvider } from "./components/CartContext";
+import Cart from "./components/Cart";
+import Like from "./components/Like";
+import PaymentPage from "./components/PaymentPage";
+import PaymentRecords from "./components/PaymentRecords";
 
 const App = () => {
   const [currentUser, setCurrentUser] = useState(null);
@@ -217,35 +187,43 @@ const App = () => {
   return (
     <>
       {loading ? (
-        <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100vh" }}>
-        <BeatLoader
-          color={"#007fee"}
-          loading={loading}
-          size={15}
-          aria-label="Loading Spinner"
-          data-testid="loader"
-        />
-      </div>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            height: "100vh",
+          }}
+        >
+          <BeatLoader
+            color={"#007fee"}
+            loading={loading}
+            size={15}
+            aria-label="Loading Spinner"
+            data-testid="loader"
+          />
+        </div>
       ) : (
-        <Router>
-          {currentUser ? (
-            <MainHeader currentUser={currentUser} onLogout={handleLogout} />
-          ) : (
-            <Header />
-          )}
-           <div className="bg-color">
-
-          <RoutesWithTitles currentUser={currentUser} onLogin={handleLogin} />
-           </div>
-          <Footer/>
-        </Router>
+        <CartProvider>
+          <Router>
+            {currentUser ? (
+              <MainHeader currentUser={currentUser} onLogout={handleLogout} />
+            ) : (
+              <Header />
+            )}
+            <div className="bg-color">
+              <RoutesWithTitles currentUser={currentUser} onLogin={handleLogin} />
+            </div>
+            <Footer />
+          </Router>
+        </CartProvider>
       )}
     </>
   );
 };
 
 const RoutesWithTitles = ({ currentUser, onLogin }) => {
-  const location = useLocation();
+  const location = useLocation(); // Make sure this is imported from 'react-router-dom'
 
   useEffect(() => {
     updateTitle(getPageName(location.pathname));
@@ -265,19 +243,23 @@ const RoutesWithTitles = ({ currentUser, onLogin }) => {
     <Routes>
       {currentUser ? (
         <>
-          <Route exact path="/" element={<Homepage />} />
+          <Route path="/" element={<Homepage />} />
           <Route path="/About" element={<About />} />
-
-          {/* Add other protected routes here */}
+          <Route path="/FirstHomepage" element={<FirstHomepage />} />
+          <Route path="/Cart" element={<Cart />} />
+          <Route path="/Like" element={<Like />} />
+          <Route path="/payment" element={<PaymentPage />} />
+          <Route path="/PaymentRecords" element={<PaymentRecords />} />
+          
         </>
       ) : (
         <>
           <Route path="/Login" element={<Login onLogin={onLogin} />} />
           <Route path="/Signin" element={<Signin />} />
           <Route path="/FirstHomepage" element={<FirstHomepage />} />
-          {/* <Route exact path="/" element={<Homepage />} /> */}
-          <Route exact path="/" element={<BeforeLogin />} />
-
+          <Route path="/" element={<BeforeLogin />} />
+          <Route path="/Cart" element={<Cart />} />
+          <Route path="/Like" element={<Like />} />
           <Route path="/About" element={<About />} />
           <Route path="*" element={<NotFound />} />
         </>
@@ -287,5 +269,3 @@ const RoutesWithTitles = ({ currentUser, onLogin }) => {
 };
 
 export default App;
-
-

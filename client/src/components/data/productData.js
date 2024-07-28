@@ -5,311 +5,311 @@ const productData = [
         "description": "Powerful laptop for work and entertainment",
         "price": 999,
         "category": "Electronics",
-        "image": "https://source.unsplash.com/random/400x400?laptop"
+        "image": "https://imgeng.jagran.com/images/2023/mar/best%20laptops1679305053832.jpg"
     },
     {
         "id": 2,
         "name": "Smartphone",
         "description": "High-performance smartphone with advanced features",
-        "price": 699,
+        "price":  99,
         "category": "Electronics",
-        "image": "https://source.unsplash.com/random/400x400?smartphone"
+        "image": "https://images-cdn.ubuy.com.sa/63b46431ffafdf2f462e84a6-christmas-gifts-clearance-cbcbtwo-smart.jpg"
     },
     {
         "id": 3,
         "name": "T-shirt",
         "description": "Comfortable cotton t-shirt for everyday wear",
-        "price": 19.99,
+        "price": 1.99,
         "category": "Clothing",
-        "image": "https://source.unsplash.com/random/400x400?tshirt"
+        "image": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F7b%2F17%2F7b17428dc1da8df6b8b054f8729b58bd8d06e60a.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_tshirtstanks_shortsleeve%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmobilemain%5D"
     },
     {
         "id": 4,
         "name": "Running Shoes",
         "description": "Lightweight running shoes for optimal performance",
-        "price": 79.99,
+        "price":  9.99,
         "category": "Footwear",
-        "image": "https://source.unsplash.com/random/400x400?running-shoes"
+        "image": "https://cdn.thewirecutter.com/wp-content/media/2023/09/running-shoes-2048px-5946.jpg?auto=webp&quality=75&width=1024"
     },
     {
         "id": 5,
         "name": "Headphones",
         "description": "Premium over-ear headphones with noise cancellation",
-        "price": 199.99,
+        "price":  9,
         "category": "Electronics",
-        "image": "https://source.unsplash.com/random/400x400?headphones"
+        "image": "https://cdn.mos.cms.futurecdn.net/fsDKHB3ZyNJK6zMpDDBenB.jpg"
     },
     {
         "id": 6,
         "name": "Watch",
         "description": "Stylish watch with leather strap and quartz movement",
-        "price": 149.99,
+        "price": 10,
         "category": "Accessories",
-        "image": "https://source.unsplash.com/random/400x400?watch"
+        "image": "https://www.titan.co.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Sites-titan-master-catalog/default/dw34d84041/images/Titan/Catalog/1698KM02_1.jpg?sw=800&sh=800"
     },
     {
         "id": 7,
         "name": "Backpack",
         "description": "Durable backpack with multiple compartments",
-        "price": 59.99,
+        "price": 59,
         "category": "Accessories",
-        "image": "https://source.unsplash.com/random/400x400?backpack"
+        "image": "https://m.media-amazon.com/images/I/61zjaQdypmL._AC_UY1100_.jpg"
     },
     {
         "id": 8,
         "name": "Sunglasses",
         "description": "Polarized sunglasses for UV protection",
-        "price": 39.99,
+        "price": 39,
         "category": "Accessories",
-        "image": "https://source.unsplash.com/random/400x400?sunglasses"
+        "image": "https://n.nordstrommedia.com/id/aeb9d925-69ff-444d-8bd9-30ed91730822.jpeg?h=600&w=750"
     },
     {
         "id": 9,
         "name": "Desk Lamp",
         "description": "Adjustable LED desk lamp for studying and working",
-        "price": 29.99,
+        "price": 29,
         "category": "Home Decor",
-        "image": "https://source.unsplash.com/random/400x400?desk-lamp"
+        "image": "https://m.media-amazon.com/images/I/61r9G8yzTCL._AC_UF1000,1000_QL80_.jpg"
     },
     {
         "id": 10,
         "name": "Wireless Mouse",
         "description": "Ergonomic wireless mouse with customizable buttons",
-        "price": 34.99,
+        "price": 39,
         "category": "Electronics",
-        "image": "https://source.unsplash.com/random/400x400?wireless-mouse"
+        "image": "https://i.pcmag.com/imagery/roundups/00c55mZIyqDwsoHj87h5waZ-2.fit_lim.size_1050x.jpg"
     },
     {
         "id": 11,
         "name": "Coffee Maker",
         "description": "Programmable coffee maker for brewing delicious coffee",
-        "price": 79.99,
+        "price": 7,
         "category": "Home Decor",
-        "image": "https://source.unsplash.com/random/400x400?coffee-maker"
+        "image": "https://m.media-amazon.com/images/I/61pdQdp66-L._AC_UF894,1000_QL80_.jpg"
     },
     {
         "id": 12,
         "name": "Yoga Mat",
         "description": "High-quality yoga mat for comfortable practice",
-        "price": 29.99,
+        "price": 29,
         "category": "Fitness & Sports",
-        "image": "https://source.unsplash.com/random/400x400?yoga-mat"
+        "image": "https://m.media-amazon.com/images/I/71b5fW+s18L._AC_UF1000,1000_QL80_.jpg"
     },
     {
         "id": 13,
         "name": "Gaming Chair",
         "description": "Ergonomic gaming chair with lumbar support",
-        "price": 199.99,
+        "price": 199,
         "category": "Gaming",
-        "image": "https://source.unsplash.com/random/400x400?gaming-chair"
+        "image": "https://m.media-amazon.com/images/I/61hGTAfXsZL._AC_UF894,1000_QL80_.jpg"
     },
     {
         "id": 14,
         "name": "Digital Camera",
         "description": "Compact digital camera with high-resolution sensor",
-        "price": 299.99,
+        "price": 299,
         "category": "Electronics",
-        "image": "https://source.unsplash.com/random/400x400?digital-camera"
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrEmz7EvqVqZkMuYcj9KUwxlLmtyGE6ZSvOA&s"
     },
     {
         "id": 15,
         "name": "Bluetooth Speaker",
         "description": "Portable Bluetooth speaker with powerful sound",
-        "price": 49.99,
+        "price": 49,
         "category": "Electronics",
-        "image": "https://source.unsplash.com/random/400x400?bluetooth-speaker"
+        "image": "https://m.media-amazon.com/images/I/614pmXRPMFL._AC_UF1000,1000_QL80_.jpg"
     },
     {
         "id": 16,
         "name": "Hiking Boots",
         "description": "Waterproof hiking boots for outdoor adventures",
-        "price": 129.99,
+        "price": 19,
         "category": "Footwear",
-        "image": "https://source.unsplash.com/random/400x400?hiking-boots"
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1Oi_uHaK1z7cHbwhZbzdI4_H2ZqEx2_Ml0Q&s"
     },
     {
         "id": 17,
         "name": "Winter Jacket",
         "description": "Insulated winter jacket for cold weather",
-        "price": 149.99,
+        "price": 149,
         "category": "Clothing",
-        "image": "https://source.unsplash.com/random/400x400?winter-jacket"
+        "image": "https://m.media-amazon.com/images/I/71GPLuey3dL._AC_UY1100_.jpg"
     },
     {
         "id": 18,
         "name": "Wireless Earbuds",
         "description": "True wireless earbuds with long battery life",
-        "price": 89.99,
+        "price": 89,
         "category": "Electronics",
-        "image": "https://source.unsplash.com/random/400x400?wireless-earbuds"
+        "image": "https://5.imimg.com/data5/SELLER/Default/2022/7/FA/KH/TW/154397919/ptron-bassbuds-jade-gaming-true-wireless-earbuds.jpg"
     },
     {
         "id": 19,
         "name": "Cycling Helmet",
         "description": "Lightweight cycling helmet for safety and comfort",
-        "price": 59.99,
+        "price": 59,
         "category": "Fitness & Sports",
-        "image": "https://source.unsplash.com/random/400x400?cycling-helmet"
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoPunVfTJ55s1a_JvoMk7BfjJEf3ZC28tX4w&s"
     },
     {
         "id": 20,
         "name": "Portable Charger",
         "description": "Compact portable charger for charging devices on the go",
-        "price": 24.99,
+        "price": 29,
         "category": "Electronics",
-        "image": "https://source.unsplash.com/random/400x400?portable-charger"
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3tnfdJaDLYC0qYo6dv-tYbBVZsAtEB06TXQ&s"
     },
     {
         "id": 21,
         "name": "Wireless Keyboard",
         "description": "Slim wireless keyboard with quiet keys",
-        "price": 49.99,
+        "price": 49,
         "category": "Electronics",
-        "image": "https://source.unsplash.com/random/400x400?wireless-keyboard"
+        "image": "https://m.media-amazon.com/images/I/71gR-IwIv-L.jpg"
     },
     {
         "id": 22,
         "name": "Sneakers",
         "description": "Stylish sneakers with cushioned sole",
-        "price": 59.99,
+        "price": 59,
         "category": "Footwear",
-        "image": "https://source.unsplash.com/random/400x400?sneakers"
+        "image": "https://m.media-amazon.com/images/I/71I2QrobMRS._AC_UY1000_.jpg"
     },
     {
         "id": 23,
         "name": "Smartwatch",
         "description": "Feature-rich smartwatch with heart rate monitor",
-        "price": 179.99,
+        "price": 179,
         "category": "Electronics",
-        "image": "https://source.unsplash.com/random/400x400?smartwatch"
+        "image": "https://www.cnet.com/a/img/resize/770007077c38361ca13ef0b0aa4c208f88fa2053/hub/2023/09/20/9e9b8e2b-04ee-4087-b819-c99ec8bbc980/apple-watch-ultra-2-7.jpg?auto=webp&fit=crop&height=1200&width=1200"
     },
     {
         "id": 24,
         "name": "Leather Wallet",
         "description": "Genuine leather wallet with multiple card slots",
-        "price": 39.99,
+        "price": 39,
         "category": "Accessories",
-        "image": "https://source.unsplash.com/random/400x400?leather-wallet"
+        "image": "https://5.imimg.com/data5/OF/GH/MY-7610375/handmade-men-s-short-leather-wallet.jpg"
     },
     {
         "id": 25,
         "name": "Wireless Headphones",
         "description": "Comfortable wireless headphones with long battery life",
-        "price": 129.99,
+        "price": 129,
         "category": "Electronics",
-        "image": "https://source.unsplash.com/random/400x400?wireless-headphones"
+        "image": "https://m.media-amazon.com/images/I/41JACWT-wWL._AC_UF1000,1000_QL80_.jpg"
     },
     {
         "id": 26,
         "name": "Running Shorts",
         "description": "Lightweight running shorts for performance and comfort",
-        "price": 29.99,
+        "price": 29,
         "category": "Clothing",
-        "image": "https://source.unsplash.com/random/400x400?running-shorts"
+        "image": "https://m.media-amazon.com/images/I/61Li8F17jKL._AC_UY1100_.jpg"
     },
     {
         "id": 27,
         "name": "Travel Backpack",
         "description": "Versatile travel backpack with anti-theft features",
-        "price": 89.99,
+        "price": 89,
         "category": "Accessories",
-        "image": "https://source.unsplash.com/random/400x400?travel-backpack"
+        "image": "https://m.media-amazon.com/images/I/61ZJYAj3nHL._AC_UY1100_.jpg"
     },
     {
         "id": 28,
         "name": "Stainless Steel Water Bottle",
         "description": "Durable stainless steel water bottle for hydration on the go",
-        "price": 19.99,
+        "price": 19,
         "category": "Fitness & Sports",
-        "image": "https://source.unsplash.com/random/400x400?stainless-steel-water-bottle"
+        "image": "https://www.bigbasket.com/media/uploads/p/xxl/40300041-4_1-bb-home-frost-stainless-steel-water-bottle-with-steel-cap-metallic-pink.jpg"
     },
     {
         "id": 29,
         "name": "Desktop Monitor",
         "description": "High-resolution desktop monitor for productivity",
-        "price": 249.99,
+        "price": 249,
         "category": "Electronics",
-        "image": "https://source.unsplash.com/random/400x400?desktop-monitor"
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHIJqpJ8gAvalN8sGEk5j0MMCjrOUo_QWNsw&s"
     },
     {
         "id": 30,
         "name": "Bluetooth Headphones",
         "description": "Wireless Bluetooth headphones with deep bass",
-        "price": 89.99,
+        "price": 89,
         "category": "Electronics",
-        "image": "https://source.unsplash.com/random/400x400?bluetooth-headphones"
+        "image": "https://m.media-amazon.com/images/I/516WC9VNHVL._AC_UF1000,1000_QL80_.jpg"
     },
     {
         "id": 31,
         "name": "Fitness Tracker",
         "description": "Fitness tracker with activity and sleep monitoring",
-        "price": 99.99,
+        "price": 99,
         "category": "Electronics",
-        "image": "https://source.unsplash.com/random/400x400?fitness-tracker"
+        "image": "https://m.media-amazon.com/images/I/61Bugm3Wo+L.jpg"
     },
     {
         "id": 32,
         "name": "Electric Toothbrush",
         "description": "Rechargeable electric toothbrush with multiple modes",
-        "price": 49.99,
+        "price": 49,
         "category": "Personal Care",
-        "image": "https://source.unsplash.com/random/400x400?electric-toothbrush"
+        "image": "https://m.media-amazon.com/images/I/716A4lE041L._AC_UF1000,1000_QL80_.jpg"
     },
     {
         "id": 33,
         "name": "Suitcase",
         "description": "Lightweight suitcase with 360-degree spinner wheels",
-        "price": 129.99,
+        "price": 129,
         "category": "Accessories",
-        "image": "https://source.unsplash.com/random/400x400?suitcase"
+        "image": "https://assets.ajio.com/medias/sys_master/root/20230321/jDtq/6419baf4aeb26924e3e79c1c/-473Wx593H-465946368-purple-MODEL.jpg"
     },
     {
         "id": 34,
         "name": "Electric Kettle",
         "description": "Fast-boiling electric kettle with auto shut-off",
-        "price": 29.99,
+        "price": 29,
         "category": "Home Decor",
-        "image": "https://source.unsplash.com/random/400x400?electric-kettle"
+        "image": "https://images-cdn.ubuy.co.in/634114f86dc4e63f73489134-topwit-electric-kettle-hot-water-kettle.jpg"
     },
     {
         "id": 35,
         "name": "Office Chair",
         "description": "Ergonomic office chair with adjustable height",
-        "price": 139.99,
+        "price": 139,
         "category": "Home Decor",
-        "image": "https://source.unsplash.com/random/400x400?office-chair"
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp2VB5SGltq7BcoWxp1IykElgcdnHSC5B7nw&s"
     },
     {
         "id": 36,
         "name": "Digital Watch",
         "description": "Digital watch with stopwatch and backlight",
-        "price": 49.99,
+        "price": 49,
         "category": "Accessories",
-        "image": "https://source.unsplash.com/random/400x400?digital-watch"
+        "image": "https://m.media-amazon.com/images/I/71NZfNlllIL._AC_UY1000_.jpg"
     },
     {
         "id": 37,
         "name": "LED Flashlight",
         "description": "Bright LED flashlight with adjustable focus",
-        "price": 19.99,
+        "price": 19,
         "category": "Home Decor",
-        "image": "https://source.unsplash.com/random/400x400?led-flashlight"
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQekME5MUMufpFqOZnc8Y9e7ZJexpcgcM2YeA&s"
     },
     {
         "id": 38,
         "name": "Mountain Bike",
         "description": "Durable mountain bike with suspension fork",
-        "price": 399.99,
+        "price": 399,
         "category": "Fitness & Sports",
-        "image": "https://source.unsplash.com/random/400x400?mountain-bike"
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY-0xR2s7hxS3otELhUejP4O0xsHpx5GTngA&s"
     },
     {
         "id": 39,
         "name": "4K Television",
         "description": "Ultra HD 4K television with smart features",
-        "price": 499.99,
+        "price": 499,
         "category": "Electronics",
-        "image": "https://source.unsplash.com/random/400x400?4k-television"
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqkvsVmXovKoFQP_E4zv7ePyREON3ZAsm2GA&s"
     },
     {
         "id": 40,
@@ -317,55 +317,55 @@ const productData = [
         "description": "Compact portable blender for smoothies",
         "price": 34.99,
         "category": "Home Decor",
-        "image": "https://source.unsplash.com/random/400x400?portable-blender"
+        "image": "https://m.media-amazon.com/images/I/71vR2A86DuL._AC_UF894,1000_QL80_.jpg"
     },
     {
         "id": 41,
         "name": "VR Headset",
         "description": "Virtual reality headset for immersive experiences",
-        "price": 299.99,
+        "price": 299,
         "category": "Electronics",
-        "image": "https://source.unsplash.com/random/400x400?vr-headset"
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFETiEJNSHsT27qy7TuZo2hpabcOoKP2-L_Q&s"
     },
     {
         "id": 42,
         "name": "Leather Boots",
         "description": "Stylish leather boots with durable sole",
-        "price": 119.99,
+        "price": 119,
         "category": "Footwear",
-        "image": "https://source.unsplash.com/random/400x400?leather-boots"
+        "image": "https://assets.ajio.com/medias/sys_master/root/20230921/HdkP/650c2c32ddf7791519eeac1f/-473Wx593H-464890556-tan-MODEL.jpg"
     },
     {
         "id": 43,
         "name": "Electric Shaver",
         "description": "Rechargeable electric shaver with precision blades",
-        "price": 59.99,
+        "price": 59,
         "category": "Personal Care",
-        "image": "https://source.unsplash.com/random/400x400?electric-shaver"
+        "image": "https://images-cdn.ubuy.co.in/64b80498a0304351cb1b94c6-braun-series-3-310s-rechargeable-wet-dry.jpg"
     },
     {
         "id": 44,
         "name": "Camping Tent",
         "description": "Spacious camping tent for outdoor adventures",
-        "price": 149.99,
+        "price": 149,
         "category": "Fitness & Sports",
-        "image": "https://source.unsplash.com/random/400x400?camping-tent"
+        "image": "https://rukminim2.flixcart.com/image/850/1000/kkbh8cw0/tent/o/a/e/4-person-tent-for-camping-waterproof-outdoor-tent-tent-house-original-imafzpagtyfftgvg.jpeg?q=90&crop=false"
     },
     {
         "id": 45,
         "name": "Bluetooth Keyboard",
         "description": "Portable Bluetooth keyboard for typing on the go",
-        "price": 39.99,
+        "price": 39,
         "category": "Electronics",
-        "image": "https://source.unsplash.com/random/400x400?bluetooth-keyboard"
+        "image": "https://m.media-amazon.com/images/I/71jtu-DdLYL.jpg"
     },
     {
         "id": 46,
         "name": "Wireless Charger",
         "description": "Fast wireless charger for Qi-enabled devices",
-        "price": 29.99,
+        "price": 29,
         "category": "Electronics",
-        "image": "https://source.unsplash.com/random/400x400?wireless-charger"
+        "image": "https://www.cnet.com/a/img/resize/941c469fbd36d1dca137fed325100179c2bc6dfa/hub/2023/02/28/9da2e9c7-d07d-45cb-89d1-18c7013249e5/anker-315-wireless-charger.png?auto=webp&fit=crop&height=576&width=768"
     },
     {
         "id": 47,
@@ -373,7 +373,7 @@ const productData = [
         "description": "Insulated travel mug for hot and cold beverages",
         "price": 14.99,
         "category": "Home Decor",
-        "image": "https://source.unsplash.com/random/400x400?travel-mug"
+        "image": "https://m.media-amazon.com/images/I/61O5eUqNZML._AC_UF894,1000_QL80_.jpg"
     },
     {
         "id": 48,
@@ -381,424 +381,424 @@ const productData = [
         "description": "Compact Bluetooth tracker for finding lost items",
         "price": 24.99,
         "category": "Electronics",
-        "image": "https://source.unsplash.com/random/400x400?bluetooth-tracker"
+        "image": "https://www.safewise.com/app/uploads/2021/02/Bluetooth-Trackers-Testing.jpg"
     },
     {
         "id": 49,
         "name": "Kitchen Scale",
         "description": "Digital kitchen scale for precise measurements",
-        "price": 19.99,
+        "price": 19,
         "category": "Home Decor",
-        "image": "https://source.unsplash.com/random/400x400?kitchen-scale"
+        "image": "https://images.meesho.com/images/products/51871962/k5ony_512.webp"
     },
     {
         "id": 50,
         "name": "Electric Scooter",
         "description": "Foldable electric scooter for convenient commuting",
-        "price": 299.99,
+        "price": 299,
         "category": "Fitness & Sports",
-        "image": "https://source.unsplash.com/random/400x400?electric-scooter"
+        "image": "https://bd.gaadicdn.com/processedimages/ola-electric/s1-pro/source/s1-pro664af02c3f229.jpg"
     },
     {
         "id": 51,
         "name": "Ski Jacket",
         "description": "Waterproof ski jacket with thermal insulation",
-        "price": 199.99,
+        "price": 199,
         "category": "Clothing",
-        "image": "https://source.unsplash.com/random/400x400?ski-jacket"
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXvvml9iLjlO0dXfh0VcgJOxizzT-T5hnF4Q&s"
     },
     {
         "id": 52,
         "name": "Electric Skillet",
         "description": "Non-stick electric skillet for versatile cooking",
-        "price": 49.99,
+        "price": 49,
         "category": "Home Decor",
-        "image": "https://source.unsplash.com/random/400x400?electric-skillet"
+        "image": "https://images-cdn.ubuy.co.in/665a50b562ea19066408dc1f-mainstays-12-round-nonstick-electric.jpg"
     },
     {
         "id": 53,
         "name": "Smart Light Bulb",
         "description": "Wi-Fi enabled smart light bulb with adjustable brightness",
-        "price": 19.99,
+        "price": 19,
         "category": "Electronics",
-        "image": "https://source.unsplash.com/random/400x400?smart-light-bulb"
+        "image": "https://images-cdn.ubuy.co.in/633b62280037f40d8b49b5cb-smart-light-bulb-wifi-light-bulb-color.jpg"
     },
     {
         "id": 54,
         "name": "Wireless Router",
         "description": "High-speed wireless router for reliable internet",
-        "price": 89.99,
+        "price": 89,
         "category": "Electronics",
-        "image": "https://source.unsplash.com/random/400x400?wireless-router"
+        "image": "https://m.media-amazon.com/images/I/41kHxeOdw+L._AC_UF1000,1000_QL80_.jpg"
     },
-    {
-        "id": 55,
-        "name": "Hair Dryer",
-        "description": "Powerful hair dryer with multiple heat settings",
-        "price": 29.99,
-        "category": "Personal Care",
-        "image": "https://source.unsplash.com/random/400x400?hair-dryer"
-    },
-    {
-        "id": 56,
-        "name": "Laptop Stand",
-        "description": "Adjustable laptop stand for ergonomic setup",
-        "price": 34.99,
-        "category": "Electronics",
-        "image": "https://source.unsplash.com/random/400x400?laptop-stand"
-    },
-    {
-        "id": 57,
-        "name": "Cordless Vacuum",
-        "description": "Lightweight cordless vacuum for easy cleaning",
-        "price": 149.99,
-        "category": "Home Decor",
-        "image": "https://source.unsplash.com/random/400x400?cordless-vacuum"
-    },
-    {
-        "id": 58,
-        "name": "Rain Jacket",
-        "description": "Waterproof rain jacket with breathable fabric",
-        "price": 89.99,
-        "category": "Clothing",
-        "image": "https://source.unsplash.com/random/400x400?rain-jacket"
-    },
-    {
-        "id": 59,
-        "name": "Soundbar",
-        "description": "High-quality soundbar for enhanced audio experience",
-        "price": 199.99,
-        "category": "Electronics",
-        "image": "https://source.unsplash.com/random/400x400?soundbar"
-    },
-    {
-        "id": 60,
-        "name": "Garden Hose",
-        "description": "Flexible garden hose with adjustable nozzle",
-        "price": 29.99,
-        "category": "Home Decor",
-        "image": "https://source.unsplash.com/random/400x400?garden-hose"
-    },
-    {
-        "id": 61,
-        "name": "Smart Thermostat",
-        "description": "Energy-saving smart thermostat with remote control",
-        "price": 149.99,
-        "category": "Electronics",
-        "image": "https://source.unsplash.com/random/400x400?smart-thermostat"
-    },
-    {
-        "id": 62,
-        "name": "Cookware Set",
-        "description": "Non-stick cookware set for versatile cooking",
-        "price": 99.99,
-        "category": "Home Decor",
-        "image": "https://source.unsplash.com/random/400x400?cookware-set"
-    },
-    {
-        "id": 63,
-        "name": "Instant Camera",
-        "description": "Instant camera for capturing and printing memories",
-        "price": 79.99,
-        "category": "Electronics",
-        "image": "https://source.unsplash.com/random/400x400?instant-camera"
-    },
-    {
-        "id": 64,
-        "name": "Fitness Mat",
-        "description": "Thick fitness mat for comfortable workouts",
-        "price": 29.99,
-        "category": "Fitness & Sports",
-        "image": "https://source.unsplash.com/random/400x400?fitness-mat"
-    },
-    {
-        "id": 65,
-        "name": "Wireless Doorbell",
-        "description": "Wireless doorbell with long range and multiple chimes",
-        "price": 24.99,
-        "category": "Home Decor",
-        "image": "https://source.unsplash.com/random/400x400?wireless-doorbell"
-    },
-    {
-        "id": 66,
-        "name": "Blender",
-        "description": "High-speed blender for smoothies and soups",
-        "price": 49.99,
-        "category": "Home Decor",
-        "image": "https://source.unsplash.com/random/400x400?blender"
-    },
-    {
-        "id": 67,
-        "name": "Smart Door Lock",
-        "description": "Keyless smart door lock with remote access",
-        "price": 129.99,
-        "category": "Home Decor",
-        "image": "https://source.unsplash.com/random/400x400?smart-door-lock"
-    },
-    {
-        "id": 68,
-        "name": "Portable Projector",
-        "description": "Compact portable projector for home entertainment",
-        "price": 179.99,
-        "category": "Electronics",
-        "image": "https://source.unsplash.com/random/400x400?portable-projector"
-    },
-    {
-        "id": 69,
-        "name": "Espresso Machine",
-        "description": "Espresso machine for making barista-quality coffee",
-        "price": 199.99,
-        "category": "Home Decor",
-        "image": "https://source.unsplash.com/random/400x400?espresso-machine"
-    },
-    {
-        "id": 70,
-        "name": "Smart Scale",
-        "description": "Smart scale with body composition analysis",
-        "price": 49.99,
-        "category": "Fitness & Sports",
-        "image": "https://source.unsplash.com/random/400x400?smart-scale"
-    },
-    {
-        "id": 71,
-        "name": "Robot Vacuum",
-        "description": "Automated robot vacuum for efficient cleaning",
-        "price": 249.99,
-        "category": "Home Decor",
-        "image": "https://source.unsplash.com/random/400x400?robot-vacuum"
-    },
-    {
-        "id": 72,
-        "name": "Electric Guitar",
-        "description": "Electric guitar with solid body and powerful pickups",
-        "price": 299.99,
-        "category": "Musical Instruments",
-        "image": "https://source.unsplash.com/random/400x400?electric-guitar"
-    },
-    {
-        "id": 73,
-        "name": "Air Purifier",
-        "description": "HEPA air purifier for clean and fresh air",
-        "price": 129.99,
-        "category": "Home Decor",
-        "image": "https://source.unsplash.com/random/400x400?air-purifier"
-    },
-    {
-        "id": 74,
-        "name": "Wireless Gaming Mouse",
-        "description": "High-precision wireless gaming mouse with RGB lighting",
-        "price": 59.99,
-        "category": "Gaming",
-        "image": "https://source.unsplash.com/random/400x400?gaming-mouse"
-    },
-    {
-        "id": 75,
-        "name": "Electric Pressure Cooker",
-        "description": "Multi-function electric pressure cooker for quick meals",
-        "price": 89.99,
-        "category": "Home Decor",
-        "image": "https://source.unsplash.com/random/400x400?pressure-cooker"
-    },
-    {
-        "id": 76,
-        "name": "Action Camera",
-        "description": "Waterproof action camera for capturing adventures",
-        "price": 149.99,
-        "category": "Electronics",
-        "image": "https://source.unsplash.com/random/400x400?action-camera"
-    },
-    {
-        "id": 77,
-        "name": "Heated Blanket",
-        "description": "Electric heated blanket for cozy warmth",
-        "price": 59.99,
-        "category": "Home Decor",
-        "image": "https://source.unsplash.com/random/400x400?heated-blanket"
-    },
-    {
-        "id": 78,
-        "name": "Gaming Console",
-        "description": "Next-gen gaming console with immersive graphics",
-        "price": 499.99,
-        "category": "Gaming",
-        "image": "https://source.unsplash.com/random/400x400?gaming-console"
-    },
-    {
-        "id": 79,
-        "name": "Home Theater System",
-        "description": "Complete home theater system for an immersive experience",
-        "price": 399.99,
-        "category": "Electronics",
-        "image": "https://source.unsplash.com/random/400x400?home-theater-system"
-    },
-    {
-        "id": 80,
-        "name": "Smart Plug",
-        "description": "Wi-Fi enabled smart plug for home automation",
-        "price": 19.99,
-        "category": "Electronics",
-        "image": "https://source.unsplash.com/random/400x400?smart-plug"
-    },
-    {
-        "id": 81,
-        "name": "E-Reader",
-        "description": "Lightweight e-reader with high-resolution display",
-        "price": 129.99,
-        "category": "Electronics",
-        "image": "https://source.unsplash.com/random/400x400?e-reader"
-    },
-    {
-        "id": 82,
-        "name": "Portable Air Conditioner",
-        "description": "Compact portable air conditioner with remote control",
-        "price": 249.99,
-        "category": "Home Decor",
-        "image": "https://source.unsplash.com/random/400x400?air-conditioner"
-    },
-    {
-        "id": 83,
-        "name": "Smart Watch",
-        "description": "Advanced smart watch with fitness tracking and notifications",
-        "price": 199.99,
-        "category": "Electronics",
-        "image": "https://source.unsplash.com/random/400x400?smartwatch"
-    },
-    {
-        "id": 84,
-        "name": "Electric Scooter",
-        "description": "Eco-friendly electric scooter with long battery life",
-        "price": 349.99,
-        "category": "Fitness & Sports",
-        "image": "https://source.unsplash.com/random/400x400?scooter"
-    },
-    {
-        "id": 85,
-        "name": "Portable Power Bank",
-        "description": "High-capacity portable power bank for charging devices",
-        "price": 39.99,
-        "category": "Electronics",
-        "image": "https://source.unsplash.com/random/400x400?power-bank"
-    },
-    {
-        "id": 86,
-        "name": "Digital Piano",
-        "description": "88-key digital piano with weighted keys",
-        "price": 499.99,
-        "category": "Musical Instruments",
-        "image": "https://source.unsplash.com/random/400x400?digital-piano"
-    },
-    {
-        "id": 87,
-        "name": "Noise-Cancelling Headphones",
-        "description": "Over-ear noise-cancelling headphones with superior sound",
-        "price": 249.99,
-        "category": "Electronics",
-        "image": "https://source.unsplash.com/random/400x400?noise-cancelling-headphones"
-    },
-    {
-        "id": 88,
-        "name": "Smart Thermostat",
-        "description": "WiFi-enabled smart thermostat for home automation",
-        "price": 129.99,
-        "category": "Home Decor",
-        "image": "https://source.unsplash.com/featured/?smartthermostat"
-    },
-    {
-        "id": 89,
-        "name": "Smart Doorbell",
-        "description": "Smart doorbell with HD video and motion detection",
-        "price": 149.99,
-        "category": "Home Decor",
-        "image": "https://source.unsplash.com/featured/?smartdoorbell"
-    },
-    {
-        "id": 90,
-        "name": "Smart Lock",
-        "description": "Smart lock with keypad and remote access",
-        "price": 199.99,
-        "category": "Home Decor",
-        "image": "https://source.unsplash.com/featured/?smartlock"
-    },
-    {
-        "id": 91,
-        "name": "Smart Vacuum",
-        "description": "Robot vacuum with app control and scheduling",
-        "price": 299.99,
-        "category": "Home Decor",
-        "image": "https://source.unsplash.com/featured/?smartvacuum"
-    },
-    {
-        "id": 92,
-        "name": "Smart Coffee Maker",
-        "description": "WiFi-enabled smart coffee maker with custom brew settings",
-        "price": 149.99,
-        "category": "Home Decor",
-        "image": "https://source.unsplash.com/featured/?smartcoffeemaker"
-    },
-    {
-        "id": 93,
-        "name": "Smart Air Conditioner",
-        "description": "Smart air conditioner with app control and scheduling",
-        "price": 399.99,
-        "category": "Home Decor",
-        "image": "https://source.unsplash.com/featured/?smartairconditioner"
-    },
-    {
-        "id": 94,
-        "name": "Smart Water Bottle",
-        "description": "Smart water bottle with hydration tracking",
-        "price": 29.99,
-        "category": "Fitness & Sports",
-        "image": "https://source.unsplash.com/featured/?smartwaterbottle"
-    },
-    {
-        "id": 95,
-        "name": "Electric Toothbrush",
-        "description": "Rechargeable electric toothbrush with Bluetooth",
-        "price": 69.99,
-        "category": "Personal Care",
-        "image": "https://source.unsplash.com/featured/?electrictoothbrush"
-    },
-    {
-        "id": 96,
-        "name": "Smart Light Switch",
-        "description": "Smart light switch with app control and scheduling",
-        "price": 49.99,
-        "category": "Home Decor",
-        "image": "https://source.unsplash.com/featured/?smartlightswitch"
-    },
-    {
-        "id": 97,
-        "name": "Smart Refrigerator",
-        "description": "Smart refrigerator with touch screen and camera",
-        "price": 1499.99,
-        "category": "Home Decor",
-        "image": "https://source.unsplash.com/featured/?smartrefrigerator"
-    },
-    {
-        "id": 98,
-        "name": "Smart Oven",
-        "description": "Smart oven with WiFi and app control",
-        "price": 799.99,
-        "category": "Home Decor",
-        "image": "https://source.unsplash.com/featured/?smartoven"
-    },
-    {
-        "id": 99,
-        "name": "Smart Washing Machine",
-        "description": "Smart washing machine with app control and scheduling",
-        "price": 999.99,
-        "category": "Home Decor",
-        "image": "https://source.unsplash.com/featured/?smartwashingmachine"
-    },
-    {
-        "id": 100,
-        "name": "Smart Glasses",
-        "description": "AR smart glasses with voice control",
-        "price": 399.99,
-        "category": "Electronics",
-        "image": "https://source.unsplash.com/featured/?smartglasses"
-    }
+    // {
+    //     "id": 55,
+    //     "name": "Hair Dryer",
+    //     "description": "Powerful hair dryer with multiple heat settings",
+    //     "price": 29,
+    //     "category": "Personal Care",
+    //     "image": "https://source.unsplash.com/random/400x400?hair-dryer"
+    // },
+    // {
+    //     "id": 56,
+    //     "name": "Laptop Stand",
+    //     "description": "Adjustable laptop stand for ergonomic setup",
+    //     "price": 34.99,
+    //     "category": "Electronics",
+    //     "image": "https://source.unsplash.com/random/400x400?laptop-stand"
+    // },
+    // {
+    //     "id": 57,
+    //     "name": "Cordless Vacuum",
+    //     "description": "Lightweight cordless vacuum for easy cleaning",
+    //     "price": 149,
+    //     "category": "Home Decor",
+    //     "image": "https://source.unsplash.com/random/400x400?cordless-vacuum"
+    // },
+    // {
+    //     "id": 58,
+    //     "name": "Rain Jacket",
+    //     "description": "Waterproof rain jacket with breathable fabric",
+    //     "price": 89.99,
+    //     "category": "Clothing",
+    //     "image": "https://source.unsplash.com/random/400x400?rain-jacket"
+    // },
+    // {
+    //     "id": 59,
+    //     "name": "Soundbar",
+    //     "description": "High-quality soundbar for enhanced audio experience",
+    //     "price": 199.99,
+    //     "category": "Electronics",
+    //     "image": "https://source.unsplash.com/random/400x400?soundbar"
+    // },
+    // {
+    //     "id": 60,
+    //     "name": "Garden Hose",
+    //     "description": "Flexible garden hose with adjustable nozzle",
+    //     "price": 29.99,
+    //     "category": "Home Decor",
+    //     "image": "https://source.unsplash.com/random/400x400?garden-hose"
+    // },
+    // {
+    //     "id": 61,
+    //     "name": "Smart Thermostat",
+    //     "description": "Energy-saving smart thermostat with remote control",
+    //     "price": 149.99,
+    //     "category": "Electronics",
+    //     "image": "https://source.unsplash.com/random/400x400?smart-thermostat"
+    // },
+    // {
+    //     "id": 62,
+    //     "name": "Cookware Set",
+    //     "description": "Non-stick cookware set for versatile cooking",
+    //     "price": 99.99,
+    //     "category": "Home Decor",
+    //     "image": "https://source.unsplash.com/random/400x400?cookware-set"
+    // },
+    // {
+    //     "id": 63,
+    //     "name": "Instant Camera",
+    //     "description": "Instant camera for capturing and printing memories",
+    //     "price": 79.99,
+    //     "category": "Electronics",
+    //     "image": "https://source.unsplash.com/random/400x400?instant-camera"
+    // },
+    // {
+    //     "id": 64,
+    //     "name": "Fitness Mat",
+    //     "description": "Thick fitness mat for comfortable workouts",
+    //     "price": 29.99,
+    //     "category": "Fitness & Sports",
+    //     "image": "https://source.unsplash.com/random/400x400?fitness-mat"
+    // },
+    // {
+    //     "id": 65,
+    //     "name": "Wireless Doorbell",
+    //     "description": "Wireless doorbell with long range and multiple chimes",
+    //     "price": 24.99,
+    //     "category": "Home Decor",
+    //     "image": "https://source.unsplash.com/random/400x400?wireless-doorbell"
+    // },
+    // {
+    //     "id": 66,
+    //     "name": "Blender",
+    //     "description": "High-speed blender for smoothies and soups",
+    //     "price": 49.99,
+    //     "category": "Home Decor",
+    //     "image": "https://source.unsplash.com/random/400x400?blender"
+    // },
+    // {
+    //     "id": 67,
+    //     "name": "Smart Door Lock",
+    //     "description": "Keyless smart door lock with remote access",
+    //     "price": 129.99,
+    //     "category": "Home Decor",
+    //     "image": "https://source.unsplash.com/random/400x400?smart-door-lock"
+    // },
+    // {
+    //     "id": 68,
+    //     "name": "Portable Projector",
+    //     "description": "Compact portable projector for home entertainment",
+    //     "price": 179.99,
+    //     "category": "Electronics",
+    //     "image": "https://source.unsplash.com/random/400x400?portable-projector"
+    // },
+    // {
+    //     "id": 69,
+    //     "name": "Espresso Machine",
+    //     "description": "Espresso machine for making barista-quality coffee",
+    //     "price": 199.99,
+    //     "category": "Home Decor",
+    //     "image": "https://source.unsplash.com/random/400x400?espresso-machine"
+    // },
+    // {
+    //     "id": 70,
+    //     "name": "Smart Scale",
+    //     "description": "Smart scale with body composition analysis",
+    //     "price": 49.99,
+    //     "category": "Fitness & Sports",
+    //     "image": "https://source.unsplash.com/random/400x400?smart-scale"
+    // },
+    // {
+    //     "id": 71,
+    //     "name": "Robot Vacuum",
+    //     "description": "Automated robot vacuum for efficient cleaning",
+    //     "price": 249.99,
+    //     "category": "Home Decor",
+    //     "image": "https://source.unsplash.com/random/400x400?robot-vacuum"
+    // },
+    // {
+    //     "id": 72,
+    //     "name": "Electric Guitar",
+    //     "description": "Electric guitar with solid body and powerful pickups",
+    //     "price": 299.99,
+    //     "category": "Musical Instruments",
+    //     "image": "https://source.unsplash.com/random/400x400?electric-guitar"
+    // },
+    // {
+    //     "id": 73,
+    //     "name": "Air Purifier",
+    //     "description": "HEPA air purifier for clean and fresh air",
+    //     "price": 129.99,
+    //     "category": "Home Decor",
+    //     "image": "https://source.unsplash.com/random/400x400?air-purifier"
+    // },
+    // {
+    //     "id": 74,
+    //     "name": "Wireless Gaming Mouse",
+    //     "description": "High-precision wireless gaming mouse with RGB lighting",
+    //     "price": 59.99,
+    //     "category": "Gaming",
+    //     "image": "https://source.unsplash.com/random/400x400?gaming-mouse"
+    // },
+    // {
+    //     "id": 75,
+    //     "name": "Electric Pressure Cooker",
+    //     "description": "Multi-function electric pressure cooker for quick meals",
+    //     "price": 89.99,
+    //     "category": "Home Decor",
+    //     "image": "https://source.unsplash.com/random/400x400?pressure-cooker"
+    // },
+    // {
+    //     "id": 76,
+    //     "name": "Action Camera",
+    //     "description": "Waterproof action camera for capturing adventures",
+    //     "price": 149.99,
+    //     "category": "Electronics",
+    //     "image": "https://source.unsplash.com/random/400x400?action-camera"
+    // },
+    // {
+    //     "id": 77,
+    //     "name": "Heated Blanket",
+    //     "description": "Electric heated blanket for cozy warmth",
+    //     "price": 59.99,
+    //     "category": "Home Decor",
+    //     "image": "https://source.unsplash.com/random/400x400?heated-blanket"
+    // },
+    // {
+    //     "id": 78,
+    //     "name": "Gaming Console",
+    //     "description": "Next-gen gaming console with immersive graphics",
+    //     "price": 499.99,
+    //     "category": "Gaming",
+    //     "image": "https://source.unsplash.com/random/400x400?gaming-console"
+    // },
+    // {
+    //     "id": 79,
+    //     "name": "Home Theater System",
+    //     "description": "Complete home theater system for an immersive experience",
+    //     "price": 399.99,
+    //     "category": "Electronics",
+    //     "image": "https://source.unsplash.com/random/400x400?home-theater-system"
+    // },
+    // {
+    //     "id": 80,
+    //     "name": "Smart Plug",
+    //     "description": "Wi-Fi enabled smart plug for home automation",
+    //     "price": 19.99,
+    //     "category": "Electronics",
+    //     "image": "https://source.unsplash.com/random/400x400?smart-plug"
+    // },
+    // {
+    //     "id": 81,
+    //     "name": "E-Reader",
+    //     "description": "Lightweight e-reader with high-resolution display",
+    //     "price": 129.99,
+    //     "category": "Electronics",
+    //     "image": "https://source.unsplash.com/random/400x400?e-reader"
+    // },
+    // {
+    //     "id": 82,
+    //     "name": "Portable Air Conditioner",
+    //     "description": "Compact portable air conditioner with remote control",
+    //     "price": 249.99,
+    //     "category": "Home Decor",
+    //     "image": "https://source.unsplash.com/random/400x400?air-conditioner"
+    // },
+    // {
+    //     "id": 83,
+    //     "name": "Smart Watch",
+    //     "description": "Advanced smart watch with fitness tracking and notifications",
+    //     "price": 199.99,
+    //     "category": "Electronics",
+    //     "image": "https://source.unsplash.com/random/400x400?smartwatch"
+    // },
+    // {
+    //     "id": 84,
+    //     "name": "Electric Scooter",
+    //     "description": "Eco-friendly electric scooter with long battery life",
+    //     "price": 349.99,
+    //     "category": "Fitness & Sports",
+    //     "image": "https://source.unsplash.com/random/400x400?scooter"
+    // },
+    // {
+    //     "id": 85,
+    //     "name": "Portable Power Bank",
+    //     "description": "High-capacity portable power bank for charging devices",
+    //     "price": 39.99,
+    //     "category": "Electronics",
+    //     "image": "https://source.unsplash.com/random/400x400?power-bank"
+    // },
+    // {
+    //     "id": 86,
+    //     "name": "Digital Piano",
+    //     "description": "88-key digital piano with weighted keys",
+    //     "price": 499.99,
+    //     "category": "Musical Instruments",
+    //     "image": "https://source.unsplash.com/random/400x400?digital-piano"
+    // },
+    // {
+    //     "id": 87,
+    //     "name": "Noise-Cancelling Headphones",
+    //     "description": "Over-ear noise-cancelling headphones with superior sound",
+    //     "price": 249.99,
+    //     "category": "Electronics",
+    //     "image": "https://source.unsplash.com/random/400x400?noise-cancelling-headphones"
+    // },
+    // {
+    //     "id": 88,
+    //     "name": "Smart Thermostat",
+    //     "description": "WiFi-enabled smart thermostat for home automation",
+    //     "price": 129.99,
+    //     "category": "Home Decor",
+    //     "image": "https://source.unsplash.com/featured/?smartthermostat"
+    // },
+    // {
+    //     "id": 89,
+    //     "name": "Smart Doorbell",
+    //     "description": "Smart doorbell with HD video and motion detection",
+    //     "price": 149.99,
+    //     "category": "Home Decor",
+    //     "image": "https://source.unsplash.com/featured/?smartdoorbell"
+    // },
+    // {
+    //     "id": 90,
+    //     "name": "Smart Lock",
+    //     "description": "Smart lock with keypad and remote access",
+    //     "price": 199.99,
+    //     "category": "Home Decor",
+    //     "image": "https://source.unsplash.com/featured/?smartlock"
+    // },
+    // {
+    //     "id": 91,
+    //     "name": "Smart Vacuum",
+    //     "description": "Robot vacuum with app control and scheduling",
+    //     "price": 299.99,
+    //     "category": "Home Decor",
+    //     "image": "https://source.unsplash.com/featured/?smartvacuum"
+    // },
+    // {
+    //     "id": 92,
+    //     "name": "Smart Coffee Maker",
+    //     "description": "WiFi-enabled smart coffee maker with custom brew settings",
+    //     "price": 149.99,
+    //     "category": "Home Decor",
+    //     "image": "https://source.unsplash.com/featured/?smartcoffeemaker"
+    // },
+    // {
+    //     "id": 93,
+    //     "name": "Smart Air Conditioner",
+    //     "description": "Smart air conditioner with app control and scheduling",
+    //     "price": 399.99,
+    //     "category": "Home Decor",
+    //     "image": "https://source.unsplash.com/featured/?smartairconditioner"
+    // },
+    // {
+    //     "id": 94,
+    //     "name": "Smart Water Bottle",
+    //     "description": "Smart water bottle with hydration tracking",
+    //     "price": 29.99,
+    //     "category": "Fitness & Sports",
+    //     "image": "https://source.unsplash.com/featured/?smartwaterbottle"
+    // },
+    // {
+    //     "id": 95,
+    //     "name": "Electric Toothbrush",
+    //     "description": "Rechargeable electric toothbrush with Bluetooth",
+    //     "price": 69.99,
+    //     "category": "Personal Care",
+    //     "image": "https://source.unsplash.com/featured/?electrictoothbrush"
+    // },
+    // {
+    //     "id": 96,
+    //     "name": "Smart Light Switch",
+    //     "description": "Smart light switch with app control and scheduling",
+    //     "price": 49.99,
+    //     "category": "Home Decor",
+    //     "image": "https://source.unsplash.com/featured/?smartlightswitch"
+    // },
+    // {
+    //     "id": 97,
+    //     "name": "Smart Refrigerator",
+    //     "description": "Smart refrigerator with touch screen and camera",
+    //     "price": 1499.99,
+    //     "category": "Home Decor",
+    //     "image": "https://source.unsplash.com/featured/?smartrefrigerator"
+    // },
+    // {
+    //     "id": 98,
+    //     "name": "Smart Oven",
+    //     "description": "Smart oven with WiFi and app control",
+    //     "price": 799.99,
+    //     "category": "Home Decor",
+    //     "image": "https://source.unsplash.com/featured/?smartoven"
+    // },
+    // {
+    //     "id": 99,
+    //     "name": "Smart Washing Machine",
+    //     "description": "Smart washing machine with app control and scheduling",
+    //     "price": 999.99,
+    //     "category": "Home Decor",
+    //     "image": "https://source.unsplash.com/featured/?smartwashingmachine"
+    // },
+    // {
+    //     "id": 100,
+    //     "name": "Smart Glasses",
+    //     "description": "AR smart glasses with voice control",
+    //     "price": 399.99,
+    //     "category": "Electronics",
+    //     "image": "https://source.unsplash.com/featured/?smartglasses"
+    // }
 ]
 
   module.exports = productData;

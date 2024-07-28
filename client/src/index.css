@@ -17,6 +17,15 @@ code {
   min-height: 100vh; /* Ensure it covers the full height of the viewport */
   /* padding: 20px; Add some padding if needed */
 }
+.custom-dots .slick-dots li button::before {
+  color: rgba(255, 255, 255, 0.296); /* Change the color to white */
+  opacity: 1;   /* Ensure the dots are fully visible */
+}
+
+.custom-dots .slick-dots li.slick-active button::before {
+  color: white; /* Change the active dot color to white */
+  opacity: 1;   /* Ensure the active dot is fully visible */
+}
 
 @tailwind base;
 @tailwind components;

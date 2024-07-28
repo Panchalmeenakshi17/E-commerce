@@ -60,8 +60,8 @@ const About = () => {
       <section className="md:py-20 py-10 w-full bg-gray-900">
     <hr className='md:w-full w-full border-black ' />
 
-        <div className="w-full mt-20 md:mx-auto text-center">
-          <h2 className="text-3xl text-[#b7c6f6] font-bold font-Main md:mb-6">
+        <div className="w-full mt-20 md:mx-auto text-left">
+          <h2 className="text-3xl px-9 text-[#b7c6f6] font-bold font-Main md:mb-6">
             About DigiHaat
           </h2>
           <p className="text-lg text-gray-300 text-justify w-full p-9 md:p-10">

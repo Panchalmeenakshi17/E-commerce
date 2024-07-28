@@ -82,9 +82,9 @@
 //                     activeclassname="active-link"
 //                     className="nav-link text-[#3322f2] transition ease-in-out duration-300 text-sm font-medium md:text-xl hover:text-[#dfcfff]"
 //                   >
-//                     Featured 
+//                     Featured
 //                   </NavLink>
-                  
+
 //                 </li>
 //                 <li className="ml-4">
 //                   <NavLink
@@ -95,7 +95,7 @@
 //                     About Us
 //                   </NavLink>
 //                 </li>
-// {/*                 
+// {/*
 //                 <li className="mr-4">
 //                   <NavLink
 //                     to="/VisionMission"
@@ -112,8 +112,7 @@
 //            className="hover:bg-[] rounded-full text-center z-50   border-2 border-[#3322f2] hover:border-[#dfcfff] hover:text-[#dfcfff] h-[40px] w-[120px] font-bold transition ease-in-out hover:shadow-2xl hover:shadow-blue-950 text-[#3322f2] shadow-[#000000d6] shadow-md flex justify-center items-center duration-300 font-scnd cursor-pointer"
 //                 to="/Signin">
 //           <div
- 
-             
+
 //             >
 //               <ul className=" ">
 //                 <li className=" p- text-center  ">
@@ -130,8 +129,7 @@
 //             <NavLink  className="hover:bg-[] rounded-full text-center hover:shadow-2xl hover:shadow-blue-950 z-50 text-[#3322f2] border-2 border-[#3322f2] hover:border-[#dfcfff] hover:text-[#dfcfff] h-[40px] w-[120px] font-bold transition ease-in-out shadow-[#000000d6] shadow-md flex justify-center items-center bg-[] font-scnd cursor-pointer"
 //                 to="/Login">
 //           <div
-             
-             
+
 //             >
 //               <ul className=" ">
 //                 <li className=" p- text-center  ">
@@ -179,7 +177,7 @@
 //                     >
 //                       Register as Admin
 //                     </NavLink>
-//                   </li>  
+//                   </li>
 //                   <li>
 //                     <NavLink
 //                       to="/Donate"
@@ -253,7 +251,7 @@
 //                       }
 //                     >
 //                     <button className="mt-3 w-full "> About </button>
-                     
+
 //                     </NavLink>
 //                   </button>
 //                   <button className="  w-full hover:bg-[#5dff8e5c] transition ease-in-out  " >
@@ -283,11 +281,11 @@
 //                   </div>
 //                 </div>
 //               </div> */}
-             
+
 //             </div>
 
 //             <div className="flex relative">
-            
+
 //               {!menu && (
 //                 <HiMenuAlt4
 //                   fontSize={28}
@@ -296,19 +294,19 @@
 //                 />
 //               )}
 //               {menu && (
-                
+
 //                 <ul
 //                   className="z-30 bg-[#0000004d] backdrop-blur-md fixed -top-0 -right-2 p-3 w-[70vw] h-screen shadow-md md:hidden list-none
 //             flex flex-col justify-start items-center rounded-md blue-glassmorphism text-white animate-slide-in"
 //                 >
-                
+
 //                   <li className="text-xl w-full my-3">
 //                     <AiOutlineClose
 //                       className="stroke-2"
 //                       onClick={() => setMenu(false)}
 //                     />
 //                   </li>
-                  
+
 //                   <li className="mr-4 font-bold bg -emerald-800">
 //                   <NavLink
 //                     exact
@@ -332,7 +330,7 @@
 //                     Featured
 //                   </NavLink>
 //                 </li>
-                
+
 //                 <li className=" mr-5 bg-yello -800 mt-4  font-bold ">
 //                   <NavLink
 //                     to="/About"
@@ -344,9 +342,9 @@
 //                     About us
 //                   </NavLink>
 //                 </li>
-                
+
 //                 <hr className="my-6 bg-red-950 w-full border-2 border-gray-300"></hr>
-                 
+
 //                   {/* <NavLink
 //                     to="/"
 //                     end
@@ -642,106 +640,760 @@
 
 // export default Header;
 
-import React, { useState } from "react";
+// <--- actual Header ----->
+// import React, { useState } from "react";
+// import { NavLink } from "react-router-dom";
+// import { AiOutlineClose } from "react-icons/ai";
+// import { motion } from "framer-motion";
+// import { HiMenuAlt4 } from "react-icons/hi";
+
+// const Header = () => {
+//   const [menu, setMenu] = useState(false);
+
+//   return (
+//     <>
+//       <motion.div
+//         className=""
+//         initial={{ opacity: 0 }}
+//         animate={{ opacity: 1 }}
+//         exit={{ opacity: 0 }}
+//       >
+//         <div className="fixed px-16 bg-[#0f172a9c] backdrop-filter backdrop-blur-lg top-0 left-0 w-full z-50">
+//           <div className="flex justify-between items-center py-4 px-6">
+//             {/* Left side: Logo */}
+//             <NavLink className="flex items-center" exact to="/">
+//               <img
+//                 className="md:h-16 w-16 h-12 md:w-20"
+//                 src="images/DiGiHaatbg.jpg"
+//                 alt="Logo"
+//               />
+//               <h1 className="mt-3 font-Main md:text-3xl font-bold text-[#3322f2]">
+//                 DigiHaat
+//               </h1>
+//             </NavLink>
+
+//             {/* Center: Navigation Links (visible only on md screens and up) */}
+//             <div className="hidden font-scnd md:flex gap-10">
+//               <NavLink
+//                 exact
+//                 to="/"
+//                 className={({ isActive }) =>
+//                   isActive
+//                     ? "text-blue-500 text-lg font-bold"
+//                     : "text-white text-lg font-bold"
+//                 }
+//               >
+//                 Shop Now
+//               </NavLink>
+//               <NavLink
+//                 to="/FirstHomepage"
+//                 className={({ isActive }) =>
+//                   isActive
+//                     ? "text-blue-500 text-lg font-bold"
+//                     : "text-white text-lg font-bold"
+//                 }
+//               >
+//                 Featured
+//               </NavLink>
+//               <NavLink
+//                 to="/About"
+//                 className={({ isActive }) =>
+//                   isActive
+//                     ? "text-blue-500 text-lg font-bold"
+//                     : "text-white text-lg font-bold"
+//                 }
+//               >
+//                 About Us
+//               </NavLink>
+//             </div>
+
+//             {/* Right side: Sign In / Log In (visible only on md screens and up) */}
+//             <div className="hidden font-scnd md:flex gap-4">
+//               <NavLink
+//                 to="/Signin"
+//                 className={({ isActive }) =>
+//                   isActive
+//                     ? "text-blue-500 text-lg font-bold"
+//                     : "text-blue-200 text-lg font-bold"
+//                 }
+//               >
+//                 Sign In
+//               </NavLink>
+//               <NavLink
+//                 to="/Login"
+//                 className={({ isActive }) =>
+//                   isActive
+//                     ? "text-blue-500 text-lg font-bold"
+//                     : "text-blue-200 text-lg font-bold"
+//                 }
+//               >
+//                 Log In
+//               </NavLink>
+//             </div>
+
+//             {/* Mobile Menu Button */}
+//             <div className="md:hidden flex">
+//               <HiMenuAlt4
+//                 fontSize={28}
+//                 className="bg-[#3322f200] rounded fill-white cursor-pointer"
+//                 onClick={() => setMenu(!menu)}
+//               />
+//             </div>
+//           </div>
+//         </div>
+
+//         {/* Mobile Menu */}
+//         {menu && (
+//           <motion.div
+//             className="fixed bg-[#0f172a9c] top-0 left-0 w-full h-full backdrop-filter backdrop-blur-lg flex justify-center items-center"
+//             initial={{ opacity: 0 }}
+//             animate={{ opacity: 1 }}
+//             exit={{ opacity: 0 }}
+//           >
+//             <div className="bg-[#0f172a] w-full h-full flex flex-col items-center p-5">
+//               <AiOutlineClose
+//                 fontSize={28}
+//                 className="absolute top-5 right-5 cursor-pointer"
+//                 onClick={() => setMenu(false)}
+//               />
+//               <NavLink
+//                 to="/"
+//                 className={({ isActive }) =>
+//                   isActive ? "text-blue-500 py-2" : "text-white py-2"
+//                 }
+//                 onClick={() => setMenu(false)}
+//               >
+//                 Shop Now
+//               </NavLink>
+//               <NavLink
+//                 to="/FirstHomepage"
+//                 className={({ isActive }) =>
+//                   isActive ? "text-blue-500 py-2" : "text-white py-2"
+//                 }
+//                 onClick={() => setMenu(false)}
+//               >
+//                 Featured
+//               </NavLink>
+//               <NavLink
+//                 to="/About"
+//                 className={({ isActive }) =>
+//                   isActive ? "text-blue-500 py-2" : "text-white py-2"
+//                 }
+//                 onClick={() => setMenu(false)}
+//               >
+//                 About Us
+//               </NavLink>
+//               <NavLink
+//                 to="/Signin"
+//                 className={({ isActive }) =>
+//                   isActive ? "text-blue-500 py-2" : "text-blue-400 py-2"
+//                 }
+//                 onClick={() => setMenu(false)}
+//               >
+//                 Sign In
+//               </NavLink>
+//               <NavLink
+//                 to="/Login"
+//                 className={({ isActive }) =>
+//                   isActive ? "text-blue-500 py-2" : "text-blue-400 py-2"
+//                 }
+//                 onClick={() => setMenu(false)}
+//               >
+//                 Log In
+//               </NavLink>
+//             </div>
+//           </motion.div>
+//         )}
+//       </motion.div>
+//     </>
+//   );
+// };
+
+// export default Header;
+
+// <------ main header se copy kia hai ------->
+
+// import React, { useState, useRef, useEffect } from "react";
+// import { NavLink } from "react-router-dom";
+// import { AiOutlineClose } from "react-icons/ai";
+// import { FaArrowRight } from "react-icons/fa";
+// import { motion } from "framer-motion";
+// import { useDispatch } from "react-redux";
+// import { HiMenuAlt4 } from "react-icons/hi";
+// import { logoutuser } from "../../actions/user";
+// import productsData from '../data/productData';
+
+// const Header = () => {
+//   const [menu, setMenu] = useState(false);
+//   const [showModal, setShowModal] = useState(false);
+//   const dispatch = useDispatch();
+//   const [showDropdown, setShowDropdown] = useState(false);
+//   const dropdownRef = useRef(null);
+
+//   const toggleDropdown = () => {
+//     setShowDropdown(!showDropdown);
+//   };
+
+//   const closeDropdown = (event) => {
+//     if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+//       setShowDropdown(false);
+//     }
+//   };
+
+//   useEffect(() => {
+//     document.addEventListener("mousedown", closeDropdown);
+//     return () => {
+//       document.removeEventListener("mousedown", closeDropdown);
+//     };
+//   }, []);
+
+//   const [searchTerm, setSearchTerm] = useState('');
+//   const [selectedCategories, setSelectedCategories] = useState([]);
+//   const [recommendedProducts, setRecommendedProducts] = useState([]);
+//   const [searchSuggestions, setSearchSuggestions] = useState([]);
+
+//   const generateRecommendations = () => {
+//     const randomRecommendations = [];
+//     const numRecommendations = 6;
+
+//     while (randomRecommendations.length < numRecommendations) {
+//       const randomIndex = Math.floor(Math.random() * productsData.length);
+//       randomRecommendations.push(productsData[randomIndex]);
+//     }
+
+//     setRecommendedProducts(randomRecommendations);
+//   };
+
+//   const searchProducts = (query) => {
+//     return productsData.filter(product =>
+//       product.name.toLowerCase().includes(query.toLowerCase()) ||
+//       product.description.toLowerCase().includes(query.toLowerCase()) ||
+//       product.category.toLowerCase().includes(query.toLowerCase()) ||
+//       product.price.toString().includes(query.toLowerCase())
+//     );
+//   };
+
+//   const generateSearchSuggestions = (query) => {
+//     const randomSuggestions = Array.from({ length: 5 }, () => {
+//       const randomIndex = Math.floor(Math.random() * productsData.length);
+//       return productsData[randomIndex].name;
+//     });
+
+//     setSearchSuggestions(randomSuggestions);
+//   };
+
+//   useEffect(() => {
+//     generateRecommendations();
+//     generateSearchSuggestions();
+//   }, []);
+
+//   const handleSearchChange = (query) => {
+//     setSearchTerm(query);
+//     generateSearchSuggestions(query);
+//   };
+
+//   const handleCheckboxChange = (category) => {
+//     if (selectedCategories.includes(category)) {
+//       setSelectedCategories(selectedCategories.filter(item => item !== category));
+//     } else {
+//       setSelectedCategories([...selectedCategories, category]);
+//     }
+//   };
+
+//   const handleSuggestionClick = (suggestion) => {
+//     setSearchTerm(suggestion);
+//   };
+
+//   return (
+//     <motion.div className=" bg-[#11182700]"
+//       initial={{ opacity: 0 }}
+//       animate={{ opacity: 5 }}
+//       exit={{ opacity: 0 }}
+//     >
+//       <div className="bg-[#11182708] fixed top-0 left-0 right-0 z-50 backdrop-blur-md md:flex md:justify-center flex justify-around gap-20 py-4">
+
+//         <div className="blue-800 w-full">
+//           <div className="flex justify-between items-center purple-500 p-2">
+//             <div className="md:translate-x-20 green-400">
+//               <NavLink className="gap-3 flex" exact to="/">
+//                 <img className="h-10 w-16" src="images/DiGiHaatbg.jpg" alt="Logo" />
+//                 <h1 className="mt-2 font-Main md:text-xl font-bold text-[#3322f2]"> DigiHaat </h1>
+//               </NavLink>
+//             </div>
+//             <ul className=" md:space-x-5 text-[#3322f2] font-medium  ml-16 flex list-none p-0 font-Main
+//                ">
+//                 <li className="mr-4">
+//                   <NavLink
+//                     exact
+//                     to="/FirstHomepage"
+//                     activeclassname="active-link"
+//                     className="nav-link text-[#3322f2] text-sm font-medium md:text-lg hover:text-[#ffffff]"
+//                   >
+//                     Featured
+//                   </NavLink>
+//                 </li>
+//                 {/* <li className="mr-4">
+//                   <NavLink
+//                     to="/About"
+//                     activeclassname="active-link"
+//                     className="nav-link text-[#3322f2] text-sm font-medium md:text-xl hover:text-[black]"
+//                   >
+//                     About Us
+//                   </NavLink> */}
+//                 {/* </li> */}
+// {/*
+//                 <li className="mr-4">
+//                   <NavLink
+//                     to="/VisionMission"
+//                     activeclassname="active-link"
+//                     className="nav-link text-[#3322f2] text-sm font-medium md:text-xl hover:text-[black]"
+//                   >
+//                     Vision &amp; Mission
+//                   </NavLink>
+//                 </li> */}
+//                 {/* <li>
+//                   <NavLink
+//                     to="/ContactUs"
+//                     activeclassname="active-link"
+//                     className="nav-link text-[#3322f2] text-sm font-medium md:text-xl hover:text-[black]"
+//                   >
+//                     Contact Us
+//                   </NavLink>
+//                 </li> */}
+//               </ul>
+//             <div className="md:flex w-1/2  teal-200 hidden justify-center md:gap-80 items-center font-bold">
+//               <div className=" yellow-300 w-full">
+//                 <nav className="flex sky-600 w-full justify-end">
+//                   <input
+//                     type="text"
+//                     placeholder="Search products..."
+//                     className="w-full px-4 py-2 border border-gray-300 rounded-3xl focus:outline-none focus:border-blue-500"
+//                     value={searchTerm}
+//                     onChange={(e) => handleSearchChange(e.target.value)}
+//                   />
+//                 </nav>
+
+//               </div>
+
+//             </div>
+//             <ul className=" md:space-x-5 text-[#3322f2] font-medium  flex list-none p-0 font-Main
+//                ">
+//                 {/* <li className="mr-4">
+//                   <NavLink
+//                     exact
+//                     to="/FirstHomepage"
+//                     activeclassname="active-link"
+//                     className="nav-link text-[#3322f2] text-sm font-medium md:text-xl hover:text-[black]"
+//                   >
+//                     Home
+//                   </NavLink>
+//                 </li> */}
+//                 {/* <li className="mr-4">
+//                   <NavLink
+//                     to="/"
+//                     activeclassname="active-link"
+//                     className="nav-link text-[#3322f2] text-sm font-medium md:text-lg hover:text-[#ffffff]"
+//                   >
+//                     Shop Now
+//                   </NavLink>
+//                 </li> */}
+// {/*
+//                 <li className="mr-4">
+//                   <NavLink
+//                     to="/VisionMission"
+//                     activeclassname="active-link"
+//                     className="nav-link text-[#3322f2] text-sm font-medium md:text-xl hover:text-[black]"
+//                   >
+//                     Vision &amp; Mission
+//                   </NavLink>
+//                 </li> */}
+//                 {/* <li>
+//                   <NavLink
+//                     to="/ContactUs"
+//                     activeclassname="active-link"
+//                     className="nav-link text-[#3322f2] text-sm font-medium md:text-xl hover:text-[black]"
+//                   >
+//                     Contact Us
+//                   </NavLink>
+//                 </li> */}
+//               </ul>
+//               <NavLink to='/Signin'>
+//               <button
+//                 // onClick={() => {
+//                 //   dispatch(logoutuser());
+//                 // }}
+//                 className="hover:bg-[]   rounded-full text-center z-50 text-[#3322f2] border-2 border-[#3322f2] hover:text-[white] hover:border-[#ffffff]   h-[40px] w-[100px] font-bold transition ease-in-out shadow-[#000000d6] shadow-md flex justify-center items-center bg-[] font-scnd cursor-pointer"
+//               >
+//                 <ul>
+//                   <li className="p- text-center">
+//                     <h1 className="nav-link rounded-full text-center p-1     font-bold md:text-sm"> Sign In </h1>
+//                   </li>
+//                 </ul>
+//               </button>
+//               </NavLink>
+//               <NavLink to='/Login'>
+//               <button
+//                 // onClick={() => {
+//                 //   dispatch(logoutuser());
+//                 // }}
+//                 className="hover:bg-[] mr-5 rounded-full text-center z-50 text-[#3322f2] border-2 border-[#3322f2] hover:text-[white] hover:border-[#ffffff]   h-[40px] w-[100px] font-bold transition ease-in-out shadow-[#000000d6] shadow-md flex justify-center items-center bg-[] font-scnd cursor-pointer"
+//               >
+//                 <ul>
+//                   <li className="p- text-center">
+//                     <h1 className="nav-link rounded-full text-center p-1     font-bold md:text-sm"> Log in </h1>
+//                   </li>
+//                 </ul>
+//               </button></NavLink>
+//                     </div>
+//         </div>
+//       </div>
+//       {searchTerm && (
+//         <div className="p-4 mt-36"> {/* Added mt-36 here */}
+//           <h2 className="text-lg font-bold mb-2">Search Results for "{searchTerm}":</h2>
+//           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+//             {searchProducts(searchTerm).map((product) => (
+//               <div key={product.id} className="border border-gray-300 rounded-lg p-4">
+//                 <img src={product.image} alt={product.name} className="w-full h-32 object-cover mb-2" />
+//                 <h3 className="text-sm font-semibold">{product.name}</h3>
+//                 <p className="text-xs text-gray-600">{product.description}</p>
+//                 <p className="text-sm font-bold text-blue-600">${product.price}</p>
+//               </div>
+//             ))}
+//           </div>
+//         </div>
+//       )}
+//     </motion.div>
+//   );
+// };
+
+// export default Header;
+
+// ----> new waala responsive jo h
+
+import React, { useState, useRef, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { AiOutlineClose } from "react-icons/ai";
+import { FaArrowRight } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { useDispatch } from "react-redux";
 import { HiMenuAlt4 } from "react-icons/hi";
+import { logoutuser } from "../../actions/user";
+import productsData from "../data/productData";
 
 const Header = () => {
   const [menu, setMenu] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+  const dispatch = useDispatch();
+  const [showDropdown, setShowDropdown] = useState(false);
+  const dropdownRef = useRef(null);
+
+  const toggleDropdown = () => {
+    setShowDropdown(!showDropdown);
+  };
+
+  const closeDropdown = (event) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      setShowDropdown(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", closeDropdown);
+    return () => {
+      document.removeEventListener("mousedown", closeDropdown);
+    };
+  }, []);
+
+  const [searchTerm, setSearchTerm] = useState("");
+  const [selectedCategories, setSelectedCategories] = useState([]);
+  const [recommendedProducts, setRecommendedProducts] = useState([]);
+  const [searchSuggestions, setSearchSuggestions] = useState([]);
+
+  const generateRecommendations = () => {
+    const randomRecommendations = [];
+    const numRecommendations = 6;
+
+    while (randomRecommendations.length < numRecommendations) {
+      const randomIndex = Math.floor(Math.random() * productsData.length);
+      randomRecommendations.push(productsData[randomIndex]);
+    }
+
+    setRecommendedProducts(randomRecommendations);
+  };
+
+  const searchProducts = (query) => {
+    return productsData.filter(
+      (product) =>
+        product.name.toLowerCase().includes(query.toLowerCase()) ||
+        product.description.toLowerCase().includes(query.toLowerCase()) ||
+        product.category.toLowerCase().includes(query.toLowerCase()) ||
+        product.price.toString().includes(query.toLowerCase())
+    );
+  };
+
+  const generateSearchSuggestions = (query) => {
+    const randomSuggestions = Array.from({ length: 5 }, () => {
+      const randomIndex = Math.floor(Math.random() * productsData.length);
+      return productsData[randomIndex].name;
+    });
+
+    setSearchSuggestions(randomSuggestions);
+  };
+
+  useEffect(() => {
+    generateRecommendations();
+    generateSearchSuggestions();
+  }, []);
+
+  const handleSearchChange = (query) => {
+    setSearchTerm(query);
+    generateSearchSuggestions(query);
+  };
+
+  const handleCheckboxChange = (category) => {
+    if (selectedCategories.includes(category)) {
+      setSelectedCategories(
+        selectedCategories.filter((item) => item !== category)
+      );
+    } else {
+      setSelectedCategories([...selectedCategories, category]);
+    }
+  };
+
+  const handleSuggestionClick = (suggestion) => {
+    setSearchTerm(suggestion);
+  };
 
   return (
-    <>
-      <motion.div
-        className=""
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-      >
-        <div className="fixed bg-[#0f172a9c] backdrop-filter backdrop-blur-lg top-0 left-0 w-full z-50">
-          <div className="md:flex md:justify-center flex justify-around gap-20 py-4">
-            <div className="bg-grey-900 w-full">
-              <div className="flex justify-between items-center bg-[ff3ce8] p-2">
-                <div className="md:translate-x-20 bg-green400">
-                  <NavLink className="gap-3 flex" exact to="/">
-                    <img
-                      className="md:h-16 w-16 h-12 md:w-20"
-                      src="images/DiGiHaatbg.jpg"
-                      alt="Logo"
-                    />
-                    <h1 className="mt-3 font-Main md:text-3xl font-bold text-[#3322f2]">
-                      DigiHaat
-                    </h1>
-                  </NavLink>
-                </div>
-                <div className="flex md:hidden">
-                  <HiMenuAlt4
-                    fontSize={28}
-                    className="bg-[#3322f200] rounded fill-white cursor-pointer"
-                    onClick={() => setMenu(!menu)}
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {menu && (
-          <motion.div
-            className="fixed bg-[#0f172a9c] top-0 z-50 left- 0 w-full h-full backdrop-filter backdrop-blur-lg z- flex justify-center items-center"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-          >
-            <div className=" backdrop-blur-lg bg-[#0f172a00] z-50 fixed p-3 w-full h-screen shadow-md md:hidden list-none flex flex-col justify-start items-center rounded-md blue-glassmorphism text-white animate-slide-in">
-              <AiOutlineClose
-                fontSize={28}
-                className="absolute top-0 right-0 m-3 cursor-pointer"
-                onClick={() => setMenu(false)}
+    <motion.div
+      className="bg-[#11182700]"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 5 }}
+      exit={{ opacity: 0 }}
+    >
+      <div className="bg-[#11182708] fixed top-0 left-0 right-0 z-50 backdrop-blur-md md:flex md:justify-center flex justify-around gap-20 py-4">
+        <div className="blue-800 w-full flex justify-between items-center">
+          <div className="md:translate-x-20 bgreen-400">
+            <NavLink className="gap-3 flex" exact to="/">
+              <img
+                className="h-10 w-16"
+                src="images/DiGiHaatbg.jpg"
+                alt="Logo"
               />
+              <h1 className="mt-2 font-Main md:text-xl font-bold text-[#3322f2]">
+                {" "}
+                DigiHaat{" "}
+              </h1>
+            </NavLink>
+          </div>
+          <div className="md:hidden flex items-center">
+            <HiMenuAlt4
+              size={30}
+              className="text-white cursor-pointer"
+              onClick={() => setMenu(true)}
+            />
+          </div>
+          <ul className="hidden md:flex md:items-center md:space-x-6  ml-16 bgyellow-300 text-[#3322f2] font-medium list-none p-0 font-Main">
+            <li className=" mt-1">
               <NavLink
                 exact
                 to="/"
-                activeClassName="active-link"
-                className="nav-link font-bold mt-8 text-[#3322f2] font-medium md:text-xl"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-white text-sm font-medium transtion ease-in-out md:text-lg hover:text-white"
+                    : "text-[#3322f2] text-sm font-medium  transtion ease-in-out md:text-lg hover:text-[#ffffff]"
+                }
               >
-                Shop Now
+                Home
               </NavLink>
+            </li>
+            <li className="ml-  mt-1">
               <NavLink
+                exact
                 to="/FirstHomepage"
-                activeClassName="active-link"
-                className="nav-link font-bold mt-4 text-[#3322f2] font-medium md:text-xl"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-white text-sm font-medium md:text-lg transtion ease-in-out hover:text-white"
+                    : "text-[#3322f2] text-sm font-medium md:text-lg transtion ease-in-out hover:text-[#ffffff]"
+                }
               >
                 Featured
               </NavLink>
+            </li>
+            <li className="">
               <NavLink
-                to="/About"
-                activeClassName="active-link"
-                className="nav-link font-bold mt-4 text-[#3322f2] font-medium md:text-xl"
+                exact
+                to="/Cart"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-white text-sm font-medium transtion ease-in-out md:text-lg hover:text-white"
+                    : "nav-link text-[#3322f2] text-sm font-medium md:text-lg hover:text-[#ffffff]"
+                }
               >
-                About Us
+                Your Cart
               </NavLink>
-              <hr className="my-6 bg-red-950 w-full border-2 border-gray-300"></hr>
-              <div className="flex flex-col">
-                <NavLink
-                  to="/Signin"
-                  className="my-4 inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-blue-500 rounded-xl group"
-                >
-                  <span className="font-bold text-white">Sign In</span>
-                </NavLink>
-                <NavLink
-                  to="/Login"
-                  className="my-4 inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-blue-500 rounded-xl group"
-                >
-                  <span className="font-bold text-white">Log In</span>
-                </NavLink>
-              </div>
+            </li>
+            <li className="">
+              <NavLink
+                exact
+                to="/Like"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-white text-sm font-medium transtion ease-in-out md:text-lg hover:text-white"
+                    : "nav-link text-[#3322f2] text-sm font-medium md:text-lg hover:text-[#ffffff]"
+                }
+              >
+                Liked Product
+              </NavLink>
+            </li>
+          </ul>
+          <div className="hidden md:flex md:w-[500px] teal-200 justify-center md:gap-40 items-center font-bold">
+            <div className="yellow-300 w-full">
+              <nav className="flex sky-600 w-full justify-end">
+                <input
+                  type="text"
+                  placeholder="Search products..."
+                  className="w-full px-4 py-2 border border-gray-300 rounded-3xl focus:outline-none focus:border-blue-500"
+                  value={searchTerm}
+                  onChange={(e) => handleSearchChange(e.target.value)}
+                />
+              </nav>
             </div>
-          </motion.div>
-        )}
-      </motion.div>
-    </>
+          </div>
+          <div className="hidden md:flex md:items-center md:space-x-5">
+            <NavLink to="/Signin">
+              <button className="hover:bg-[] rounded-full text-center z-50 text-[#3322f2] border-2 border-[#3322f2] hover:text-[white] hover:border-[#ffffff] h-[40px] w-[100px] font-bold transition ease-in-out shadow-[#000000d6] shadow-md flex justify-center items-center bg-[] font-scnd cursor-pointer">
+                <ul>
+                  <li className="p- text-center">
+                    <h1 className="nav-link rounded-full text-center p-1 font-bold md:text-sm">
+                      {" "}
+                      Sign In{" "}
+                    </h1>
+                  </li>
+                </ul>
+              </button>
+            </NavLink>
+            <NavLink to="/Login">
+              <button className="hover:bg-[] mr-5 rounded-full text-center z-50 text-[#3322f2] border-2 border-[#3322f2] hover:text-[white] hover:border-[#ffffff] h-[40px] w-[100px] font-bold transition ease-in-out shadow-[#000000d6] shadow-md flex justify-center items-center bg-[] font-scnd cursor-pointer">
+                <ul>
+                  <li className="p- text-center">
+                    <h1 className="nav-link rounded-full text-center p-1 font-bold md:text-sm">
+                      {" "}
+                      Log in{" "}
+                    </h1>
+                  </li>
+                </ul>
+              </button>
+            </NavLink>
+          </div>
+        </div>
+      </div>
+      {menu && (
+        <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-90 flex flex-col items-center justify-center z-50">
+          <AiOutlineClose
+            size={30}
+            className="text-white cursor-pointer absolute top-4 right-4"
+            onClick={() => setMenu(false)}
+          />
+          <ul className="text-white text-2xl space-y-8">
+            <li>
+              <NavLink
+                exact
+                to="/"
+                activeclassname="active-link"
+                className="nav-link flex items-center gap-2"
+                onClick={() => setMenu(false)}
+              >
+                <FaArrowRight />
+                Home
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                exact
+                to="/FirstHomepage"
+                activeclassname="active-link"
+                className="nav-link flex items-center gap-2"
+                onClick={() => setMenu(false)}
+              >
+                <FaArrowRight />
+                Featured
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                exact
+                to="/Cart"
+                activeclassname="active-link"
+                className="nav-link flex items-center gap-2"
+                onClick={() => setMenu(false)}
+              >
+                <FaArrowRight />
+                Cart
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                exact
+                to="/Like"
+                activeclassname="active-link"
+                className="nav-link flex items-center gap-2"
+                onClick={() => setMenu(false)}
+              >
+                <FaArrowRight />
+                Like
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/Signin"
+                className="nav-link flex items-center gap-2"
+                onClick={() => setMenu(false)}
+              >
+                <FaArrowRight />
+                Sign In
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/Login"
+                className="nav-link flex items-center gap-2"
+                onClick={() => setMenu(false)}
+              >
+                <FaArrowRight />
+                Log in
+              </NavLink>
+            </li>
+          </ul>
+        </div>
+      )}
+      {searchTerm && (
+        <div className="p-4 mt-36">
+          <h2 className="text-lg text-white font-bold mb-2">
+            Search Results for "{searchTerm}":
+          </h2>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            {searchProducts(searchTerm).map((product) => (
+              <div
+                key={product.id}
+                className="border border-gray-300 rounded-lg p-4"
+              >
+                <img
+                  src={product.image}
+                  alt={product.name}
+                  className="w-full h-32 object-cover mb-2"
+                />
+                <h3 className="text-sm font-semibold">{product.name}</h3>
+                <p className="text-xs text-gray-600">{product.description}</p>
+                <p className="text-sm font-bold text-blue-600">
+                  ${product.price}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+    </motion.div>
   );
 };
 
