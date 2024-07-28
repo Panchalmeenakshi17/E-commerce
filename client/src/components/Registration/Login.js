@@ -150,7 +150,7 @@ const Login = () => {
                       data-te-ripple-init
                       data-te-ripple-color="light"
                     >
-                      Sign In
+                      Log In
                     </button>
                   </div>
                   <h1 className="text-[#ffffff] text-center font-medium  ">

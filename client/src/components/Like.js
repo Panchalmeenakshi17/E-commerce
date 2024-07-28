@@ -44,7 +44,7 @@ const Like = () => {
   };
 
   return (
-    <div className="w-full h-screen  p-4 font-Main  bg-gray-900">
+    <div className="w-full h-full  p-4 font-Main  bg-gray-900">
       <h2 className="text-xl font-bold mt-20 text-white mb-4">Liked Products</h2>
       {likedProducts.length === 0 ? (
         <p className=" text-gray-400">No products liked yet.</p>

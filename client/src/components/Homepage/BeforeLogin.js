@@ -1392,7 +1392,7 @@ const BeforeLogin = () => {
     <hr className="px-10 w-full" />
     <div className="md:flex md:mt-20 flex-wrap mt-10 overflow-x-auto overflow-y-hidden grid grid-cols-2 md:grid-cols-9 gap-10 mb-10">
       {productsData.slice(0, 10).map((product) => (
-        <div key={product.id} className="w-full md:w-1/6 mb-5 mt-2 md:mb-0">
+        <div key={product.id} className="w-full md:w-1/4 mb-5 mt-2 md:mb-0">
           <div className="bg-[#ca515100] rounded-2xl hover:-translate-y-2 transition ease-in-out">
             <img
               src={product.image}

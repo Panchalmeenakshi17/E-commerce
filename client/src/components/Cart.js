@@ -55,7 +55,7 @@ const Cart = () => {
   };
 
   return (
-    <div className="flex bg-gray-900  h-screen font-Main flex-wrap">
+    <div className="flex bg-gray-900  h-full font-Main flex-wrap">
       {/* <h1 className=" text-white mt-24 text-2xl font-bold">Your Cart Items Appear here:</h1> */}
       <div className="w-full md:h-full h-full md:w-3/4 p-4">
         <div className="flex bg-fuchsi-300 flex-wrap mt-20 -mx-2">
