@@ -1413,7 +1413,14 @@ const Header = () => {
             >
               Like
             </NavLink>
-             
+            <NavLink
+              to="/PaymentRecords"
+              className="bg-[#00000083] text-white border-2 border-blue-500 rounded-xl p-4 w-48 text-center font-semibold transition hover:bg-gray-700"
+              activeClassName="active-link"
+              onClick={() => setMenu(false)}
+            >
+              Payment History
+            </NavLink>
           </div>
         </div>
         <NavLink

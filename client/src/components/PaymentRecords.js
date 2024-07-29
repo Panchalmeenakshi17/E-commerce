@@ -9,7 +9,7 @@ const PaymentRecords = () => {
   }, []);
 
   return (
-    <div className="bg-gray-900 font-Main p-6 shadow-lg h-screen w-full">
+    <div className="bg-gray-900 font-Main p-6 shadow-lg h-full w-full">
       <h1 className="text-2xl mt-20 md:mt-20 font-bold text-white font-Main mb-4">Payment Records</h1>
       <hr className="md:w-1/4 w-56" />
 

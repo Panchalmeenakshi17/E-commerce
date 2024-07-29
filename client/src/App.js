@@ -262,6 +262,8 @@ const RoutesWithTitles = ({ currentUser, onLogin }) => {
           <Route path="/Like" element={<Like />} />
           <Route path="/About" element={<About />} />
           <Route path="*" element={<NotFound />} />
+          <Route path="/payment" element={<PaymentPage />} />
+          <Route path="/PaymentRecords" element={<PaymentRecords />} />
         </>
       )}
     </Routes>

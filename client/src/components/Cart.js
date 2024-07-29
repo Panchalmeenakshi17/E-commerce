@@ -25,18 +25,25 @@ const Cart = () => {
     alert("Item removed from cart successfully!");
   };
 
+  // const handleProceedToPay = () => {
+  //   const isAuthenticated = JSON.parse(localStorage.getItem("currentUser")) || false;
+  //   if (isAuthenticated) {
+  //     const totalAmount = calculateTotalInINR().replace('₹', '').replace(',', ''); // Get the total amount in INR
+  //     localStorage.setItem('totalAmount', totalAmount); // Store the total amount in localStorage
+  //     navigate("/payment"); // Redirect to payment page if authenticated
+  //   } else {
+  //     alert("Please sign in to proceed to payment."); // Alert user if not authenticated
+  //     navigate("/signin"); // Redirect to signin page if not authenticated
+  //   }
+  // };
   const handleProceedToPay = () => {
-    const isAuthenticated = JSON.parse(localStorage.getItem("currentUser")) || false;
-    if (isAuthenticated) {
+    // const isAuthenticated = JSON.parse(localStorage.getItem("currentUser")) || false;
+    
       const totalAmount = calculateTotalInINR().replace('₹', '').replace(',', ''); // Get the total amount in INR
       localStorage.setItem('totalAmount', totalAmount); // Store the total amount in localStorage
       navigate("/payment"); // Redirect to payment page if authenticated
-    } else {
-      alert("Please sign in to proceed to payment."); // Alert user if not authenticated
-      navigate("/signin"); // Redirect to signin page if not authenticated
-    }
+    
   };
-
   const formatPrice = (priceInUSD) => {
     const exchangeRate = 74; // Example exchange rate, 1 USD = 74 INR
     const priceInINR = (priceInUSD * exchangeRate).toFixed(2);

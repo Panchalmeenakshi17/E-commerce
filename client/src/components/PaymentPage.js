@@ -83,7 +83,7 @@ const PaymentPage = () => {
         setTimeout(() => navigate('/'), 2000); // Redirect to homepage after 2 seconds
       },
       prefill: {
-        name: 'John Doe',
+        name: 'USER',
         email: 'john@example.com',
         contact: '9876543210',
       },
@@ -115,8 +115,8 @@ const PaymentPage = () => {
 
   return (
     <div className="min-h-screen bg-gray-900 text-white">
-      <div className="flex flex-col md:flex-row items-center justify-start min-h-screen py-6 px-4 space-y-6 md:space-y-0 md:space-x-6">
-        <div className="bg-gray-800 p-8 rounded-lg shadow-lg max-w-md w-full">
+      <div className="  flex-col md:flex-row items-center justify-start min-h-screen py-6 px-4 space-y-6 md:space-y-0 md:space-x-6">
+        <div className="bg-gray-800 p-8 mt-20 md:mt- rounded-lg shadow-lg max-w-md w-full">
           <h1 className="text-2xl font-bold mb-4">Payment Page</h1>
           <p className="mb-4 text-gray-400">Total amount to be paid:</p>
           {/* Conditionally render the amount based on payment status */}
@@ -131,7 +131,7 @@ const PaymentPage = () => {
             Pay Now
           </button>
         </div>
-        <div className="bg-gray-800 p-8 rounded-lg shadow-lg max-w-md w-full">
+        <div className="bg-gray-800 md:p-8 rounded-lg shadow-lg max-w-md w-full">
           <PaymentRecords />
         </div>
       </div>
