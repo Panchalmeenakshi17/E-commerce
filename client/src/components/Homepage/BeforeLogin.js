@@ -1331,16 +1331,27 @@ const BeforeLogin = () => {
                 <h3 className="text-xl font-bold mb-4">Filter by Category</h3>
                 <div className="flex flex-col">
                   {[
-                    "Electronics",
-                    "Clothing",
-                    "Footwear",
-                    "Accessories",
-                    "Home & Living",
-                    "Fitness & Sports",
-                    "Gaming",
-                    "Outdoor Gear",
-                    "Tools",
-                    "Furniture",
+                   "Seeds",
+"Saplings",
+"Manure & Fertilizers",
+"Pots & Planters",
+"Gardening Tools",
+"Watering Equipment",
+"Soil & Compost",
+"Pesticides & Herbicides",
+"Irrigation Systems",
+"Mulch & Coverings",
+"Plant Support Systems",
+"Plant Nutrients",
+"Garden Décor",
+"Compost Bins",
+"Greenhouses & Shade Nets",
+"Grow Bags",
+"Plant Protection Products",
+"Organic Pesticides",
+"Hydroponic Equipment",
+"Gardening Books & Guides",
+"Garden Furniture",
                   ].map((category) => (
                     <label key={category} className="block">
                       <input

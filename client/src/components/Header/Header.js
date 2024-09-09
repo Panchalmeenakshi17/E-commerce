@@ -1174,13 +1174,13 @@ const Header = () => {
       <div className="bg-[#11182708] fixed top-0 left-0 right-0 z-50 backdrop-blur-md md:flex md:justify-center flex justify-around gap-20 py-4">
         <div className="blue-800 w-full flex justify-between items-center">
           <div className="md:translate-x-20 bgreen-400">
-            <NavLink className="gap-3 flex" exact to="/">
+            <NavLink className="gap- flex" exact to="/">
               {/* <img
                 className="h-10 w-16"
                 src="images/DiGiHaatbg.jpg"
                 alt="Logo"
               /> */}
-              <h1 className="mt-2 font-Main md:text-xl font-bold text-[#3322f2]">
+              <h1 className="mt-2 mr-6 font-Main md:text-xl font-bold text-[#3322f2]">
                 {" "}
                 Need4Need{" "}
               </h1>
