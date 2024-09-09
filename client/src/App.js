@@ -257,7 +257,7 @@ const RoutesWithTitles = ({
   };
 
   const updateTitle = (pageName) => {
-    document.title = `${pageName} | DigiHaat`;
+    document.title = `${pageName} | Need4Need`;
   };
 
   useEffect(() => {
