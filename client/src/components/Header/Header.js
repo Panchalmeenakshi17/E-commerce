@@ -1175,14 +1175,14 @@ const Header = () => {
         <div className="blue-800 w-full flex justify-between items-center">
           <div className="md:translate-x-20 bgreen-400">
             <NavLink className="gap-3 flex" exact to="/">
-              <img
+              {/* <img
                 className="h-10 w-16"
                 src="images/DiGiHaatbg.jpg"
                 alt="Logo"
-              />
+              /> */}
               <h1 className="mt-2 font-Main md:text-xl font-bold text-[#3322f2]">
                 {" "}
-                DigiHaat{" "}
+                Need4Need{" "}
               </h1>
             </NavLink>
           </div>

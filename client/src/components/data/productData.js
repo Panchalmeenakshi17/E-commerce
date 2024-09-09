@@ -1,436 +1,436 @@
 const productData = [
     {
         "id": 1,
-        "name": "Laptop",
+        "name": "Vegetable Seeds",
         "description": "Powerful laptop for work and entertainment",
         "price": 999,
-        "category": "Electronics",
-        "image": "https://imgeng.jagran.com/images/2023/mar/best%20laptops1679305053832.jpg"
+        "category": "Seeds",
+        "image": "https://images.unsplash.com/photo-1642769359258-40b4378a7de9?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
         "id": 2,
-        "name": "Smartphone",
+        "name": "Saplings ",
         "description": "High-performance smartphone with advanced features",
         "price":  99,
-        "category": "Electronics",
-        "image": "https://images-cdn.ubuy.com.sa/63b46431ffafdf2f462e84a6-christmas-gifts-clearance-cbcbtwo-smart.jpg"
+        "category": "Saplings",
+        "image": "https://images.unsplash.com/photo-1529123276648-af6cfff88c20?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
         "id": 3,
-        "name": "T-shirt",
+        "name": "Manure & Fertilizers",
         "description": "Comfortable cotton t-shirt for everyday wear",
         "price": 1.99,
-        "category": "Clothing",
-        "image": "https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F7b%2F17%2F7b17428dc1da8df6b8b054f8729b58bd8d06e60a.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_tshirtstanks_shortsleeve%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B2%5D&call=url%5Bfile%3A%2Fproduct%2Fmobilemain%5D"
+        "category": "Manure & Fertilizers",
+        "image": "https://media.geeksforgeeks.org/wp-content/uploads/20220926163013/Fertilizers.png"
     },
     {
         "id": 4,
-        "name": "Running Shoes",
+        "name": "Pots & Planters",
         "description": "Lightweight running shoes for optimal performance",
         "price":  9.99,
-        "category": "Footwear",
-        "image": "https://cdn.thewirecutter.com/wp-content/media/2023/09/running-shoes-2048px-5946.jpg?auto=webp&quality=75&width=1024"
+        "category": "Pots & Planters",
+        "image": "https://images.unsplash.com/photo-1523575708161-ad0fc2a9b951?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
         "id": 5,
-        "name": "Headphones",
+        "name": "Gardening Tools ",
         "description": "Premium over-ear headphones with noise cancellation",
         "price":  9,
-        "category": "Electronics",
-        "image": "https://cdn.mos.cms.futurecdn.net/fsDKHB3ZyNJK6zMpDDBenB.jpg"
+        "category": "Gardening Tools",
+        "image": "https://images.unsplash.com/photo-1661712663315-d851d40bcf07?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
         "id": 6,
-        "name": "Watch",
+        "name": "Watering Equipment",
         "description": "Stylish watch with leather strap and quartz movement",
         "price": 10,
-        "category": "Accessories",
-        "image": "https://www.titan.co.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Sites-titan-master-catalog/default/dw34d84041/images/Titan/Catalog/1698KM02_1.jpg?sw=800&sh=800"
+        "category": "Watering Equipment",
+        "image": "https://dbgarden.pl/wp-content/uploads/2022/03/nawadnianie_ogrodu.jpg"
     },
     {
         "id": 7,
-        "name": "Backpack",
+        "name": "Soil & Compost",
         "description": "Durable backpack with multiple compartments",
         "price": 59,
-        "category": "Accessories",
-        "image": "https://m.media-amazon.com/images/I/61zjaQdypmL._AC_UY1100_.jpg"
+        "category": "Soil & Compost",
+        "image": "https://images.unsplash.com/photo-1688633767821-3469dc5076bb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
         "id": 8,
-        "name": "Sunglasses",
+        "name": "Pesticides & Herbicides",
         "description": "Polarized sunglasses for UV protection",
         "price": 39,
-        "category": "Accessories",
-        "image": "https://n.nordstrommedia.com/id/aeb9d925-69ff-444d-8bd9-30ed91730822.jpeg?h=600&w=750"
+        "category": "Pesticides & Herbicides",
+        "image": "https://i.pinimg.com/564x/9f/77/c7/9f77c73c0eabed3b640579d12dc9370b.jpg"
     },
     {
         "id": 9,
-        "name": "Desk Lamp",
+        "name": "Liquid fertilizers",
         "description": "Adjustable LED desk lamp for studying and working",
         "price": 29,
-        "category": "Home Decor",
-        "image": "https://m.media-amazon.com/images/I/61r9G8yzTCL._AC_UF1000,1000_QL80_.jpg"
+        "category": "Plant Nutrients",
+        "image": "https://i.pinimg.com/564x/ab/6c/39/ab6c39eaadfa847943bf894be3708c79.jpg"
     },
     {
         "id": 10,
-        "name": "Wireless Mouse",
+        "name": "Stakes",
         "description": "Ergonomic wireless mouse with customizable buttons",
         "price": 39,
-        "category": "Electronics",
-        "image": "https://i.pcmag.com/imagery/roundups/00c55mZIyqDwsoHj87h5waZ-2.fit_lim.size_1050x.jpg"
+        "category": "Plant Support Systems",
+        "image": "https://images.unsplash.com/10/mason-jars.jpg?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
         "id": 11,
-        "name": "Coffee Maker",
+        "name": "Organic Pesticides",
         "description": "Programmable coffee maker for brewing delicious coffee",
         "price": 7,
-        "category": "Home Decor",
-        "image": "https://m.media-amazon.com/images/I/61pdQdp66-L._AC_UF894,1000_QL80_.jpg"
+        "category": "Organic Pesticides ",
+        "image": "https://i.pinimg.com/564x/30/7a/58/307a581e94b22b09792e1dc9a5f00e45.jpg"
     },
     {
         "id": 12,
-        "name": "Yoga Mat",
+        "name": "Biopesticides",
         "description": "High-quality yoga mat for comfortable practice",
         "price": 29,
-        "category": "Fitness & Sports",
-        "image": "https://m.media-amazon.com/images/I/71b5fW+s18L._AC_UF1000,1000_QL80_.jpg"
+        "category": "Organic Pesticides ",
+        "image": "https://i.pinimg.com/564x/e0/26/4f/e0264fed5e278772ead6ebf28cc66304.jpg"
     },
     {
         "id": 13,
-        "name": "Gaming Chair",
+        "name": "Clay",
         "description": "Ergonomic gaming chair with lumbar support",
         "price": 199,
-        "category": "Gaming",
-        "image": "https://m.media-amazon.com/images/I/61hGTAfXsZL._AC_UF894,1000_QL80_.jpg"
+        "category": "Pots & Planters",
+        "image": "https://i.pinimg.com/564x/15/63/54/15635420054158515ed7e72425bafa4e.jpg"
     },
     {
         "id": 14,
-        "name": "Digital Camera",
+        "name": "Sprinklers",
         "description": "Compact digital camera with high-resolution sensor",
         "price": 299,
-        "category": "Electronics",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrEmz7EvqVqZkMuYcj9KUwxlLmtyGE6ZSvOA&s"
+        "category": "Irrigation Systems",
+        "image": "https://i.pinimg.com/564x/ef/40/4f/ef404f0bb8749904fb31c0ad663b3d85.jpg"
     },
     {
         "id": 15,
-        "name": "Bluetooth Speaker",
+        "name": "Shade cloths",
         "description": "Portable Bluetooth speaker with powerful sound",
         "price": 49,
-        "category": "Electronics",
-        "image": "https://m.media-amazon.com/images/I/614pmXRPMFL._AC_UF1000,1000_QL80_.jpg"
+        "category": "Greenhouses & Shade Nets",
+        "image": "https://i.pinimg.com/564x/1b/46/82/1b4682605bc342b6bedec874491b7ab6.jpg"
     },
     {
         "id": 16,
-        "name": "Hiking Boots",
+        "name": "Neem oil",
         "description": "Waterproof hiking boots for outdoor adventures",
         "price": 19,
-        "category": "Footwear",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1Oi_uHaK1z7cHbwhZbzdI4_H2ZqEx2_Ml0Q&s"
+        "category": "Organic Pesticides",
+        "image": "https://i.pinimg.com/564x/86/28/75/862875e97873ea79b6bad1f2f0397157.jpg"
     },
     {
         "id": 17,
-        "name": "Winter Jacket",
+        "name": "Gardening Books & Guides",
         "description": "Insulated winter jacket for cold weather",
         "price": 149,
-        "category": "Clothing",
-        "image": "https://m.media-amazon.com/images/I/71GPLuey3dL._AC_UY1100_.jpg"
+        "category": "Gardening Books & Guides",
+        "image": "https://images.unsplash.com/photo-1607473129014-0afb7ed09c3a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
         "id": 18,
-        "name": "Wireless Earbuds",
+        "name": "Slow-release granules",
         "description": "True wireless earbuds with long battery life",
         "price": 89,
-        "category": "Electronics",
-        "image": "https://5.imimg.com/data5/SELLER/Default/2022/7/FA/KH/TW/154397919/ptron-bassbuds-jade-gaming-true-wireless-earbuds.jpg"
+        "category": "Plant Nutrients",
+        "image": "https://i.pinimg.com/564x/08/4f/4b/084f4b9978b4e43987e8a8fac129202e.jpg"
     },
     {
         "id": 19,
-        "name": "Cycling Helmet",
+        "name": "Plant care guides",
         "description": "Lightweight cycling helmet for safety and comfort",
         "price": 59,
-        "category": "Fitness & Sports",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoPunVfTJ55s1a_JvoMk7BfjJEf3ZC28tX4w&s"
+        "category": "Gardening Books & Guides",
+        "image": "https://i.pinimg.com/564x/bc/b8/0e/bcb80eecfa67ddf8b80d1ed7e39030b7.jpg"
     },
     {
         "id": 20,
-        "name": "Portable Charger",
+        "name": "Garden soil",
         "description": "Compact portable charger for charging devices on the go",
         "price": 29,
-        "category": "Electronics",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3tnfdJaDLYC0qYo6dv-tYbBVZsAtEB06TXQ&s"
+        "category": "Soil & Compost",
+        "image": "https://i.pinimg.com/564x/59/e4/1c/59e41c652dd24ef1cf09d9bed70695b9.jpg"
     },
-    {
-        "id": 21,
-        "name": "Wireless Keyboard",
-        "description": "Slim wireless keyboard with quiet keys",
-        "price": 49,
-        "category": "Electronics",
-        "image": "https://m.media-amazon.com/images/I/71gR-IwIv-L.jpg"
-    },
-    {
-        "id": 22,
-        "name": "Sneakers",
-        "description": "Stylish sneakers with cushioned sole",
-        "price": 59,
-        "category": "Footwear",
-        "image": "https://m.media-amazon.com/images/I/71I2QrobMRS._AC_UY1000_.jpg"
-    },
-    {
-        "id": 23,
-        "name": "Smartwatch",
-        "description": "Feature-rich smartwatch with heart rate monitor",
-        "price": 179,
-        "category": "Electronics",
-        "image": "https://www.cnet.com/a/img/resize/770007077c38361ca13ef0b0aa4c208f88fa2053/hub/2023/09/20/9e9b8e2b-04ee-4087-b819-c99ec8bbc980/apple-watch-ultra-2-7.jpg?auto=webp&fit=crop&height=1200&width=1200"
-    },
-    {
-        "id": 24,
-        "name": "Leather Wallet",
-        "description": "Genuine leather wallet with multiple card slots",
-        "price": 39,
-        "category": "Accessories",
-        "image": "https://5.imimg.com/data5/OF/GH/MY-7610375/handmade-men-s-short-leather-wallet.jpg"
-    },
-    {
-        "id": 25,
-        "name": "Wireless Headphones",
-        "description": "Comfortable wireless headphones with long battery life",
-        "price": 129,
-        "category": "Electronics",
-        "image": "https://m.media-amazon.com/images/I/41JACWT-wWL._AC_UF1000,1000_QL80_.jpg"
-    },
-    {
-        "id": 26,
-        "name": "Running Shorts",
-        "description": "Lightweight running shorts for performance and comfort",
-        "price": 29,
-        "category": "Clothing",
-        "image": "https://m.media-amazon.com/images/I/61Li8F17jKL._AC_UY1100_.jpg"
-    },
-    {
-        "id": 27,
-        "name": "Travel Backpack",
-        "description": "Versatile travel backpack with anti-theft features",
-        "price": 89,
-        "category": "Accessories",
-        "image": "https://m.media-amazon.com/images/I/61ZJYAj3nHL._AC_UY1100_.jpg"
-    },
-    {
-        "id": 28,
-        "name": "Stainless Steel Water Bottle",
-        "description": "Durable stainless steel water bottle for hydration on the go",
-        "price": 19,
-        "category": "Fitness & Sports",
-        "image": "https://www.bigbasket.com/media/uploads/p/xxl/40300041-4_1-bb-home-frost-stainless-steel-water-bottle-with-steel-cap-metallic-pink.jpg"
-    },
-    {
-        "id": 29,
-        "name": "Desktop Monitor",
-        "description": "High-resolution desktop monitor for productivity",
-        "price": 249,
-        "category": "Electronics",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHIJqpJ8gAvalN8sGEk5j0MMCjrOUo_QWNsw&s"
-    },
-    {
-        "id": 30,
-        "name": "Bluetooth Headphones",
-        "description": "Wireless Bluetooth headphones with deep bass",
-        "price": 89,
-        "category": "Electronics",
-        "image": "https://m.media-amazon.com/images/I/516WC9VNHVL._AC_UF1000,1000_QL80_.jpg"
-    },
-    {
-        "id": 31,
-        "name": "Fitness Tracker",
-        "description": "Fitness tracker with activity and sleep monitoring",
-        "price": 99,
-        "category": "Electronics",
-        "image": "https://m.media-amazon.com/images/I/61Bugm3Wo+L.jpg"
-    },
-    {
-        "id": 32,
-        "name": "Electric Toothbrush",
-        "description": "Rechargeable electric toothbrush with multiple modes",
-        "price": 49,
-        "category": "Personal Care",
-        "image": "https://m.media-amazon.com/images/I/716A4lE041L._AC_UF1000,1000_QL80_.jpg"
-    },
-    {
-        "id": 33,
-        "name": "Suitcase",
-        "description": "Lightweight suitcase with 360-degree spinner wheels",
-        "price": 129,
-        "category": "Accessories",
-        "image": "https://assets.ajio.com/medias/sys_master/root/20230321/jDtq/6419baf4aeb26924e3e79c1c/-473Wx593H-465946368-purple-MODEL.jpg"
-    },
-    {
-        "id": 34,
-        "name": "Electric Kettle",
-        "description": "Fast-boiling electric kettle with auto shut-off",
-        "price": 29,
-        "category": "Home Decor",
-        "image": "https://images-cdn.ubuy.co.in/634114f86dc4e63f73489134-topwit-electric-kettle-hot-water-kettle.jpg"
-    },
-    {
-        "id": 35,
-        "name": "Office Chair",
-        "description": "Ergonomic office chair with adjustable height",
-        "price": 139,
-        "category": "Home Decor",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp2VB5SGltq7BcoWxp1IykElgcdnHSC5B7nw&s"
-    },
-    {
-        "id": 36,
-        "name": "Digital Watch",
-        "description": "Digital watch with stopwatch and backlight",
-        "price": 49,
-        "category": "Accessories",
-        "image": "https://m.media-amazon.com/images/I/71NZfNlllIL._AC_UY1000_.jpg"
-    },
-    {
-        "id": 37,
-        "name": "LED Flashlight",
-        "description": "Bright LED flashlight with adjustable focus",
-        "price": 19,
-        "category": "Home Decor",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQekME5MUMufpFqOZnc8Y9e7ZJexpcgcM2YeA&s"
-    },
-    {
-        "id": 38,
-        "name": "Mountain Bike",
-        "description": "Durable mountain bike with suspension fork",
-        "price": 399,
-        "category": "Fitness & Sports",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY-0xR2s7hxS3otELhUejP4O0xsHpx5GTngA&s"
-    },
-    {
-        "id": 39,
-        "name": "4K Television",
-        "description": "Ultra HD 4K television with smart features",
-        "price": 499,
-        "category": "Electronics",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqkvsVmXovKoFQP_E4zv7ePyREON3ZAsm2GA&s"
-    },
-    {
-        "id": 40,
-        "name": "Portable Blender",
-        "description": "Compact portable blender for smoothies",
-        "price": 34.99,
-        "category": "Home Decor",
-        "image": "https://m.media-amazon.com/images/I/71vR2A86DuL._AC_UF894,1000_QL80_.jpg"
-    },
-    {
-        "id": 41,
-        "name": "VR Headset",
-        "description": "Virtual reality headset for immersive experiences",
-        "price": 299,
-        "category": "Electronics",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFETiEJNSHsT27qy7TuZo2hpabcOoKP2-L_Q&s"
-    },
-    {
-        "id": 42,
-        "name": "Leather Boots",
-        "description": "Stylish leather boots with durable sole",
-        "price": 119,
-        "category": "Footwear",
-        "image": "https://assets.ajio.com/medias/sys_master/root/20230921/HdkP/650c2c32ddf7791519eeac1f/-473Wx593H-464890556-tan-MODEL.jpg"
-    },
-    {
-        "id": 43,
-        "name": "Electric Shaver",
-        "description": "Rechargeable electric shaver with precision blades",
-        "price": 59,
-        "category": "Personal Care",
-        "image": "https://images-cdn.ubuy.co.in/64b80498a0304351cb1b94c6-braun-series-3-310s-rechargeable-wet-dry.jpg"
-    },
-    {
-        "id": 44,
-        "name": "Camping Tent",
-        "description": "Spacious camping tent for outdoor adventures",
-        "price": 149,
-        "category": "Fitness & Sports",
-        "image": "https://rukminim2.flixcart.com/image/850/1000/kkbh8cw0/tent/o/a/e/4-person-tent-for-camping-waterproof-outdoor-tent-tent-house-original-imafzpagtyfftgvg.jpeg?q=90&crop=false"
-    },
-    {
-        "id": 45,
-        "name": "Bluetooth Keyboard",
-        "description": "Portable Bluetooth keyboard for typing on the go",
-        "price": 39,
-        "category": "Electronics",
-        "image": "https://m.media-amazon.com/images/I/71jtu-DdLYL.jpg"
-    },
-    {
-        "id": 46,
-        "name": "Wireless Charger",
-        "description": "Fast wireless charger for Qi-enabled devices",
-        "price": 29,
-        "category": "Electronics",
-        "image": "https://www.cnet.com/a/img/resize/941c469fbd36d1dca137fed325100179c2bc6dfa/hub/2023/02/28/9da2e9c7-d07d-45cb-89d1-18c7013249e5/anker-315-wireless-charger.png?auto=webp&fit=crop&height=576&width=768"
-    },
-    {
-        "id": 47,
-        "name": "Travel Mug",
-        "description": "Insulated travel mug for hot and cold beverages",
-        "price": 14.99,
-        "category": "Home Decor",
-        "image": "https://m.media-amazon.com/images/I/61O5eUqNZML._AC_UF894,1000_QL80_.jpg"
-    },
-    {
-        "id": 48,
-        "name": "Bluetooth Tracker",
-        "description": "Compact Bluetooth tracker for finding lost items",
-        "price": 24.99,
-        "category": "Electronics",
-        "image": "https://www.safewise.com/app/uploads/2021/02/Bluetooth-Trackers-Testing.jpg"
-    },
-    {
-        "id": 49,
-        "name": "Kitchen Scale",
-        "description": "Digital kitchen scale for precise measurements",
-        "price": 19,
-        "category": "Home Decor",
-        "image": "https://images.meesho.com/images/products/51871962/k5ony_512.webp"
-    },
-    {
-        "id": 50,
-        "name": "Electric Scooter",
-        "description": "Foldable electric scooter for convenient commuting",
-        "price": 299,
-        "category": "Fitness & Sports",
-        "image": "https://bd.gaadicdn.com/processedimages/ola-electric/s1-pro/source/s1-pro664af02c3f229.jpg"
-    },
-    {
-        "id": 51,
-        "name": "Ski Jacket",
-        "description": "Waterproof ski jacket with thermal insulation",
-        "price": 199,
-        "category": "Clothing",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXvvml9iLjlO0dXfh0VcgJOxizzT-T5hnF4Q&s"
-    },
-    {
-        "id": 52,
-        "name": "Electric Skillet",
-        "description": "Non-stick electric skillet for versatile cooking",
-        "price": 49,
-        "category": "Home Decor",
-        "image": "https://images-cdn.ubuy.co.in/665a50b562ea19066408dc1f-mainstays-12-round-nonstick-electric.jpg"
-    },
-    {
-        "id": 53,
-        "name": "Smart Light Bulb",
-        "description": "Wi-Fi enabled smart light bulb with adjustable brightness",
-        "price": 19,
-        "category": "Electronics",
-        "image": "https://images-cdn.ubuy.co.in/633b62280037f40d8b49b5cb-smart-light-bulb-wifi-light-bulb-color.jpg"
-    },
-    {
-        "id": 54,
-        "name": "Wireless Router",
-        "description": "High-speed wireless router for reliable internet",
-        "price": 89,
-        "category": "Electronics",
-        "image": "https://m.media-amazon.com/images/I/41kHxeOdw+L._AC_UF1000,1000_QL80_.jpg"
-    },
+    // {
+    //     "id": 21,
+    //     "name": "Wireless Keyboard",
+    //     "description": "Slim wireless keyboard with quiet keys",
+    //     "price": 49,
+    //     "category": "Electronics",
+    //     "image": "https://m.media-amazon.com/images/I/71gR-IwIv-L.jpg"
+    // },
+    // {
+    //     "id": 22,
+    //     "name": "Sneakers",
+    //     "description": "Stylish sneakers with cushioned sole",
+    //     "price": 59,
+    //     "category": "Footwear",
+    //     "image": "https://m.media-amazon.com/images/I/71I2QrobMRS._AC_UY1000_.jpg"
+    // },
+    // {
+    //     "id": 23,
+    //     "name": "Smartwatch",
+    //     "description": "Feature-rich smartwatch with heart rate monitor",
+    //     "price": 179,
+    //     "category": "Electronics",
+    //     "image": "https://www.cnet.com/a/img/resize/770007077c38361ca13ef0b0aa4c208f88fa2053/hub/2023/09/20/9e9b8e2b-04ee-4087-b819-c99ec8bbc980/apple-watch-ultra-2-7.jpg?auto=webp&fit=crop&height=1200&width=1200"
+    // },
+    // {
+    //     "id": 24,
+    //     "name": "Leather Wallet",
+    //     "description": "Genuine leather wallet with multiple card slots",
+    //     "price": 39,
+    //     "category": "Accessories",
+    //     "image": "https://5.imimg.com/data5/OF/GH/MY-7610375/handmade-men-s-short-leather-wallet.jpg"
+    // },
+    // {
+    //     "id": 25,
+    //     "name": "Wireless Headphones",
+    //     "description": "Comfortable wireless headphones with long battery life",
+    //     "price": 129,
+    //     "category": "Electronics",
+    //     "image": "https://m.media-amazon.com/images/I/41JACWT-wWL._AC_UF1000,1000_QL80_.jpg"
+    // },
+    // {
+    //     "id": 26,
+    //     "name": "Running Shorts",
+    //     "description": "Lightweight running shorts for performance and comfort",
+    //     "price": 29,
+    //     "category": "Clothing",
+    //     "image": "https://m.media-amazon.com/images/I/61Li8F17jKL._AC_UY1100_.jpg"
+    // },
+    // {
+    //     "id": 27,
+    //     "name": "Travel Backpack",
+    //     "description": "Versatile travel backpack with anti-theft features",
+    //     "price": 89,
+    //     "category": "Accessories",
+    //     "image": "https://m.media-amazon.com/images/I/61ZJYAj3nHL._AC_UY1100_.jpg"
+    // },
+    // {
+    //     "id": 28,
+    //     "name": "Stainless Steel Water Bottle",
+    //     "description": "Durable stainless steel water bottle for hydration on the go",
+    //     "price": 19,
+    //     "category": "Fitness & Sports",
+    //     "image": "https://www.bigbasket.com/media/uploads/p/xxl/40300041-4_1-bb-home-frost-stainless-steel-water-bottle-with-steel-cap-metallic-pink.jpg"
+    // },
+    // {
+    //     "id": 29,
+    //     "name": "Desktop Monitor",
+    //     "description": "High-resolution desktop monitor for productivity",
+    //     "price": 249,
+    //     "category": "Electronics",
+    //     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHIJqpJ8gAvalN8sGEk5j0MMCjrOUo_QWNsw&s"
+    // },
+    // {
+    //     "id": 30,
+    //     "name": "Bluetooth Headphones",
+    //     "description": "Wireless Bluetooth headphones with deep bass",
+    //     "price": 89,
+    //     "category": "Electronics",
+    //     "image": "https://m.media-amazon.com/images/I/516WC9VNHVL._AC_UF1000,1000_QL80_.jpg"
+    // },
+    // {
+    //     "id": 31,
+    //     "name": "Fitness Tracker",
+    //     "description": "Fitness tracker with activity and sleep monitoring",
+    //     "price": 99,
+    //     "category": "Electronics",
+    //     "image": "https://m.media-amazon.com/images/I/61Bugm3Wo+L.jpg"
+    // },
+    // {
+    //     "id": 32,
+    //     "name": "Electric Toothbrush",
+    //     "description": "Rechargeable electric toothbrush with multiple modes",
+    //     "price": 49,
+    //     "category": "Personal Care",
+    //     "image": "https://m.media-amazon.com/images/I/716A4lE041L._AC_UF1000,1000_QL80_.jpg"
+    // },
+    // {
+    //     "id": 33,
+    //     "name": "Suitcase",
+    //     "description": "Lightweight suitcase with 360-degree spinner wheels",
+    //     "price": 129,
+    //     "category": "Accessories",
+    //     "image": "https://assets.ajio.com/medias/sys_master/root/20230321/jDtq/6419baf4aeb26924e3e79c1c/-473Wx593H-465946368-purple-MODEL.jpg"
+    // },
+    // {
+    //     "id": 34,
+    //     "name": "Electric Kettle",
+    //     "description": "Fast-boiling electric kettle with auto shut-off",
+    //     "price": 29,
+    //     "category": "Home Decor",
+    //     "image": "https://images-cdn.ubuy.co.in/634114f86dc4e63f73489134-topwit-electric-kettle-hot-water-kettle.jpg"
+    // },
+    // {
+    //     "id": 35,
+    //     "name": "Office Chair",
+    //     "description": "Ergonomic office chair with adjustable height",
+    //     "price": 139,
+    //     "category": "Home Decor",
+    //     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp2VB5SGltq7BcoWxp1IykElgcdnHSC5B7nw&s"
+    // },
+    // {
+    //     "id": 36,
+    //     "name": "Digital Watch",
+    //     "description": "Digital watch with stopwatch and backlight",
+    //     "price": 49,
+    //     "category": "Accessories",
+    //     "image": "https://m.media-amazon.com/images/I/71NZfNlllIL._AC_UY1000_.jpg"
+    // },
+    // {
+    //     "id": 37,
+    //     "name": "LED Flashlight",
+    //     "description": "Bright LED flashlight with adjustable focus",
+    //     "price": 19,
+    //     "category": "Home Decor",
+    //     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQekME5MUMufpFqOZnc8Y9e7ZJexpcgcM2YeA&s"
+    // },
+    // {
+    //     "id": 38,
+    //     "name": "Mountain Bike",
+    //     "description": "Durable mountain bike with suspension fork",
+    //     "price": 399,
+    //     "category": "Fitness & Sports",
+    //     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY-0xR2s7hxS3otELhUejP4O0xsHpx5GTngA&s"
+    // },
+    // {
+    //     "id": 39,
+    //     "name": "4K Television",
+    //     "description": "Ultra HD 4K television with smart features",
+    //     "price": 499,
+    //     "category": "Electronics",
+    //     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqkvsVmXovKoFQP_E4zv7ePyREON3ZAsm2GA&s"
+    // },
+    // {
+    //     "id": 40,
+    //     "name": "Portable Blender",
+    //     "description": "Compact portable blender for smoothies",
+    //     "price": 34.99,
+    //     "category": "Home Decor",
+    //     "image": "https://m.media-amazon.com/images/I/71vR2A86DuL._AC_UF894,1000_QL80_.jpg"
+    // },
+    // {
+    //     "id": 41,
+    //     "name": "VR Headset",
+    //     "description": "Virtual reality headset for immersive experiences",
+    //     "price": 299,
+    //     "category": "Electronics",
+    //     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFETiEJNSHsT27qy7TuZo2hpabcOoKP2-L_Q&s"
+    // },
+    // {
+    //     "id": 42,
+    //     "name": "Leather Boots",
+    //     "description": "Stylish leather boots with durable sole",
+    //     "price": 119,
+    //     "category": "Footwear",
+    //     "image": "https://assets.ajio.com/medias/sys_master/root/20230921/HdkP/650c2c32ddf7791519eeac1f/-473Wx593H-464890556-tan-MODEL.jpg"
+    // },
+    // {
+    //     "id": 43,
+    //     "name": "Electric Shaver",
+    //     "description": "Rechargeable electric shaver with precision blades",
+    //     "price": 59,
+    //     "category": "Personal Care",
+    //     "image": "https://images-cdn.ubuy.co.in/64b80498a0304351cb1b94c6-braun-series-3-310s-rechargeable-wet-dry.jpg"
+    // },
+    // {
+    //     "id": 44,
+    //     "name": "Camping Tent",
+    //     "description": "Spacious camping tent for outdoor adventures",
+    //     "price": 149,
+    //     "category": "Fitness & Sports",
+    //     "image": "https://rukminim2.flixcart.com/image/850/1000/kkbh8cw0/tent/o/a/e/4-person-tent-for-camping-waterproof-outdoor-tent-tent-house-original-imafzpagtyfftgvg.jpeg?q=90&crop=false"
+    // },
+    // {
+    //     "id": 45,
+    //     "name": "Bluetooth Keyboard",
+    //     "description": "Portable Bluetooth keyboard for typing on the go",
+    //     "price": 39,
+    //     "category": "Electronics",
+    //     "image": "https://m.media-amazon.com/images/I/71jtu-DdLYL.jpg"
+    // },
+    // {
+    //     "id": 46,
+    //     "name": "Wireless Charger",
+    //     "description": "Fast wireless charger for Qi-enabled devices",
+    //     "price": 29,
+    //     "category": "Electronics",
+    //     "image": "https://www.cnet.com/a/img/resize/941c469fbd36d1dca137fed325100179c2bc6dfa/hub/2023/02/28/9da2e9c7-d07d-45cb-89d1-18c7013249e5/anker-315-wireless-charger.png?auto=webp&fit=crop&height=576&width=768"
+    // },
+    // {
+    //     "id": 47,
+    //     "name": "Travel Mug",
+    //     "description": "Insulated travel mug for hot and cold beverages",
+    //     "price": 14.99,
+    //     "category": "Home Decor",
+    //     "image": "https://m.media-amazon.com/images/I/61O5eUqNZML._AC_UF894,1000_QL80_.jpg"
+    // },
+    // {
+    //     "id": 48,
+    //     "name": "Bluetooth Tracker",
+    //     "description": "Compact Bluetooth tracker for finding lost items",
+    //     "price": 24.99,
+    //     "category": "Electronics",
+    //     "image": "https://www.safewise.com/app/uploads/2021/02/Bluetooth-Trackers-Testing.jpg"
+    // },
+    // {
+    //     "id": 49,
+    //     "name": "Kitchen Scale",
+    //     "description": "Digital kitchen scale for precise measurements",
+    //     "price": 19,
+    //     "category": "Home Decor",
+    //     "image": "https://images.meesho.com/images/products/51871962/k5ony_512.webp"
+    // },
+    // {
+    //     "id": 50,
+    //     "name": "Electric Scooter",
+    //     "description": "Foldable electric scooter for convenient commuting",
+    //     "price": 299,
+    //     "category": "Fitness & Sports",
+    //     "image": "https://bd.gaadicdn.com/processedimages/ola-electric/s1-pro/source/s1-pro664af02c3f229.jpg"
+    // },
+    // {
+    //     "id": 51,
+    //     "name": "Ski Jacket",
+    //     "description": "Waterproof ski jacket with thermal insulation",
+    //     "price": 199,
+    //     "category": "Clothing",
+    //     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXvvml9iLjlO0dXfh0VcgJOxizzT-T5hnF4Q&s"
+    // },
+    // {
+    //     "id": 52,
+    //     "name": "Electric Skillet",
+    //     "description": "Non-stick electric skillet for versatile cooking",
+    //     "price": 49,
+    //     "category": "Home Decor",
+    //     "image": "https://images-cdn.ubuy.co.in/665a50b562ea19066408dc1f-mainstays-12-round-nonstick-electric.jpg"
+    // },
+    // {
+    //     "id": 53,
+    //     "name": "Smart Light Bulb",
+    //     "description": "Wi-Fi enabled smart light bulb with adjustable brightness",
+    //     "price": 19,
+    //     "category": "Electronics",
+    //     "image": "https://images-cdn.ubuy.co.in/633b62280037f40d8b49b5cb-smart-light-bulb-wifi-light-bulb-color.jpg"
+    // },
+    // {
+    //     "id": 54,
+    //     "name": "Wireless Router",
+    //     "description": "High-speed wireless router for reliable internet",
+    //     "price": 89,
+    //     "category": "Electronics",
+    //     "image": "https://m.media-amazon.com/images/I/41kHxeOdw+L._AC_UF1000,1000_QL80_.jpg"
+    // },
     // {
     //     "id": 55,
     //     "name": "Hair Dryer",

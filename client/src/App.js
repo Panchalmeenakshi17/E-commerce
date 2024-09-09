@@ -143,6 +143,7 @@ import {
   Routes,
   Route,
   useLocation,
+  useNavigate,
 } from "react-router-dom";
 import Login from "./components/Registration/Login";
 import Signin from "./components/Registration/Signin";
@@ -157,10 +158,14 @@ import Cart from "./components/Cart";
 import Like from "./components/Like";
 import PaymentPage from "./components/PaymentPage";
 import PaymentRecords from "./components/PaymentRecords";
+import OrderTracking from "./components/OrderTracking";
 
 const App = () => {
   const [currentUser, setCurrentUser] = useState(null);
   const [loading, setLoading] = useState(false);
+  const [isOrderTracked, setIsOrderTracked] = useState(
+    JSON.parse(localStorage.getItem("orderTracked")) || false
+  );
 
   useEffect(() => {
     const storedUser = localStorage.getItem("currentUser");
@@ -177,6 +182,11 @@ const App = () => {
   const handleLogout = () => {
     setCurrentUser(null);
     localStorage.removeItem("currentUser");
+  };
+
+  const handleOrderTracking = () => {
+    setIsOrderTracked(true);
+    localStorage.setItem("orderTracked", true);
   };
 
   useEffect(() => {
@@ -212,7 +222,12 @@ const App = () => {
               <Header />
             )}
             <div className="bg-color">
-              <RoutesWithTitles currentUser={currentUser} onLogin={handleLogin} />
+              <RoutesWithTitles
+                currentUser={currentUser}
+                onLogin={handleLogin}
+                onOrderTracking={handleOrderTracking}
+                isOrderTracked={isOrderTracked}
+              />
             </div>
             <Footer />
           </Router>
@@ -222,8 +237,14 @@ const App = () => {
   );
 };
 
-const RoutesWithTitles = ({ currentUser, onLogin }) => {
+const RoutesWithTitles = ({
+  currentUser,
+  onLogin,
+  onOrderTracking,
+  isOrderTracked,
+}) => {
   const location = useLocation(); // Make sure this is imported from 'react-router-dom'
+  const navigate = useNavigate();
 
   useEffect(() => {
     updateTitle(getPageName(location.pathname));
@@ -239,6 +260,12 @@ const RoutesWithTitles = ({ currentUser, onLogin }) => {
     document.title = `${pageName} | DigiHaat`;
   };
 
+  useEffect(() => {
+    if (isOrderTracked) {
+      navigate("/order-tracking");
+    }
+  }, [isOrderTracked, navigate]);
+
   return (
     <Routes>
       {currentUser ? (
@@ -248,9 +275,9 @@ const RoutesWithTitles = ({ currentUser, onLogin }) => {
           <Route path="/FirstHomepage" element={<FirstHomepage />} />
           <Route path="/Cart" element={<Cart />} />
           <Route path="/Like" element={<Like />} />
-          <Route path="/payment" element={<PaymentPage />} />
+          <Route path="/payment" element={<PaymentPage onPaymentSuccess={onOrderTracking} />} />
           <Route path="/PaymentRecords" element={<PaymentRecords />} />
-          
+          <Route path="/order-tracking" element={<OrderTracking />} />
         </>
       ) : (
         <>
@@ -262,8 +289,9 @@ const RoutesWithTitles = ({ currentUser, onLogin }) => {
           <Route path="/Like" element={<Like />} />
           <Route path="/About" element={<About />} />
           <Route path="*" element={<NotFound />} />
-          <Route path="/payment" element={<PaymentPage />} />
+          <Route path="/payment" element={<PaymentPage onPaymentSuccess={onOrderTracking} />} />
           <Route path="/PaymentRecords" element={<PaymentRecords />} />
+          <Route path="/order-tracking" element={<OrderTracking />} />
         </>
       )}
     </Routes>

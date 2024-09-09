@@ -719,43 +719,43 @@ const BeforeLogin = () => {
   const carouselImages = [
     {
       image:
-        "https://static01.nyt.com/images/2021/03/30/multimedia/28xp-shoes-09/28xp-shoes-09-superJumbo.jpg",
+        "https://images.unsplash.com/photo-1462690417829-5b41247f6b0e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       text: "Welcome to DigiHaat",
       subtext: "Your one-stop shop for all things awesome",
     },
     {
       image:
-        "https://static-assets.business.amazon.com/assets/in/24th-jan/705_Website_Blog_Appliances_1450x664.jpg.transform/1450x664/image.jpg",
+        "https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       text: "Discover Amazing Deals",
       subtext: "Find the latest trends in clothing, electronics, and more",
     },
     {
       image:
-        "https://static.thcdn.com/images/large/original//productimg/1600/1600/12656224-1464802597501868.jpg",
+        "https://images.unsplash.com/photo-1696371269200-2c8d837426aa?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       text: "Shop with Confidence",
       subtext: "Top-quality products and exceptional customer service",
     },
     {
       image:
-        "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1611651625032-153048f0da00?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       text: "Find Your Style",
       subtext: "Explore a wide range of products to suit your lifestyle",
     },
     {
       image:
-        "https://i0.wp.com/www.satvagold.com/admin/uploads/2021/09/29/20210929032122210897597.jpg?w=1280",
+        "https://images.unsplash.com/photo-1464820820824-6c2c3f3ba59d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       text: "Welcome to DigiHaat",
       subtext: "Your one-stop shop for all things awesome",
     },
     {
       image:
-        "https://images.unsplash.com/photo-1524679813234-66a389fe1a42?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1593007434321-eeb39892c04b?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       text: "Discover Amazing Deals",
       subtext: "Find the latest trends in clothing, electronics, and more",
     },
     {
       image:
-        "https://cdn.mos.cms.futurecdn.net/GXHa4PWwDPx7tGQG9MDQvK-1200-80.jpg",
+        "https://images.unsplash.com/photo-1604762524889-3e2fcc145683?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       text: "Shop with Confidence",
       subtext: "Top-quality products and exceptional customer service",
     },
@@ -825,43 +825,43 @@ const BeforeLogin = () => {
   const carouselbrand = [
     {
       image:
-        "https://gumlet-images.assettype.com/afaqs%2F2023-02%2Fb256d8f4-6fe4-4502-b4c0-5f7fd19926b7%2FLakm___UnapologeticallyM_____This_Once__Red_Means_Go____Campaign_Visual_2.png?rect=0%2C24%2C843%2C474&format=webp&w=480&dpr=2.6", // Amazon with Jeff Bezos
+        "https://i.pinimg.com/564x/6a/da/1a/6ada1a2bb7091b18ab03246cf049607a.jpg", // Amazon with Jeff Bezos
       text: "Welcome to DigiHaat",
       subtext: "Your one-stop shop for all things awesome",
     },
     {
       image:
-        "https://exchange4media.gumlet.io/news-photo/133208-big-2024-03-18T115125.441.jpg?w=400&dpr=2.6", // Apple with Tim Cook
+        "https://i.pinimg.com/564x/9a/02/84/9a028486e6684dfac076b3e7677f0a09.jpg", // Apple with Tim Cook
       text: "Discover Amazing Deals",
       subtext: "Find the latest trends in clothing, electronics, and more",
     },
     {
       image:
-        "https://exchange4media.gumlet.io/news-photo/108157-bam.jpg?w=400&dpr=2.6", // Nike with Michael Jordan
+        "https://i.pinimg.com/564x/dc/ad/04/dcad04641bb67cc3aa4d8f7a5521d8b1.jpg", // Nike with Michael Jordan
       text: "Shop with Confidence",
       subtext: "Top-quality products and exceptional customer service",
     },
     {
       image:
-        "https://exchange4media.gumlet.io/news-photo/132333-main-2024-02-05T133550.958.jpg?w=400&dpr=2.6", // Samsung with BTS
+        "https://i.pinimg.com/564x/62/a4/84/62a484c6b49d7272d00eb041106e9dbd.jpg", // Samsung with BTS
       text: "Find Your Style",
       subtext: "Explore a wide range of products to suit your lifestyle",
     },
     {
       image:
-        "https://www.medianews4u.com/wp-content/uploads/2019/03/Consumer-Electronics-brand-Vingajoy-roped-in-Ayushman-Khurrana-as-their-brand-ambassador-2.jpg", // Adidas with Lionel Messi
+        "https://i.pinimg.com/564x/4a/32/94/4a3294f9889cf248e4f814fdda378444.jpg", // Adidas with Lionel Messi
       text: "Welcome to DigiHaat",
       subtext: "Your one-stop shop for all things awesome",
     },
     {
       image:
-        "https://www.adgully.com/img/800/202207/copy-of-copy-of-adgully-61.png.jpg", // Sony with Robert Downey Jr.
+        "https://i.pinimg.com/564x/0c/09/8c/0c098ca784b066db418e061fc1187536.jpg", // Sony with Robert Downey Jr.
       text: "Discover Amazing Deals",
       subtext: "Find the latest trends in clothing, electronics, and more",
     },
     {
       image:
-        "https://static.startuptalky.com/2022/12/cosmetic-brands-india-lakme-startuptalky--1-.jpg", // Gucci with Harry Styles
+        "https://i.pinimg.com/564x/fd/04/7f/fd047f063fef190bb916d80a270d4daa.jpg", // Gucci with Harry Styles
       text: "Shop with Confidence",
       subtext: "Top-quality products and exceptional customer service",
     },
@@ -1184,7 +1184,7 @@ const BeforeLogin = () => {
                     </div>
                   ))}
                 </div>
-                <div className="md:mt-20 mt-10">
+                {/* <div className="md:mt-20 mt-10">
                   <Slider {...settings}>
                     {carouselAd.map((slide, index) => (
                       <div key={index} style={{ position: "relative" }}>
@@ -1196,7 +1196,7 @@ const BeforeLogin = () => {
                       </div>
                     ))}
                   </Slider>
-                </div>
+                </div> */}
               </div>
 
               {/* Products Section */}

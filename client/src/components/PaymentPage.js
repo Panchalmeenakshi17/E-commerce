@@ -80,10 +80,12 @@ const PaymentPage = () => {
         alert('Payment Successful! Payment ID: ' + response.razorpay_payment_id);
         setPaymentStatus('Success'); // Update status to Success
         savePaymentDetails(response.razorpay_payment_id, amountInPaise / 100, 'INR', 'Success'); // Save payment
-        setTimeout(() => navigate('/'), 2000); // Redirect to homepage after 2 seconds
+
+        // Redirect to Order Tracking page after 2 seconds
+        setTimeout(() => navigate('/order-tracking'), 2000);
       },
       prefill: {
-        name: 'USER',
+        name: 'John Doe',
         email: 'john@example.com',
         contact: '9876543210',
       },
@@ -109,14 +111,29 @@ const PaymentPage = () => {
       currency,
       status,
       timestamp: new Date().toISOString(),
+      // You can add additional fields for products here if needed
     });
     localStorage.setItem('payments', JSON.stringify(payments));
+
+    // Simulate saving order details for tracking
+    const orderDetails = {
+      id,
+      status,
+      amount,
+      currency,
+      timestamp: new Date().toISOString(),
+      products: [
+        { name: 'Product 1', quantity: 2, price: '100' },
+        { name: 'Product 2', quantity: 1, price: '300' }
+      ]
+    };
+    localStorage.setItem('orderDetails', JSON.stringify(orderDetails));
   };
 
   return (
     <div className="min-h-screen bg-gray-900 text-white">
-      <div className="  flex-col md:flex-row items-center justify-start min-h-screen py-6 px-4 space-y-6 md:space-y-0 md:space-x-6">
-        <div className="bg-gray-800 p-8 mt-20 md:mt- rounded-lg shadow-lg max-w-md w-full">
+      <div className="flex flex-col md:flex-row items-center justify-start min-h-screen py-6 px-4 space-y-6 md:space-y-0 md:space-x-6">
+        <div className="bg-gray-800 p-8 mt-20 md:-mt-96 rounded-lg shadow-lg max-w-md w-full">
           <h1 className="text-2xl font-bold mb-4">Payment Page</h1>
           <p className="mb-4 text-gray-400">Total amount to be paid:</p>
           {/* Conditionally render the amount based on payment status */}

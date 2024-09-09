@@ -151,37 +151,37 @@ const HomePage = () => {
 
   const carouselImages = [
     {
-      image: "https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "https://images.unsplash.com/photo-1634978946872-7aff94521b1e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       text: "Welcome to DigiHaat",
       subtext: "Your one-stop shop for all things awesome",
     },
     {
-      image: "https://www.cougar.com.pk/cdn/shop/articles/New_Women_s_Collection.jpg?v=1662637654",
+      image: "https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       text: "Discover Amazing Deals",
       subtext: "Find the latest trends in clothing, electronics, and more",
     },
     {
-      image: "https://global.bonanzasatrangi.com/cdn/shop/collections/kids_1_654e2bd2-a4bf-4182-ac09-00ff5fa0abb8.jpg?v=1604457023",
+      image: "https://images.unsplash.com/photo-1477558716721-e28322f187c6?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       text: "Shop with Confidence",
       subtext: "Top-quality products and exceptional customer service",
     },
     {
-      image: "https://www.swisswatchexpo.com/TheWatchClub/wp-content/uploads/2023/06/How-to-Start-a-Watch-Collection-Rolex-Daytona-Panerai-Radiomir-Vacheron-Constantin-Overseas-Omega-Seamaster.jpg",
+      image: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=1913&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       text: "Find Your Style",
       subtext: "Explore a wide range of products to suit your lifestyle",
     },
     {
-        image: "https://preview.redd.it/j5uuq5jcp5y81.jpg?auto=webp&s=481585743a22a115459128964763e959294b0270",
+        image: "https://images.unsplash.com/photo-1535978115060-d01ae6702684?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         text: "Welcome to DigiHaat",
         subtext: "Your one-stop shop for all things awesome",
       },
       {
-        image: "https://shop.zebronics.com/cdn/shop/collections/Laptop-PR-banner.jpg?v=1699940282",
+        image: "https://images.unsplash.com/photo-1600841784377-45b805f54d34?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         text: "Discover Amazing Deals",
         subtext: "Find the latest trends in clothing, electronics, and more",
       },
       {
-        image: "https://static.vecteezy.com/system/resources/previews/034/139/197/large_2x/empty-clothing-store-in-shopping-mall-new-fashion-collection-on-shelf-fashionable-clothes-on-hangers-and-racks-modern-boutique-filled-with-merchandise-and-accessories-at-sale-for-customers-photo.jpg",
+        image: "https://images.unsplash.com/photo-1601368156156-fb9e52e2f5dd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         text: "Shop with Confidence",
         subtext: "Top-quality products and exceptional customer service",
       },
@@ -192,120 +192,121 @@ const HomePage = () => {
 
   const products = [
     {
-      name: "Stylish T-shirt",
-      category: "Clothing",
+      name: "Seeds",
+      category: "Seeds",
       description: "A trendy t-shirt perfect for casual outings.",
-      image: "https://assets.ajio.com/medias/sys_master/root/20230810/uHn0/64d3e8fea9b42d15c99f6d1b/-473Wx593H-466428340-taupe-MODEL.jpg",
+      image: "https://images.unsplash.com/photo-1563760836797-bf5d5f9d2243?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
-      name: "Stylish T-shirt",
-      category: "Clothing",
+      name: "Manure",
+      category: "Manure",
       description: "A trendy t-shirt perfect for casual outings.",
-      image: "https://m.media-amazon.com/images/I/41bPLkNlFEL._AC_UY1100_.jpg",
+      image: "https://images.unsplash.com/photo-1708437237775-6c89e28913d4?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
-        name: "Elegant Saree",
-        category: "Sarees",
+        name: "Fertilizers",
+        category: "Fertilizers",
         description: "An elegant saree perfect for special occasions.",
-        image: "https://www.sairasboutique.net/cdn/shop/products/ClaretPink_GrayDesignerEmbroideredSilkPartyWearSaree-Saira_sBoutique.jpg?v=1667277430",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnx5-0xolzI-KFVTsq1Z_u7Xwu7rNHVzzUJw&s",
       },
+    // {
+    //   name: "Smartphone",
+    //   category: "Electronics",
+    //   description: "The latest smartphone with advanced features.",
+    //   image: "https://thegreytechnologies.in/cdn/shop/products/mini-smartphone-android-7_1000x.jpg?v=1701107216",
+    // },
     {
-      name: "Smartphone",
-      category: "Electronics",
-      description: "The latest smartphone with advanced features.",
-      image: "https://thegreytechnologies.in/cdn/shop/products/mini-smartphone-android-7_1000x.jpg?v=1701107216",
-    },
-    {
-      name: "Designer Watch",
-      category: "Accessories",
+      name: "Flowers",
+      category: "Flowers",
       description: "A classy watch to complement your style.",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfqcc4yVVLTZo8vsLOn1g3IoYlxbPecRpB-g&s",
+      image: "https://images.unsplash.com/photo-1571992049393-827d13da8fe3?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
+    // {
+    //   name: "Fresh Fruits Basket",
+    //   category: "Fruits",
+    //   description: "A variety of fresh fruits packed in a beautiful basket.",
+    //   image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlBK7B6isWoobBQcSvi9RHOAO_HlTFOUh-Ig&s",
+    // },
     {
-      name: "Fresh Fruits Basket",
-      category: "Fruits",
-      description: "A variety of fresh fruits packed in a beautiful basket.",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlBK7B6isWoobBQcSvi9RHOAO_HlTFOUh-Ig&s",
-    },
-    {
-        name: "Kids' T-shirt",
-        category: "Kids",
+        name: "Pots and basket",
+        category: "Pots and basket",
         description: "A cute and comfortable t-shirt for kids.",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJmBys4cIEKxSyju-XsqdEN7jRQun-fUstAw&s",
+        image: "https://images.unsplash.com/photo-1616961002389-504228edfcb7?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       },
       {
-        name: "Educational Toy Set",
-        category: "Kids",
+        name: "Saplings",
+        category: "Saplings",
         description: "A fun and educational toy set for kids to learn while playing.",
-        image: "https://www.jiomart.com/images/product/original/rvdw1sjtso/vastate-satsun-bricks-toys-sets-with-wheel-lego-blocks-educational-toys-for-kids-60-pcs-multicolor-product-images-orvdw1sjtso-p601176536-1-202305050653.jpg?im=Resize=(420,420)",
+        image: "https://images.unsplash.com/photo-1505235687559-28b5f54645b7?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       },
-      {
-        name: "Kids' Backpack",
-        category: "Kids",
-        description: "A colorful and durable backpack for kids to carry their essentials.",
-        image: "https://5.imimg.com/data5/SELLER/Default/2023/4/300120740/FK/QK/QD/87329053/check-printed-kids-school-backpack-school-for-girl-with-teddy-toy-inner-linning-500x500.jpeg",
-      },
+      // {
+      //   name: "Kids' Backpack",
+      //   category: "Kids",
+      //   description: "A colorful and durable backpack for kids to carry their essentials.",
+      //   image: "https://5.imimg.com/data5/SELLER/Default/2023/4/300120740/FK/QK/QD/87329053/check-printed-kids-school-backpack-school-for-girl-with-teddy-toy-inner-linning-500x500.jpeg",
+      // },
   ];
   const products1 = [
-    // Men's section
+    // Seeds's section
     {
-      name: "Men's Formal Shirt",
-      category: "Men's Clothing",
-      description: "A stylish formal shirt for men.",
-      image: "https://m.media-amazon.com/images/I/41bPLkNlFEL._AC_UY1100_.jpg",
+      name: "Pumkin  ",
+      category: "Seeds",
+      description: "Fresh pumpkin seeds in the market",
+      image: "https://images.unsplash.com/photo-1706961088910-6f182d386aab?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
-      name: "Men's Casual Jeans",
-      category: "Men's Clothing",
-      description: "Comfortable jeans for casual wear.",
-      image: "https://turtle.in/cdn/shop/files/027A9537copy_1400x.jpg?v=1702376499",
+      name: "Fresh pistachios",
+      category: "Seeds",
+      description: "Fresh pistachios at the market",
+      image: "https://images.unsplash.com/photo-1708521203160-2a1e7c8f774a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
-      name: "Men's Leather Shoes",
-      category: "Men's Shoes",
-      description: "Classic leather shoes for men.",
-      image: "https://5.imimg.com/data5/SELLER/Default/2021/12/IC/UG/UG/142936861/men-leather-shoes.jpg",
+      name: "Fresh corn kernels",
+      category: "Seeds",
+      description: "Fresh corn kernels at the market",
+      image: "https://images.unsplash.com/photo-1672333660572-cf4f1a097878?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
 
-    // Women's section
+    // 's section
     {
-      name: "Women's Summer Dress",
-      category: "Women's Clothing",
-      description: "A beautiful summer dress for women.",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2_1UfeAOaOfwRhv9A9iAij_s9ZBEpnjfh6g&s",
+      name: "Horse manure",
+      category: "Manure",
+      // description: "A beautiful summer dress for women.",
+      image: "https://upload.wikimedia.org/wikipedia/commons/c/c2/Hestem%C3%B8j.jpg",
     },
     {
-      name: "Women's Handbag",
-      category: "Women's Accessories",
-      description: "A trendy handbag for women.",
-      image: "https://rukminim2.flixcart.com/image/850/1000/xif0q/hand-messenger-bag/k/h/r/-original-imagrhgksuzv7xcg.jpeg?q=90&crop=false",
+      name: "Plants Manure",
+      category: "Manure",
+      // description: "A trendy handbag for women.",
+      image: "https://images.unsplash.com/photo-1609784969374-b53a14d91338?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
-      name: "Women's Sandals",
-      category: "Women's Shoes",
-      description: "Stylish sandals for women.",
-      image: "https://m.media-amazon.com/images/I/61LWZFYMkZL._AC_UY1000_.jpg",
+      name: "Freshly Prepared Cow's Manure",
+      category: "Manure",
+      // description: "Stylish sandals for women.",
+      image: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
 
     // Children's section
     {
-        name: "Kids' T-shirt",
-        category: "Kids",
-        description: "A cute and comfortable t-shirt for kids.",
-        image: "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/465147/item/ingoods_03_465147.jpg?width=494",
-      },
-      {
-        name: "Educational Toy Set",
-        category: "Kids",
-        description: "A fun and educational toy set for kids to learn while playing.",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqvesWl8mhUR38OffWiMV2-Tj5k5TZctJnmw&s",
-      },
-      {
-        name: "Kids' Backpack",
-        category: "Kids",
-        description: "A colorful and durable backpack for kids to carry their essentials.",
-        image: "https://funblast.in/cdn/shop/files/81oS4QJz3WL._UL1500.jpg?v=1694067737",
-      },
+      name: "Newly born Saplings",
+      category: "Plants, Pots and Basket",
+      description: "Freshly sprouted saplings ready to be nurtured, perfect for enhancing your garden or home décor.",
+      image: "https://images.unsplash.com/photo-1611843467160-25afb8df1074?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+    {
+      name: "Domestic Saplings",
+      category: "Plants, Pots and Basket",
+      description: "Ideal for indoor spaces, these saplings bring a touch of nature and freshness to your home.",
+      image: "https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+    {
+      name: "Decorative Saplings",
+      category: "Plants, Pots and Basket",
+      description: "Beautiful decorative saplings that add a vibrant and aesthetic touch to any space.",
+      image: "https://images.unsplash.com/photo-1495908333425-29a1e0918c5f?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+    
     ];
   
   return (
@@ -371,7 +372,7 @@ const HomePage = () => {
           <h2 className="text-3xl text-white text-left font-scnd font-bold mb-6">About DigiHaat</h2>
       <hr className=" md:w-1/5 w-72 " />
 
-          <p className="text-lg mt-10 text-justify font-scnd text-white  ">DigiHaat is your premier destination for an unparalleled online shopping experience. Our commitment to excellence is reflected in every aspect of our platform, from the carefully curated selection of top-quality products to the seamless browsing and purchasing process. Whether you're in search of fashionable clothing, cutting-edge electronics, or essential home goods, DigiHaat offers a diverse range of items to cater to your every need. With a dedication to customer satisfaction at the forefront, we provide transparent pricing, secure transactions, and prompt delivery services. Our mission is simple: to exceed your expectations at every turn. Join the thousands of satisfied customers who trust DigiHaat for their online shopping needs, and embark on a journey of convenience, reliability, and unparalleled quality today.</p>
+          <p className="text-lg mt-10 text-justify font-scnd text-white  ">Need4Need is a premier e-commerce platform catering specifically to gardening enthusiasts. With a carefully curated selection of items such as manure, seeds, plants, pots, and baskets, Need4Need ensures that all your gardening needs are met in one convenient location. Whether you're a seasoned gardener or just starting out, this platform offers a diverse range of products to help you create the perfect garden. With a focus on providing top-quality items, transparent pricing, secure transactions, and timely delivery, Need4Need strives to make your shopping experience seamless and reliable. Join the community of gardening lovers who trust Need4Need for all their plant and gardening essentials.</p>
         </div>
       </section>
 
@@ -379,15 +380,15 @@ const HomePage = () => {
  {/* Men's Section */}
  <section className="md:py-10 md:p-20 p-5 bg-gray-900">
   <div className="container mx-auto text-center">
-    <h2 className="text-3xl text-white text-left font-bold mb-6">Men's Section</h2>
+    <h2 className="text-3xl text-white text-left font-bold mb-6">Seeds Section</h2>
     <hr className=" md:w-1/5 w-72 " />
 
     <div className="grid grid-cols-1 mt-10 md:grid-cols-2 lg:grid-cols-3 gap-12">
       {products1
         .filter(
           (product1) =>
-            product1.category === "Men's Clothing" ||
-            product1.category === "Men's Shoes"
+            product1.category === "Seeds" ||
+            product1.category === "Seeds"
         )
         .map((product1, index) => (
           <div
@@ -413,15 +414,15 @@ const HomePage = () => {
 {/* Women's Section */}
 <section className="py-10 md:p-20 p-5 bg-gray-900">
   <div className="container mx-auto text-center">
-    <h2 className="text-3xl text-white text-left font-bold mb-6">Women's Section</h2>
+    <h2 className="text-3xl text-white text-left font-bold mb-6">Manure Section</h2>
     <hr className="md:w-1/5 w-72  mb-10" />
     <div className="grid grid-cols-1 md:grid-cols-2 mt-10 lg:grid-cols-3 gap-12">
       {products1
         .filter(
           (product1) =>
-            product1.category === "Women's Clothing" ||
-            product1.category === "Women's Accessories" ||
-            product1.category === "Women's Shoes"
+            product1.category === "Manure" ||
+            product1.category === "Manure" ||
+            product1.category === "Manure"
         )
         .map((product1, index) => (
           <div
@@ -447,11 +448,11 @@ const HomePage = () => {
       {/* Children's Section */}
       <section className="md:p-20 p-5 bg-gray-900">
   <div className="container mx-auto text-center">
-    <h2 className="text-3xl text-white text-left font-bold mb-6">Children's Section</h2>
+    <h2 className="text-3xl text-white text-left font-bold mb-6">Plants, Pots and Basket</h2>
     <hr className="md:w-1/5 w-72   mb-10" />
     <div className="grid grid-cols-1 md:grid-cols-2 mt-10 lg:grid-cols-3 gap-12">
       {products1
-        .filter((product1) => product1.category === "Kids")
+        .filter((product1) => product1.category === "Plants, Pots and Basket")
         .map((product1, index) => (
           <div
             key={index}
