@@ -1236,7 +1236,7 @@ const BeforeLogin = () => {
                             {product.description}
                           </p>
                           <p className="text-blue-600 text-sm font-semibold">
-                            Price: ${product.price}
+                            Price: Rs. {product.price}
                           </p>
                           <p className="text-gray-600 text-sm">
                             Category: {product.category}
@@ -1302,7 +1302,7 @@ const BeforeLogin = () => {
                           {product.description}
                         </p>
                         <p className="text-blue-600 font-semibold">
-                          Price: ${product.price}
+                          Price: Rs.{product.price}
                         </p>
                         {/* <button
                           onClick={() => addToCart(product)}
